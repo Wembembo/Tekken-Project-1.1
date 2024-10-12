@@ -121,19 +121,19 @@ select :hover {
 .container {
   display: flex;
   flex-direction: space-evenly;
-  grid-template-columns: repeat(3,1FR);
+  grid-template-columns: repeat(2,1FR);
   column-gap: 10px;
   margin: 10px;
 }
 
 .Tables1 {
-  min-width: 33%;
+  min-width: 50%;
   height: -100;
   margin-top: 0.6em;
 }
 
 .Tables2 {
-  min-width: 33%;
+  min-width: 50%;
   height: -100;
 }
 
