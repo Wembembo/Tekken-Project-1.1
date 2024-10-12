@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tekken 8 To Do</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="../styles.css" rel="stylesheet"></link>
+</head>
+<body>
+    <a href="../index.html" id="Nav">Home</a>
+    <div id="toDoList">
+        <table>
+            <h1>Things to do</h1>
+            <tr>
+                <th>Task</th>
+                <th>Thought Process</th>
+                <th>Priority</th>
+            </tr>
+            <tr>
+                <td>Have Video Player position to centre on load. </td>
+                <td>Right now it initially loads on the left, which makes sense given its loading on a grid 
+                    with nothing else to display until the character data populates, but it just looks 
+                    a little janky. </td>
+                <td>Medium</td>
+            </tr>
+            <tr>
+                <td>Fix Heihachis Picture</td>
+                <td>Right now he's just a little guy, but I cannot seem to find a css portrait. 
+                    While its not high on the list, it isnt breaking anything, so I can work on this later.</td>
+                <td>Low</td>
+            </tr>
+            <tr>
+                <td>Dynamic Video Selection based on player selection</td>
+                <td>At the moment, the only video that players is the Tekken 8 intro.
+                    The plan is to have the video embed update depending on the player selection for player 1 and 2.
+                    This will most likely be using a JSON file to create a 2d array for each matchup.</td>
+                    <td>High</td>
+            </tr>
+            <tr>
+                <td>Character Art</td>
+                <td>The current character pictures use ones from the character selection screen 
+                    (with the exception of Heihachi, he's just a lil' guy). I'm debating having the CSS pictures removed, 
+                    and in their place have the full character art populate behind the table and meeting somewhere in the middle of the 
+                    display. I would think that the CSS icons would need to remain for smaller screens. </td>
+                <td>Low</td>
+            </tr>
+            <tr>
+                <td>Visual display of moves on hover</td>
+                <td>As an idea I'm currently throwing around, it may be cool to have the user be able to mouse over (or tap on) a move 
+                    to have a gif show up of the move itself. This would be a lot of work on what is already quite a large project, 
+                    so this is going to be fairly low down the list of prirorites until I'm happy with everything else first. </td>
+                    <td>Low</td>
+                </td>
+            </tr>
+            <tr>
+                <td>Fix the grid layout</td>
+                <td>At the moment, changing character (particularly on player 2 side) can result in changes to the width of the grid coloumns. This is unintended and will be fixed.</td>
+                <td>High</td>
+            </tr>
+            <tr>
+                <td>Get feedback</td>
+                <td>This is my first project on my own, and this is also the first time I'm really getting into Tekken, so reaching out via discords and reddit pages for anything like design feedback and idea, data corrections, etc will only benefit the project</td>
+                <td>Ongoing high</td>
+            </tr>
+        </table>
+        <p id="help">If anyone would like to reach out to offer advice or help, please feel free. I can be contacted on discord, reddit and twitter with the username Wembembo</p>
+    </div>
+</body>
+</html>
