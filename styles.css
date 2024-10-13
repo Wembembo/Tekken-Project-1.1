@@ -130,13 +130,12 @@ select :hover {
   min-width: 50%;
   height: -100;
   margin-top: 0.6em;
-  max-width: 50%;
+  max-width: 90%;
 }
 
 .Tables2 {
   min-width: 50%;
   height: -100;
-  max-width: 90%;
 }
 
 .video{
