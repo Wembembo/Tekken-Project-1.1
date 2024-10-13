@@ -121,7 +121,7 @@ select :hover {
 .container {
   display: flex;
   flex-direction: space-evenly;
-  grid-template-columns: repeat(2,1FR);
+  justify-content: stretch;
   column-gap: 10px;
   margin: 10px;
 }
