@@ -120,7 +120,7 @@ select :hover {
 
 .container {
   display: flex;
-  flex-direction: space-evenly;
+  flex-direction: row;
   justify-content: stretch;
   column-gap: 10px;
   margin: 10px;
