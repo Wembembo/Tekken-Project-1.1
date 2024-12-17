@@ -15,6 +15,10 @@ body {
   max-width: 100%;
 }
 
+.display-picture{
+  height: 80px;
+}
+
 @font-face {
   font-family: ironFist;
   src: url(./Styles/Iron-Fist.ttf);
