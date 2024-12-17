@@ -1,11 +1,11 @@
 "use strict";
 
-const characters = ["Alisa", "Asuka", "Azucena", "Bryan", "Claudio", "Devil", "Dragunov", 
+const characters = ["Alisa", "Asuka", "Azucena", "Bryan", "Claudio", "Clive", "Devil", "Dragunov", 
   "Eddy", "Feng", "Heihachi", "Hwoarang", "Jack", "Jin", "Jun", "Kazuya", "King", "Kuma", "Lars", "Law", 
   "Lee", "Leo", "Leroy", "Lidia", "Lili", "Nina", "Panda", "Paul", "Raven", "Reina", "Shaheen", 
   "Steve", "Victor", "Xiaoyu", "Yoshimitsu", "Zafina"];
 
-const characters2 = ["Alisa", "Asuka", "Azucena", "Bryan", "Claudio", "Devil", "Dragunov", 
+const characters2 = ["Alisa", "Asuka", "Azucena", "Bryan", "Claudio", "Clive", "Devil", "Dragunov", 
   "Eddy", "Feng", "Heihachi", "Hwoarang", "Jack", "Jin", "Jun", "Kazuya", "King", "Kuma", "Lars", "Law",
    "Lee", "Leo", "Leroy", "Lidia", "Lili", "Nina", "Panda", "Paul", "Raven", "Reina", "Shaheen", 
    "Steve", "Victor", "Xiaoyu", "Yoshimitsu", "Zafina"];
