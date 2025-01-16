@@ -10,8 +10,8 @@ const characters2 = ["Alisa", "Asuka", "Azucena", "Bryan", "Claudio", "Clive", "
   "Lee", "Leo", "Leroy", "Lidia", "Lili", "Nina", "Panda", "Paul", "Raven", "Reina", "Shaheen", 
   "Steve", "Victor", "Xiaoyu", "Yoshimitsu", "Zafina"];
 
-function renderTables(character, containerId) {
-  const container = document.getElementById(containerId);
+function renderTables(character, containerID) {
+  const container = document.getElementById(containerID);
   container.innerHTML = ""; // Clear previous content
 
   const tables = data[character];
@@ -70,7 +70,9 @@ document.getElementById("playerTwoSelection").addEventListener("change", (event)
 
 //Test area for Character Data
 
-// Template: [
+// Template: {
+//    image: ""
+//    moves:[
 //   {
 //     headers:["Term", "Notation", "Input"],
 //     rows:[
@@ -90,9 +92,12 @@ document.getElementById("playerTwoSelection").addEventListener("change", (event)
 //     ],
 //   },
 // ],
+// };
 
 const data = {
-  Alisa: [
+  Alisa: {
+    image: "./Assets/Characters/Alisa.png",
+    moves: [
     {
       headers:["Term", "Notation", "Input"],
       rows:[
@@ -105,14 +110,14 @@ const data = {
     {
       headers:["Input", "Description", "Startup Frames", "Attack Level", "+/- On Block", "Counter Options"],
       rows:[
-        [`<p class = notation>7</p>`, "Quick jab to start offence", "10", "High", "+1", ""],
+        ["7", "Quick jab to start offence", "10", "High", "+1", ""],
         ["a7", "Mid Poke with good range", "15", "Mid", "-5", ""],
         ["z1", "Key low poke to harass the opponent", "16", "Low", "-13", ""],
         ["x9", "Good keepout and whiff punisher", "16", "Mid", "-9", ""],
         ["s1", "Long ranged low, mix it with your other approach tools", "23", "Low", "-10", ""],
         ["a1", "Homing attack with great range and pushback on block", "20", "Mid", "-8", ""],
         [`<img class="notation" src="./Assets/Input-Notations/assets_generic/R5_03_WS.png">8`, "Homing attack from crouch, Mix it with FC1+2", "20", "Mid", "-8",""],
-        ["ddD8", "Approach attack, usefule to pressure the opponent", "18", "Mid", "-4", ""],
+        ["ddD8", "Approach attack, usefule to pressure the opponent", "18", "Mid", "-4"],
         [`<img class="notation" src="./Assets/Input-Notations/assets_generic/R9_DES.png">`, "Explore this stance to form and aggressive gameplan", "-", "-", "-", "-"],
       ],
     },
@@ -122,9 +127,10 @@ const data = {
         ["a4/a6", "Parries high attacks", "-", "-", "-"],
         ["a8", "Power Crush", "19", "Mid", "-13"],
         ["q9", "Power Crush", "16", "High", "-9"]
-      ],
-    },
-  ],
+        ],
+      },
+    ],
+  }
   Asuka: [
     {
       headers:["Term", "Notation", "Input"],
