@@ -10,68 +10,118 @@ const characters2 = ["Alisa", "Asuka", "Azucena", "Bryan", "Claudio", "Clive", "
   "Lee", "Leo", "Leroy", "Lidia", "Lili", "Nina", "Panda", "Paul", "Raven", "Reina", "Shaheen", 
   "Steve", "Victor", "Xiaoyu", "Yoshimitsu", "Zafina"];
 
+function renderTables(character, containerId) {
+  const container = document.getElementById(containerId);
+  container.innerHTML = ""; // Clear previous content
 
-var playerOneSelection = document.getElementById("playerOneSelection");
+  const tables = data[character];
+  if (!tables) {
+    container.innerHTML = `<p>No data available for ${character}</p>`;
+    return;
+  }
 
-playerOneSelection.addEventListener("change", function (e) {
-  
-  characters.forEach((character) => {
-    document.getElementById(character + "-Tables").classList.add("invisible", "fade-in");
+  tables.forEach((tableData, index) => {
+    const table = document.createElement("table");
+
+    //headers
+    const headerRow = document.createElement("tr");
+    tableData.headers.forEach((header) => {
+      const th = document.createElement("th");
+      th.innerHTML = header;
+      headerRow.appendChild(th);
+    });
+
+    table.appendChild(headerRow);
+
+    //rows
+    tableData.rows.forEach((row) => {
+      const tr = document.createElement("tr");
+      row.forEach((cell) => {
+        const td = document.createElement("td");
+
+        //this might add the notation class - we'll see. 
+        if (cell.includes("notation")) {
+          td.classList.add("notation");
+        }
+
+        td.innerHTML = cell;
+        tr.appendChild(td);
+      });
+      table.appendChild(tr);
+    });
+
+    container.appendChild(table);
   });
-  document.getElementById(this.value + "-Tables").classList.toggle("invisible");
-  console.log(e)
+}
+
+document.getElementById("playerOneSelection").addEventListener("change", (event) => {
+  const selectedCharacter = event.target.value;
+  if (data[selectedCharacter]) {
+    renderTables(selectedCharacter, "playerOneContainer");
+  }
 });
 
-var playerTwoSelection = document.getElementById("playerTwoSelection");
-
-playerTwoSelection.addEventListener("change", function (i) {
-  characters2.forEach((character2) => {
-    document.getElementById(character2 + "-Tables2").classList.add("invisible", "fade-in");
-  });
-  document.getElementById(this.value + "-Tables2").classList.toggle("invisible");
-  console.log(i)  
+document.getElementById("playerTwoSelection").addEventListener("change", (event) => {
+  const selectedCharacter = event.target.value;
+  if (data[selectedCharacter]) {
+    renderTables(selectedCharacter, "playerTwoContainer");
+  }
 });
 
 //Test area for Character Data
 
+// Template: [
+//   {
+//     headers:["Term", "Notation", "Input"],
+//     rows:[
+
+//     ],
+//   },
+//   {
+//     headers:["Input", "Description", "Startup Frames", "Attack Level", "+/- On Block", "Counter Options"],
+//     rows:[
+
+//     ],
+//   },
+//   {
+//     headers: ["Input", "Decription", "Startup Frames", "Attack Level", "+/- On Block"],
+//     rows:[
+
+//     ],
+//   },
+// ],
+
 const data = {
-  Template: [
-    {
-      headers:["Term", "Notation", "Input"],
-      rows:[
-
-      ],
-    },
-    {
-      headers:["Input", "Description", "Startup Frames", "Attack Level", "+/- On Block", "Counter Options"],
-      rows:[
-
-      ],
-    },
-    {
-      headers: ["Input", "Decription", "Startup Frames", "Attack Level", "+/- On Block"],
-      rows:[
-
-      ],
-    },
-  ],
   Alisa: [
     {
       headers:["Term", "Notation", "Input"],
       rows:[
-
+        ["Single Boot", "SBT", "d2"],
+        ["Double Boot", "DBT", `<img class="notation" src="./Assets/Input-Notations/assets_generic/R9_DES.png">d1</td>`],
+        ["Destructive Form", `<img class="notation" src="./Assets/Input-Notations/assets_generic/R9_DES.png">`, "s8"],
+        ["Backup", `<img class="notation" src="./Assets/Input-Notations/assets_generic/R9_BKP.png">`, "z1"],
       ],
     },
     {
       headers:["Input", "Description", "Startup Frames", "Attack Level", "+/- On Block", "Counter Options"],
       rows:[
-
+        ["7", "Quick jab to start offence", "10", "High", "+1", ""],
+        ["a7", "Mid Poke with good range", "15", "Mid", "-5", ""],
+        ["z1", "Key low poke to harass the opponent", "16", "Low", "-13", ""],
+        ["x9", "Good keepout and whiff punisher", "16", "Mid", "-9", ""],
+        ["s1", "Long ranged low, mix it with your other approach tools", "23", "Low", "-10", ""],
+        ["a1", "Homing attack with great range and pushback on block", "20", "Mid", "-8", ""],
+        [`<img class="notation" src="./Assets/Input-Notations/assets_generic/R5_03_WS.png">8`, "Homing attack from crouch, Mix it with FC1+2", "20", "Mid", "-8",""],
+        ["ddD8", "Approach attack, usefule to pressure the opponent", "18", "Mid", "-4"],
+        [`<img class="notation" src="./Assets/Input-Notations/assets_generic/R9_DES.png">`, "Explore this stance to form and aggressive gameplan", "-", "-", "-", "-"],
       ],
     },
     {
       headers: ["Input", "Decription", "Startup Frames", "Attack Level", "+/- On Block"],
       rows:[
-
+        ["a4/a6", "Parries high attacks", "-", "-", "-"],
+        ["a8", "Power Crush", "19", "Mid", "-13"],
+        ["q9", "Power Crush", "16", "High", "-9"]
       ],
     },
   ],
@@ -862,5 +912,4 @@ const data = {
       ],
     },
   ],
-};
-
+}
