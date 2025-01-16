@@ -105,7 +105,7 @@ const data = {
     {
       headers:["Input", "Description", "Startup Frames", "Attack Level", "+/- On Block", "Counter Options"],
       rows:[
-        ["7", "Quick jab to start offence", "10", "High", "+1", ""],
+        [`<p class = notiation>7</p>`, "Quick jab to start offence", "10", "High", "+1", ""],
         ["a7", "Mid Poke with good range", "15", "Mid", "-5", ""],
         ["z1", "Key low poke to harass the opponent", "16", "Low", "-13", ""],
         ["x9", "Good keepout and whiff punisher", "16", "Mid", "-9", ""],
