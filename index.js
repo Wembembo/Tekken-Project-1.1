@@ -112,7 +112,7 @@ const data = {
         ["s1", "Long ranged low, mix it with your other approach tools", "23", "Low", "-10", ""],
         ["a1", "Homing attack with great range and pushback on block", "20", "Mid", "-8", ""],
         [`<img class="notation" src="./Assets/Input-Notations/assets_generic/R5_03_WS.png">8`, "Homing attack from crouch, Mix it with FC1+2", "20", "Mid", "-8",""],
-        ["ddD8", "Approach attack, usefule to pressure the opponent", "18", "Mid", "-4"],
+        ["ddD8", "Approach attack, usefule to pressure the opponent", "18", "Mid", "-4", ""],
         [`<img class="notation" src="./Assets/Input-Notations/assets_generic/R9_DES.png">`, "Explore this stance to form and aggressive gameplan", "-", "-", "-", "-"],
       ],
     },
