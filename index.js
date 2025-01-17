@@ -174,20 +174,39 @@ const data = {
     {
       headers:["Term", "Notation", "Input"],
       rows:[
-
+        ["Libertador", 
+          `<img class="notation" src="./Assets/Input-Notations/assets_generic/R9_LIB.png">`, 
+          `<p class = notation>d2</p>`
+      ],
+      [
+        "Backturn",
+        `<img class="notation" src="./Assets/Input-Notations/assets_generic/R5_02_BT.PNG">`,
+        `<p class = notation>a2</p>`
+      ],
       ],
     },
     {
       headers:["Input", "Description", "Startup Frames", "Attack Level", "+/- On Block", "Counter Options"],
       rows:[
-
-      ],
+        [`<p class = notation>7</p>`, "Useful to start offense and check situations", "10", "High", "+1", ""],
+        [`<p class = notation>x7</p>`, "Mid poke to harass the opponent, has extentions", "13", "Mid", "-3", ""],
+        [`<p class = notation>z1</p>`, "Low pokes to mix with your fast mid attacks", "16", "Low", "-7", ""],
+        [`<p class = notation>z3</p>`, "Low pokes to mix with your fast mid attacks", "19", "Low", "-14", ""],
+        [`<p class = notation>x1</p>`, "Mid counterhit launcher", "17", "Mid", "-5", ""],
+        [`<p class = notation>e3</p>`, "Safe low crushing launcher", "24", "Mid", "-8", ""],
+        [`<p class = notation>dD2</p>`, "Pressure button that goes into stance", "21", "Mid, Mid", "+4", ""],
+        [`<p class = notation>ddD19</p>`, "Approaching attack to start your offense", "10", "Mid High", "+2", ""],        
+      ]
     },
     {
       headers: ["Input", "Decription", "Startup Frames", "Attack Level", "+/- On Block"],
       rows:[
-
-      ],
+        [`<p class = notation>e7</p>`, "Has punch parry properties", "18", "High", "-9"],   
+        [`<img class="notation" src = "./Assets/Input-Notations/assets_generic/R9_LIB.png">`,
+          "Automatically evades high and low attacks", "-", "-", "-"
+        ],
+        [`<p class = notation>z2</p>`,  "A low crushing kick that starts with a sway", "26", "Mid", "-16"], 
+      ]
     },
   ],
   Bryan: [
