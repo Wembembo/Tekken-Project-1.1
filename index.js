@@ -180,7 +180,7 @@ const data = {
       ],
       [
         "Backturn",
-        `<img class="notation" src="./Assets/Input-Notations/assets_generic/R5_02_BT.PNG">`,
+        `<img class="notation" src="./Assets/Input-Notations/assets_generic/R5_02_BT.png">`,
         `<p class = notation>a2</p>`
       ],
       ],
