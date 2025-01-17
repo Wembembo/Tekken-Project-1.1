@@ -95,58 +95,77 @@ document.getElementById("playerTwoSelection").addEventListener("change", (event)
 // };
 
 const data = {
-  Alisa: {
-    image: "./Assets/Characters/Alisa.png",
-    moves: [
+  Alisa: [//{
+    // image: "./Assets/Characters/Alisa.png",
+    //moves: [
     {
       headers:["Term", "Notation", "Input"],
       rows:[
-        ["Single Boot", "SBT", "d2"],
-        ["Double Boot", "DBT", `<img class="notation" src="./Assets/Input-Notations/assets_generic/R9_DES.png">d1</td>`],
-        ["Destructive Form", `<img class="notation" src="./Assets/Input-Notations/assets_generic/R9_DES.png">`, "s8"],
-        ["Backup", `<img class="notation" src="./Assets/Input-Notations/assets_generic/R9_BKP.png">`, "z1"],
+        ["Single Boot", "SBT", `<p class = notation>d2</p>`],
+        ["Double Boot", "DBT", `<img class="notation" src="./Assets/Input-Notations/assets_generic/R9_DES.png"><p class = notation>d1</p>`],
+        ["Destructive Form", `<img class="notation" src="./Assets/Input-Notations/assets_generic/R9_DES.png">`, `<p class = notation>s8</p>`],
+        ["Backup", `<img class="notation" src="./Assets/Input-Notations/assets_generic/R9_BKP.png">`, `<p class = notation>z1</p>`],
       ],
     },
     {
       headers:["Input", "Description", "Startup Frames", "Attack Level", "+/- On Block", "Counter Options"],
       rows:[
         [`<p class = notation>7</p>`, "Quick jab to start offence", "10", "High", "+1", ""],
-        ["a7", "Mid Poke with good range", "15", "Mid", "-5", ""],
-        ["z1", "Key low poke to harass the opponent", "16", "Low", "-13", ""],
-        ["x9", "Good keepout and whiff punisher", "16", "Mid", "-9", ""],
-        ["s1", "Long ranged low, mix it with your other approach tools", "23", "Low", "-10", ""],
-        ["a1", "Homing attack with great range and pushback on block", "20", "Mid", "-8", ""],
+        [`<p class = notation>a7</p>`, "Mid Poke with good range", "15", "Mid", "-5", ""],
+        [`<p class = notation>z1</p>`, "Key low poke to harass the opponent", "16", "Low", "-13", ""],
+        [`<p class = notation>x9</p>`, "Good keepout and whiff punisher", "16", "Mid", "-9", ""],
+        [`<p class = notation>s1</p>`, "Long ranged low, mix it with your other approach tools", "23", "Low", "-10", ""],
+        [`<p class = notation>a1</p>`, "Homing attack with great range and pushback on block", "20", "Mid", "-8", ""],
         [`<img class="notation" src="./Assets/Input-Notations/assets_generic/R5_03_WS.png">8`, "Homing attack from crouch, Mix it with FC1+2", "20", "Mid", "-8",""],
-        ["ddD8", "Approach attack, usefule to pressure the opponent", "18", "Mid", "-4"],
+        [`<p class = notation>ddD8</p>`, "Approach attack, usefule to pressure the opponent", "18", "Mid", "-4", ""   ],
         [`<img class="notation" src="./Assets/Input-Notations/assets_generic/R9_DES.png">`, "Explore this stance to form and aggressive gameplan", "-", "-", "-", "-"],
       ],
     },
     {
       headers: ["Input", "Decription", "Startup Frames", "Attack Level", "+/- On Block"],
       rows:[
-        ["a4/a6", "Parries high attacks", "-", "-", "-"],
-        ["a8", "Power Crush", "19", "Mid", "-13"],
-        ["q9", "Power Crush", "16", "High", "-9"]
+        [`<p class = notation>a4</p>`, "Parries high attacks", "-", "-", "-"],
+        [`<p class = notation>a8</p>`, "Power Crush", "19", "Mid", "-13"],
+        [`<p class = notation>q9</p>`, "Power Crush", "16", "High", "-9"]
         ],
       },
     ],
-  }
   Asuka: [
     {
       headers:["Term", "Notation", "Input"],
       rows:[
-
+        ["Naniwa Gusto", "NWG", "Hitting the opponent with certain moves"],
       ],
     },
     {
       headers:["Input", "Description", "Startup Frames", "Attack Level", "+/- On Block", "Counter Options"],
       rows:[
-
+        [`<p class = notation>7</p>`, "Single jab to check situations, use its extenstions to stop them from challenging it","10", "High", "-2", ""],
+        [`<p class = notation>x7</p>`, "Mid poke to harass opponents", "13", "Mid", "-3", ""],
+        [`<p class = notation>a1</p>`, `Keepout launcher, hit confirmable into B.343`, "16", "Mid", "-", ""],
+        [`<p class = notation>a3</p>`, "A knee attack to fish for a counterhit launch", "15", "Mid", "-7", ""],
+        [`<p class = notation>e1</p>`, "Jumping conuterhit launcher, good for keepout", "20", "Mid", "-3", ""],
+        [`<p class = notation>z1</p>`, "Low poke to annoy the enemy and make them press into your defensive tools", "20", "Mid", "-", ""],
+        [`<p class = notation><img class = "notation" src = "./Assets/Input-Notations/assets_generic/R5_03_WS.png">z9</p>`, "Low poke to annoy the enemy and make them press into your defensive buttons", "20", "Mid", "-", ""],
+        [`<p class = notation><img class = "notation" src = "./Assets/Input-Notations/assets_generic/R5_03_WS.png">8</p>`, "Can be used for approaching, launches on counterhit", "21", "Mid", "-2", ""],
+        [`<p class = notation>d3</p>`, "Useful against opponents that are side stepping", "19", "High", "+3", ""],
+        [`<p class = notation>d1<img class = "notation" src = "./Assets/Input-Notations/assets_generic/R7_40_HOLD.PNG"></p>`, 
+          "Becomes an unblockable when fully held, Very useful against opponents getting off the ground",
+          "70",
+          "Unblockable Mid",
+          "Knockdown",
+          ""
+        ],
       ],
     },
     {
       headers: ["Input", "Decription", "Startup Frames", "Attack Level", "+/- On Block"],
       rows:[
+        [`<p class = notation>a4</p>`, "Reversal", "5", "SP", "N/A"],
+        [`<p class = notation>a6</p>`, "Reversal", "5", "SP", "N/A"],
+        [`<p class = notation>z8</p>`, "Has a low parry effect", "42", "Mid Mid", "+10"],
+        [`<p class = notation>aM</p>`, "Has a kick parry effect", "24", "Mid", "-9"],
+        [`<p class = notation>dM</p>`, "Has a punch parry effect", "23", "High", "0"]
 
       ],
     },
