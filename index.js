@@ -213,19 +213,31 @@ const data = {
     {
       headers:["Term", "Notation", "Input"],
       rows:[
-
+        ["Backsway", "QCB", `<p class = "notation">sza</p>`],
+        ["Snake Eyes", "SE", "Granted upon hitting certain moves or taunts"],
+        ["Jet Upper", "-", `<p class "notation">da9</p>`],
+        ["Taunt", "Taunt", `<p class "notation">K</p>`],
       ],
     },
     {
       headers:["Input", "Description", "Startup Frames", "Attack Level", "+/- On Block", "Counter Options"],
-      rows:[
-
+      rows:[[`<p class = "notation">7</p>`, "Quick jab with strong follow-ups", "10", "High", "+1", "-"],
+      [`<p class = "notation">x9</p>`, "Mid poke with useful follow-ups", "13", "Mid", "-6", "-"],
+      [`<p class =  "notation">2</p>`, "Long range counter hit launcher for keepout", "18", "Mid", "-13", "-"],
+      [`<p class = "notation">w3</p>`, "Low crushing launcher, useful for keepout", "-", "-", "-", "-"],
+      [`<p class = "notation">sza7</p>`, "Strong backsway option", "-", "-", "-","-"],
+      [`<p class = "notation">sza1</p>`, "Strong low poke for harassing the enemy", "-", "-", "-", "-"],
+      [`<p class = "notation">dd3</p>`, "Homing attack, useful for discouraging sidesteps at mid range", "24", "Mid", "-13", "-"],
+      [`<p class = "notation">K</p>`, "Enters Snake Eyes and can be used to break enemy guard", "28", "Mid, Unblockable", "N/A", "-"],
       ],
     },
     {
       headers: ["Input", "Decription", "Startup Frames", "Attack Level", "+/- On Block"],
       rows:[
-
+        [`<p class = "notation">a4</p>`, "Has parry properties", "-", "-", "-"],
+        [`<p class = "notation">a6</p>`, "Has parry properties", "-", "-", "-"],
+        [`<p class = "notation">dd8</p>`, "During SE only, Has parry properties", "-", "-", "-"],
+        [`<p class = "notation">d8</p>`, "Power Crush", "20", "High", "-8"]
       ],
     },
   ],
