@@ -102,23 +102,23 @@ const data = {
       headers:["Term", "Notation", "Input"],
       rows:[
         ["Single Boot", "SBT", `<p class = notation>d2</p>`],
-        ["Double Boot", "DBT", `<img class="notation" src="./Assets/Input-Notations/assets_generic/R9_DES.png"><p class = notation>d1</p>`],
-        ["Destructive Form", `<img class="notation" src="./Assets/Input-Notations/assets_generic/R9_DES.png">`, `<p class = notation>s8</p>`],
-        ["Backup", `<img class="notation" src="./Assets/Input-Notations/assets_generic/R9_BKP.png">`, `<p class = notation>z1</p>`],
+        ["Double Boot", "DBT", `<img alt="Double Boot" class="notation" src="./Assets/Input-Notations/assets_generic/R9_DES.png"><p class = notation>d1</p>`],
+        ["Destructive Form", `<img alt="Destructive Form" class="notation" src="./Assets/Input-Notations/assets_generic/R9_DES.png">`, `<p class = notation>s8</p>`],
+        ["Backup", `<img alt="Backup" class="notation" src="./Assets/Input-Notations/assets_generic/R9_BKP.png">`, `<p class = notation>z1</p>`],
       ],
     },
     {
       headers:["Input", "Description", "Startup Frames", "Attack Level", "+/- On Block", "Counter Options"],
       rows:[
-        [`<p class = notation>7</p>`, "Quick jab to start offence", "10", "High", "+1", ""],
-        [`<p class = notation>a7</p>`, "Mid Poke with good range", "15", "Mid", "-5", ""],
-        [`<p class = notation>z1</p>`, "Key low poke to harass the opponent", "16", "Low", "-13", ""],
-        [`<p class = notation>x9</p>`, "Good keepout and whiff punisher", "16", "Mid", "-9", ""],
-        [`<p class = notation>s1</p>`, "Long ranged low, mix it with your other approach tools", "23", "Low", "-10", ""],
-        [`<p class = notation>a1</p>`, "Homing attack with great range and pushback on block", "20", "Mid", "-8", ""],
-        [`<img class="notation" src="./Assets/Input-Notations/assets_generic/R5_03_WS.png">8`, "Homing attack from crouch, Mix it with FC1+2", "20", "Mid", "-8",""],
+        [`<p class = notation>7</p>`, "Quick jab to start offence", "10", "High", "+1", "-"],
+        [`<p class = notation>a7</p>`, "Mid Poke with good range", "15", "Mid", "-5", "-"],
+        [`<p class = notation>z1</p>`, "Key low poke to harass the opponent", "16", "Low", "-13", "-"],
+        [`<p class = notation>x9</p>`, "Good keepout and whiff punisher", "16", "Mid", "-9", "-"],
+        [`<p class = notation>s1</p>`, "Long ranged low, mix it with your other approach tools", "23", "Low", "-10", "-"],
+        [`<p class = notation>a1</p>`, "Homing attack with great range and pushback on block", "20", "Mid", "-8", "-"],
+        [`<img alt="While Standing" class="notation" src="./Assets/Input-Notations/assets_generic/R5_03_WS.png">8`, "Homing attack from crouch, Mix it with FC1+2", "20", "Mid", "-8","-"],
         [`<p class = notation>ddD8</p>`, "Approach attack, usefule to pressure the opponent", "18", "Mid", "-4", ""   ],
-        [`<img class="notation" src="./Assets/Input-Notations/assets_generic/R9_DES.png">`, "Explore this stance to form and aggressive gameplan", "-", "-", "-", "-"],
+        [`<img alt="Destuctive Form" class="notation" src="./Assets/Input-Notations/assets_generic/R9_DES.png">`, "Explore this stance to form and aggressive gameplan", "-", "-", "-", "-"],
       ],
     },
     {
@@ -175,12 +175,12 @@ const data = {
       headers:["Term", "Notation", "Input"],
       rows:[
         ["Libertador", 
-          `<img class="notation" src="./Assets/Input-Notations/assets_generic/R9_LIB.png">`, 
+          `<img alt="Libertador" class="notation" src="./Assets/Input-Notations/assets_generic/R9_LIB.png">`, 
           `<p class = notation>d2</p>`
       ],
       [
         "Backturn",
-        `<img class="notation" src="./Assets/Input-Notations/assets_generic/R5_02_BT.png">`,
+        `<img alt="Backturn" class="notation" src="./Assets/Input-Notations/assets_generic/R5_02_BT.png">`,
         `<p class = notation>a2</p>`
       ],
       ],
@@ -202,7 +202,7 @@ const data = {
       headers: ["Input", "Decription", "Startup Frames", "Attack Level", "+/- On Block"],
       rows:[
         [`<p class = notation>e7</p>`, "Has punch parry properties", "18", "High", "-9"],   
-        [`<img class="notation" src = "./Assets/Input-Notations/assets_generic/R9_LIB.png">`,
+        [`<img alt="Libertador" class="notation" src = "./Assets/Input-Notations/assets_generic/R9_LIB.png">`,
           "Automatically evades high and low attacks", "-", "-", "-"
         ],
         [`<p class = notation>z2</p>`,  "A low crushing kick that starts with a sway", "26", "Mid", "-16"], 
@@ -245,7 +245,7 @@ const data = {
     {
       headers:["Term", "Notation", "Input"],
       rows:[
-        ["Starburst", `<img class = "notation" src = "./Assets/Input-Notations/assets_generic/R9_STB.png">`, "Hit the enemy with certain moves to build stocks of this"]
+        ["Starburst", `<img alt="Starburst" class = "notation" src = "./Assets/Input-Notations/assets_generic/R9_STB.png">`, "Hit the enemy with certain moves to build stocks of this"]
       ],
     },
     {
@@ -255,10 +255,10 @@ const data = {
         [`<p class = "notation">a7</p>`, "Homing attack, great for space control", "18", "Mid", "-5", "-"],
         [`<p class = "notation">a1</p>`, "Mid poke with extentions to discourage retaliation", "13", "Mid", "-4", "-"],
         [`<p class = "notation">x9</p>`, "Quick counterhit launcer", "14", "Mid", "-18", "-"],
-        [`<p class = "notation"><img class = "notation" src="./Assets/Input-Notations/assets_generic/R5_05_SS.png">3</p>`,
+        [`<p class = "notation"><img alt="SideStep" class = "notation" src="./Assets/Input-Notations/assets_generic/R5_05_SS.png">3</p>`,
           "Low poke for pressure", "20", "Low", "-12", "-"
         ],
-        [`<p class = "notation"><img class="notation" src="./Assets/Input-Notations/assets_generic/R5_03_WR.png">9</p>`,
+        [`<p class = "notation"><img alt="While Rising" class="notation" src="./Assets/Input-Notations/assets_generic/R5_03_WR.png">9</p>`,
           "Very strong approach tool",
           "13", "High", "+7", "-"
         ],
@@ -309,10 +309,10 @@ const data = {
     {
       headers:["Term", "Notation", "Input"],
       rows:[
-        ["Fly", `<img class = "notation", src = "./Assets/Input-Notations/assets_generic/R9_FLY.png">`, `<p class = "notation">2</p>`],
+        ["Fly", `<img alt="Fly" class = "notation", src = "./Assets/Input-Notations/assets_generic/R9_FLY.png">`, `<p class = "notation">2</p>`],
         ["Mourning Crow", "MCR", `<p class = "notation">d1</p>`],
-        ["Crouch Dash", `<img class="notation" src="./Assets/Input-Notations/assets_generic/R9_CD_All.png">`, `<p class = "notation">d5sx</p>`],
-        ["Electric Wind God Fist", `<img class="notation" src="./Assets/Input-Notations/assets_generic/R9_EWGF.png">`,`<p class = "notation">d5sx9</p>`],
+        ["Crouch Dash", `<img alt = "Crouch Dash" class="notation" src="./Assets/Input-Notations/assets_generic/R9_CD_All.png">`, `<p class = "notation">d5sx</p>`],
+        ["Electric Wind God Fist", `<img alt= "Electric Wind God Fist" class="notation" src="./Assets/Input-Notations/assets_generic/R9_EWGF.png">`,`<p class = "notation">d5sx9</p>`],
       ],
     },
     {
@@ -324,20 +324,20 @@ const data = {
         [`<p class = "notation">z9</p>`, "Low poke to harass the opponent", "21", "Low","-13", "-"],
         [`<p class = "notation">a3</p>`, "Use it against grounded opponents", "17", "Mid", "-8", "-"],
         [`<p class = "notation">e7</p>`, "Projectile that goes into stance", "21", "High", "+11", "-"],
-        [`<img class = "notation" src="./Assets/Input-Notations/assets_generic/R9_EWGF.png">`, 
+        [`<img alt = "Electric Wind God Fist" class = "notation" src="./Assets/Input-Notations/assets_generic/R9_EWGF.png">`, 
           "High launching attack that is useful in many situations", 
           "14", 
           "High", 
           "+5", 
           "-"],
-        [`<p class = "notation"><img class = "notation" src="./Assets/Input-Notations/assets_generic/R9_CD_All.png">8</p>`,
+        [`<p class = "notation"><img alt="Crouch Dash" class = "notation" src="./Assets/Input-Notations/assets_generic/R9_CD_All.png">8</p>`,
           "Homing attack to discourage sidestep on  your approach",
           "25",
           "Mid, Special Mid", 
           "+2",
           "-"
         ],
-        [`<p class = "notation"><img class = "notation" src="./Assets/Input-Notations/assets_generic/R9_CD_All.png">38</p>`,
+        [`<p class = "notation"><img alt = "Crouch Dash" class = "notation" src="./Assets/Input-Notations/assets_generic/R9_CD_All.png">38</p>`,
           "Strong but risky low", 
           "29",
           "Low, Special Mid",
@@ -358,7 +358,9 @@ const data = {
     {
       headers:["Term", "Notation", "Input"],
       rows:[
-
+        ["Sneak", 
+        `<img alt="Sneak" class = "notation" src="./Assets/Input-Notations/assets_generic/R9_SNK_Dragunov.png">`,
+        `<p class="notation">sxd</p>`]
       ],
     },
     {
@@ -480,17 +482,17 @@ const data = {
       rows: [
         [
           "Electric Wind Hook Fist",
-          `<img class='notation' src='./Assets/Input-Notations/assets_generic/R9_EWGF.png'>`,
+          `<img alt="Electric Wind God Fist" class='notation' src='./Assets/Input-Notations/assets_generic/R9_EWGF.png'>`,
           "d5sx9",
         ],
         [
           "Crouch Dash",
-          `<img class='notation' src='./Assets/Input-Notations/assets_generic/R9_CD_Jin.png'>`,
+          `<img alt="Crouch Dash" class='notation' src='./Assets/Input-Notations/assets_generic/R9_CD_Jin.png'>`,
           "d5sx",
         ],
         [
           "Zen",
-          `<img class='notation' src='./Assets/Input-Notations/assets_generic/R9_ZEN.png'>`,
+          `<img alt="Zen" class='notation' src='./Assets/Input-Notations/assets_generic/R9_ZEN.png'>`,
           "a2/d2",
         ],
       ],
@@ -505,7 +507,7 @@ const data = {
         ["z3", "Good low poke to pressure the opponent"],
         ["d3", "Long range mid that launches on counter"],
         [
-          `<img class='notation' src='./Assets/Input-Notations/assets_generic/R9_EWGF.png'>`,
+          `<img alt="Electric Wind God Fist" class='notation' src='./Assets/Input-Notations/assets_generic/R9_EWGF.png'>`,
           "High launching attack useful in many situations",
         ],
         ["w9", "Evasive punch that can be used to challenge situations"],
@@ -547,21 +549,21 @@ const data = {
         [
           "During Heat",
           "Devil Form",
-          `<img class='notation' src='./Assets/Input-Notations/assets_generic/R5_01_HEAT.png'>`,
+          `<img alt="Heat" class='notation' src='./Assets/Input-Notations/assets_generic/R5_01_HEAT.png'>`,
         ],
         [
           "Crouch Dash",
-          `<img class='notation' src='./Assets/Input-Notations/assets_generic/R9_CD_All.png'>`,
+          `<img alt="Crouch Dash" class='notation' src='./Assets/Input-Notations/assets_generic/R9_CD_All.png'>`,
           "d5sx",
         ],
         [
           "Electric Wind God Fist",
-          `<img class='notation' src='./Assets/Input-Notations/assets_generic/R9_EWGF.png'>`,
+          `<img alt="Electric Wind God Fist" class='notation' src='./Assets/Input-Notations/assets_generic/R9_EWGF.png'>`,
           "d5sx9",
         ],
         [
           "Hellsweep",
-          `<img class='notation' src='./Assets/Input-Notations/assets_generic/R9_CD_All.png'>37`,
+          `<img alt="Hellsweep" class='notation' src='./Assets/Input-Notations/assets_generic/R9_CD_All.png'>37`,
           "d5sx37",
         ],
       ],
@@ -583,12 +585,12 @@ const data = {
         ["dD1", "Safe mid launcher that can be used in mixups", "20", "Mid", "-3", ""],
         ["dd3", "Useful to get opponents off the ground", "17", "Mid", "-3", ""],
         [
-          `<img class='notation' src='./Assets/Input-Notations/assets_generic/R9_EWGF.png'>`,
+          `<img alt="Electric Wind God Fist" class='notation' src='./Assets/Input-Notations/assets_generic/R9_EWGF.png'>`,
           "High launching attack useful in many situations",
           "11", "High", "+5", ""
         ],
         [
-          `<img class='notation' src='./Assets/Input-Notations/assets_generic/R9_CD_All.png'>37`,
+          `<img alt="Crouch Dash" class='notation' src='./Assets/Input-Notations/assets_generic/R9_CD_All.png'>37`,
           "A strong low that is the base of his mixup game", "26", "Low, Mid", "+5", ""
         ],
       ],
