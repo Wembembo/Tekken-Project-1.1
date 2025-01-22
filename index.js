@@ -245,19 +245,32 @@ const data = {
     {
       headers:["Term", "Notation", "Input"],
       rows:[
-
+        ["Starburst", `<img class = "notation" src = "./Assets/Input-Notations/assets_generic/R9_STB.png">`, "Hit the enemy with certain moves to build stocks of this"]
       ],
     },
     {
       headers:["Input", "Description", "Startup Frames", "Attack Level", "+/- On Block", "Counter Options"],
-      rows:[
-
+      rows:[        
+        [`<p class = "notation">7</p>`, "Quick jab to start offence and check situations", "10", "High", "+1", "-"],
+        [`<p class = "notation">a7</p>`, "Homing attack, great for space control", "18", "Mid", "-5", "-"],
+        [`<p class = "notation">a1</p>`, "Mid poke with extentions to discourage retaliation", "13", "Mid", "-4", "-"],
+        [`<p class = "notation">x9</p>`, "Quick counterhit launcer", "14", "Mid", "-18", "-"],
+        [`<p class = "notation"><img class = "notation" src="./Assets/Input-Notations/assets_generic/R5_05_SS.png">3</p>`,
+          "Low poke for pressure", "20", "Low", "-12", "-"
+        ],
+        [`<p class = "notation"><img class="notation" src="./Assets/Input-Notations/assets_generic/R5_03_WR.png">9</p>`,
+          "Very strong approach tool",
+          "13", "High", "+7", "-"
+        ],
+        [`<p class = "notation">dd3</p>`, "Safe mid approach with counterhit proprerites", "15", "Mid", "-13", "-"],
+        [`<p class = "notation">x9</p>`, "Mid with extensions, great for wall pressure", "14", "Mid", "-13", "-"],  
       ],
     },
     {
       headers: ["Input", "Decription", "Startup Frames", "Attack Level", "+/- On Block"],
       rows:[
-
+        [`<p class = "notation">a2</p>`, "Evasive attack", "29", "Mid", "-14"],
+        [`<p class = "notation">a8</p>`, "Power Crush", "22", "Mid", "-13"],
       ],
     },
   ],
@@ -265,19 +278,30 @@ const data = {
     {
       headers:["Term", "Notation", "Input"],
       rows:[
-
+        ["PHS", "Phoenix Step/Stance", `<p class = "notation">d3</p>`],
+        ["BHT", "Bahamut", `<p class = "notation">2</p>`],
+        ["Updraft", "Updraft", "During Jump"]
       ],
     },
     {
       headers:["Input", "Description", "Startup Frames", "Attack Level", "+/- On Block", "Counter Options"],
-      rows:[
-
+      rows:[        
+      [`<p class = "notation">7</p>`, "Quick jab to start offence", "10", "High", "+1", "-"],
+      [`<p class = "notation">x7</p>`, "Mid poke to harass the opponent", "14", "Mid", "-3", "-"],
+      [`<p class = "notation">s7</p>`, "Low poke to harass the opponent", "18", "Low", "-13", "-"],
+      [`<p class = "notation">z3</p>`, "Counterhit launching sweep", "19", "Low", "-18", "-"],
+      [`<p class = "notation">a9D</p>`, "Very long range high attack that can shift into PHX", "20", "High", "-4", "-"],
+      [`<p class = "notation">a3</p>`, "Good button to deal with grounded opponents", "18", "Mid", "9", "-"],
+      [`<p class = "notation">dd9</p>`, "Safe ranged attack to build your Zantetsuken", "21", "Mid", "-7", "-"],
+      ["PHX", "Learn your stance options for mixing the opponent, especially after a blocked b+2F, you can start PHX", "-", "-", "-", "-"]
       ],
     },
     {
       headers: ["Input", "Decription", "Startup Frames", "Attack Level", "+/- On Block"],
       rows:[
-
+        [`<p class = "notation">a8</p>`, "Power Crush", "24", "Mid", "-14"],
+        [`<p class = "notation">2</p>`, "Has low parry properties", "-", "-", "-"],
+        [`<p class = "notation">a1</p>`, "Parry, can be followed up with 2 or 1+2 on successful parry", "-", "-", "-"],
       ],
     },
   ],
@@ -285,19 +309,48 @@ const data = {
     {
       headers:["Term", "Notation", "Input"],
       rows:[
-
+        ["Fly", `<img class = "notation", src = "./Assets/Input-Notations/assets_generic/R9_FLY.png">`, `<p class = "notation">2</p>`],
+        ["Mourning Crow", "MCR", `<p class = "notation">d1</p>`],
+        ["Crouch Dash", `<img class="notation" src="./Assets/Input-Notations/assets_generic/R9_CD_All.png">`, `<p class = "notation">d5sx</p>`],
+        ["Electric Wind God Fist", `<img class="notation" src="./Assets/Input-Notations/assets_generic/R9_EWGF.png">`,`<p class = "notation">d5sx9</p>`],
       ],
     },
     {
       headers:["Input", "Description", "Startup Frames", "Attack Level", "+/- On Block", "Counter Options"],
       rows:[
-
+        [`<p class = "notation">7_779</p>`, "Jab to start offence, the full string can be hit confirmed", "10, 13", "High High High Mid", "+1 -17", "- -"],
+        [`<p class = "notation">x7</p>`, "Quick mid to check the opponent", "13", "Mid", "-6", "-"],
+        [`<p class = "notation">s1</p>`, "Low poke to harass the opponent", "18", "Low","-12", "-"],
+        [`<p class = "notation">z9</p>`, "Low poke to harass the opponent", "21", "Low","-13", "-"],
+        [`<p class = "notation">a3</p>`, "Use it against grounded opponents", "17", "Mid", "-8", "-"],
+        [`<p class = "notation">e7</p>`, "Projectile that goes into stance", "21", "High", "+11", "-"],
+        [`<img class = "notation" src="./Assets/Input-Notations/assets_generic/R9_EWGF.png">`, 
+          "High launching attack that is useful in many situations", 
+          "14", 
+          "High", 
+          "+5", 
+          "-"],
+        [`<p class = "notation"><img class = "notation" src="./Assets/Input-Notations/assets_generic/R9_CD_All.png">8</p>`,
+          "Homing attack to discourage sidestep on  your approach",
+          "25",
+          "Mid, Special Mid", 
+          "+2",
+          "-"
+        ],
+        [`<p class = "notation"><img class = "notation" src="./Assets/Input-Notations/assets_generic/R9_CD_All.png">38</p>`,
+          "Strong but risky low", 
+          "29",
+          "Low, Special Mid",
+          "N/A", "-"
+        ]
       ],
     },
     {
       headers: ["Input", "Decription", "Startup Frames", "Attack Level", "+/- On Block"],
       rows:[
-
+        [`<p class="notation">a4</p>`, "Has power crush properties", "-", "-", "-"],
+        [`<p class="notation">a6</p>`, "Has power crush properties", "-", "-", "-"],
+        [`<p class="notation">s7</p>`, "Power crush", "18", "Mid", "-14"]
       ],
     },
   ],
