@@ -366,13 +366,40 @@ const data = {
     {
       headers:["Input", "Description", "Startup Frames", "Attack Level", "+/- On Block", "Counter Options"],
       rows:[
-
+        [`<p class = "notation">7</p>`, "Jab to check situations and start your pressure", "10", "High", "+1", "-"],
+        [`<p class = "notation">x7</p>`, 
+          "Quick mid attack to check situatoins, df+1,4 can be used to catch opponents challenging this on block",
+          "13",
+          "Mid",
+          "-2", 
+          "-"
+        ],
+        [`<p class = "notation">s9</p>`, "A low that opens up many strategies", "18", "Low", "-13", "-"],
+        [`<p class = "notation">ddD9</p>`, "Approaching and pressure tool that launches on counter hit", "15", "Mid", "+4", "-"],
+        [`<p class = "notation">a8</p>`, "Pressure tool for when you are in close range", "22", "Mid", "+6", "-"],
+        [`<p class = "notation">z2</p>`, "A risky low that allows you to keep pressure on hit", "20", "Low", "-31", "-"],
+        [`<p class = "notation"><img alt="Full crouch" class="notation" src="./Assets/Input-Notations/assets_generic/R5_02_FC.png">x73</p>`,
+          "Quick low from full crouch, shifts into SNK",
+          "16",
+          "Low, Mid",
+          "N/A",
+          "-"
+        ],
+        ["Throws", 
+          "Use his command throw to harass the opponent and open their defence. They're great against power crushes",
+          "-",
+          "-",
+          "-",
+          "-"]
       ],
     },
     {
       headers: ["Input", "Decription", "Startup Frames", "Attack Level", "+/- On Block"],
       rows:[
-
+        [`<p class = "notation">a4</p>`, "Reversal", "N/A", "SP", "N/A"],
+        [`<p class = "notation">a6</p>`, "Reversal", "N/A", "SP", "N/A"],
+        [`<p class = "notation">s8</p>`, "Parries low attacks", "N/A", "SP", "N/A"],
+        [`<p class = "notation">8</p>`, "Power crush", "21", "Mid", "-14"] 
       ],
     },
   ],
@@ -380,7 +407,14 @@ const data = {
     {
       headers:["Term", "Notation", "Input"],
       rows:[
-
+        ["Relax Stance", 
+          `<img alt = "Relax Stance" class = "notation" src = "./Assets/Input-Notations/assets_generic/R9_RLX.png">`,
+          `<p class = "notation">s2</p>`
+        ],
+        ["Handstand Position"
+          ,`<img alt="hand stand stance" class = "notation" src="./Assets/Input-Notations/assets_generic/R9_HSP.png">`,
+          `<p class = "notation">d8</p>`],
+        ["Mandinga", "MND", "Hit the opponent with certain moves to raise the level of Mandinga (up to 2)"],
       ],
     },
     {
