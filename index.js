@@ -464,13 +464,34 @@ const data = {
     {
       headers:["Input", "Description", "Startup Frames", "Attack Level", "+/- On Block", "Counter Options"],
       rows:[
-
+        [`<p class = "notation">7</p>`, "Quick jab to check situations and start offence", "10", "High", "+1", "-"],
+        [`<p class = "notation"x7</p>`, "Mid poke to check the opponent", "14", "Mid", "0", "-"],
+        [`<p class = "notation"a3</p>`, "Mid poke to check the opponent", "12", "Mid", "-9", "-"],
+        [`<p class = "notation">a7</p>`, "Fast High attack, useful to challenge situations", "10", "High", "-12", "-"],
+        [`<p class = "notation">a1</p>`, "Knee attack, useful for starting pressure", "22", "Mid", "+6", "-"],
+        [`<p class = "notation">d3</p>`, "Keepout tool", "18", "High", "-9", "-"],
+        [`<p class = "notation">dd1</p>`, "Long range pressure button, good in Okizeme situation", "18", "High", "-9", "-"],
+        [`<p class = "notation">x1</p>`, "18", "Mid", "-7", "-"],
+        [`<p class = "notation">a2</p>`, "Evasive stance with followups, useful for creating whiff-punish situations", "N/A", "SP", "N/A", "-"],
       ],
     },
     {
       headers: ["Input", "Decription", "Startup Frames", "Attack Level", "+/- On Block"],
       rows:[
-
+        [`<p class = "notation">d2</p>`, 
+          "Has parry properties, press any button after parrying two attacks or a launch follow-up",
+          "N/A",
+          "SP",
+          "N/A"
+        ],
+        [`<p class = "notation">8</p>`, "Has punch parry properties", "19", "High", "-9"],
+        [`<p class = "notation"><img alt="While Standing" class="notation" src="./Assets/Input-Notation/assets_generic/R5_03_WS.png">8</p>`,
+          "Has punch parry properties",
+          "23",
+          "Mid", 
+          "-9"
+        ],
+        [`<p class = "notation">a4</p>`, "Attack reversal", "-", "-", "-"]
       ],
     },
   ],
