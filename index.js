@@ -420,13 +420,35 @@ const data = {
     {
       headers:["Input", "Description", "Startup Frames", "Attack Level", "+/- On Block", "Counter Options"],
       rows:[
-
+        [`<p class = "notation">7</p>`, "Jab to check situations and start pressure", "10", "High", "+1", "-"],
+        [`<p class = "notation">x9</p>`, "Quick mid to check situations and harass the opponent", "14", "Mid", "+6", "-"],
+        [`<p class = "notation">a11</p>`, "Counterhit confirmable launcher", "26", "Mid Mid", "-15", "-"],
+        [`<p class = "notation">s1</p>`, "Low poke with counterhit properties", "21", "Low", "-14", "-"],
+        [`<p class = "notation">dd1</p>`, "Low poke with counterhit properties", "21", "Low", "-14", "-"],
+        [`<p class = "notation">e3</p>`, "Homing attack, shifts into RLX on hit", "22", "Mid", "-9", "-"],
+        [`<p class = "notation">ddD1</p>`, "Approaching tool, Shifts into HSP", "25", "Mid", "+8", "-"],
+        [`<p class = "notation"><img alt="Sidestep" class = "notation" src="./Assets/Input-Notations/assets_generic/R5_05_SS.png">1</p>`,
+          "Useful to approach at mid range, shifts into RLX stance",
+          "25",
+          "Mid",
+          "0",
+          "-"
+        ],
+        [`<p class = "notation"><img alt="Sidestep" class="notation" src="./Assets/Input-Notations/assets_generic/R5_05_SS.png">2</p>`,
+          "Stong Keepout tool",
+          "25", 
+          "Mid",
+          "0",
+          "-"
+        ]
       ],
     },
     {
       headers: ["Input", "Decription", "Startup Frames", "Attack Level", "+/- On Block"],
       rows:[
-
+        [`<p class = "notation">z8</p>`, "Evasive Attack", "20", "Mid Mid", "-6"],
+        [`<p class = "notation">e9</p>`, "Sideways evasion", "22", "Mid", "-9"],
+        [`<p class = "notation">a2</p>`, "High, heat engaging, powercrush", "20", "High", "-9"],
       ],
     },
   ],
@@ -434,7 +456,9 @@ const data = {
     {
       headers:["Term", "Notation", "Input"],
       rows:[
-
+        ["Back Kenpo", `<img alt="Back Kenpo" class="notation" src="./Assets/Input-Notations/assets_generic/R9_BKP.png">`, `<p class = "notation">a2</p>`],
+        ["Backturn", `<img alt="Backturn" class="notation" src="./Assets/Input-Notations/assets_generic/R5_02_BT.png">`, `<p class = "notation">a[13]</p>`],
+        ["Shifting Clouds", `<img alt="Shifting Clouds" class="notation" src="./Assets/Input-Notations/assets_generic/R9_STC.png">`, `<p class = "notation">d2</p>`]
       ],
     },
     {
