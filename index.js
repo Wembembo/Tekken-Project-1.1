@@ -2259,8 +2259,8 @@ const data = {
 
 const matches = {
   Alisa: { 
-    Alisa:, //Video
-    Asuka: , //VIDEO,
+    Alisa: , //Video
+    Asuka: , //VIDEO
     Azucena: , //VIDEO
     Bryan: ,
     Claudio:, 
