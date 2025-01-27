@@ -2261,7 +2261,7 @@ const matches = {
   Alisa: { 
     Alisa: [], //Video
     Asuka: [], //VIDEO
-    Azucena: [], //VIDEO
+    Azucena: [`<iframe width="640" height="360" src="https://www.youtube.com/embed/iay6lSLazqw" title="Tekken 8  ▰  CHANEL (#1 Alisa) Vs Infested (Azucena) ▰ Player Matches!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`], //VIDEO
     Bryan: [],
     Claudio: [], 
     Clive: [],
@@ -2335,7 +2335,7 @@ const matches = {
     Zafina: [],
   },
   Azucena:{
-    Alisa: [], //Video
+    Alisa: [`<iframe width="640" height="360" src="https://www.youtube.com/embed/iay6lSLazqw" title="Tekken 8  ▰  CHANEL (#1 Alisa) Vs Infested (Azucena) ▰ Player Matches!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`], //Video
     Asuka: [], //VIDEO
     Azucena: [], //VIDEO
     Bryan: [],
