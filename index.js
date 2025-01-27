@@ -2259,7 +2259,7 @@ const data = {
 
 const matches = {
   Alisa: { 
-    Alisa: , //Video
+    Alisa:[], //Video
     Asuka: , //VIDEO
     Azucena: , //VIDEO
     Bryan: ,
