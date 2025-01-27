@@ -123,8 +123,8 @@ function renderTables(character, containerID) {
 }
 
 function showMatch() {
-    const playerOne = document.getElementById("playerOne").value;
-    const playerTwo = document.getElementById("playerTwo").value;
+    const playerOne = document.getElementById("playerOneSelection").value;
+    const playerTwo = document.getElementById("playerTwoSelection").value;
 
     if (matches[playerOne] && matches[playerOne][playerTwo]) {
         const videoURL = matches[playerOne][playerTwo];
