@@ -139,7 +139,7 @@ function showMatch() {
     } else {
         alert("No match found for this character combination!");
     }
-}
+};
 
 document
   .getElementById("playerOneSelection")
