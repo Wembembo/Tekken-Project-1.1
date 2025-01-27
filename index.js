@@ -1375,7 +1375,7 @@ const data = {
         ],
         [
           //This needs to have the while standing graphic.
-          `<p class = "notation">8</p>`,
+          `<img alt="While Standing" class="notation" src="./Assets/Input-Notations/assets_generic_R5_03_WS.png"><p class = "notation">8</p>`,
           "Has punch parry properties",
           "23",
           "Mid",
