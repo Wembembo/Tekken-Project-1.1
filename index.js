@@ -126,8 +126,8 @@ function showMatch() {
     const playerOne = document.getElementById("playerOneSelection").value;
     const playerTwo = document.getElementById("playerTwoSelection").value;
 
-    if (matches[playerOne] && matches[playerOne][playerTwo]) {
-        const videoURL = matches[playerOne][playerTwo];
+    if (matches[playerOneSelection] && matches[playerOneSelection][playerTwoSelection]) {
+        const videoURL = matches[playerOneSelection][playerTwoSelection];
         const videoContainer = document.getElementById("videoContainer");
         videoContainer.innerHTML = `
             <iframe width="560" height="315"
