@@ -140,6 +140,25 @@ document
     }
   });
 
+function showMatch() {
+    const playerOne = document.getElementById("playerOneSelection").value;
+    const playerTwo = document.getElementById("playerTwoSelection").value;
+
+    if (matches[playerOne] && matches[playerOne][playerTwo]) {
+        const videoURL = matches[playerOne][playerTwo];
+        const videoContainer = document.getElementById("videoContainer");
+        videoContainer.innerHTML = `
+            <iframe width="560" height="315"
+                    src="${videoURL}"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+            </iframe>`;
+    } else {
+        alert("No match found for this character combination!");
+    }
+}
+
 //Test area for Character Data
 
 // Template: {
