@@ -2420,7 +2420,7 @@ const matches = {
     Jack: [], 
     Jin: [], 
     Jun: [], 
-    Kazuya: [], 
+    Kazuya: [`<iframe width="893" height="502" src="https://www.youtube.com/embed/S0v3djPH7M0" title="Tekken 8  ▰ Arslan Ash (Azucena) Vs TheMainManSWE (Kazuya) ▰ Player Matches" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`], 
     King: [], 
     Kuma: [], 
     Lars: [], 
@@ -2901,7 +2901,7 @@ const matches = {
   Kazuya: { 
     Alisa: [], // Add video links or data here
     Asuka: [], // Add video links or data here
-    Azucena: [], // Add video links or data here
+    Azucena: [`<iframe width="893" height="502" src="https://www.youtube.com/embed/S0v3djPH7M0" title="Tekken 8  ▰ Arslan Ash (Azucena) Vs TheMainManSWE (Kazuya) ▰ Player Matches" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`], // Add video links or data here
     Bryan: [], 
     Claudio: [], 
     Clive: [], 
