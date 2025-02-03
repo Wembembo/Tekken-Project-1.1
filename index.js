@@ -1441,7 +1441,21 @@ const data = {
   Hwoarang: [
     {
       headers: ["Term", "Notation", "Input"],
-      rows: [],
+      rows: [
+        ["Left foot forward", 
+        `<img alt="Left foot forward" class="notation" src="./Assets/Input-Notations/assets_generic/R9_LFF.png">`,
+        "Default Stance"],
+        ["Right Foot Forward",
+          `<img alt="Right Foot Forward" class="notation" src="./Assets/Input-Notations/assets_generic/R9_RFF.png">`,
+          `<p class="notation">2</p>`],
+        ["Left Flamingo Step", 
+          `<img alt="Left Flamingo Step" class="notation" src="./Assets/Input-Notations/assets_generic/R9_LFS.png">`,
+          `<p class="notation">d1</p>`],
+        ["Right Flamingo Step",
+          `<img alt="Right Flamingo Step" class="notation" src="./Assets/Input-Notations/assets_generic/R9_RFS.png">`,
+          `<p class="notation">d53</p>`],
+        ["Just Frame Sky Rocket", "JSFR", `<p class="notation">d5x3</p>`]
+      ],
     },
     {
       headers: [
@@ -1452,7 +1466,18 @@ const data = {
         "+/- On Block",
         "Counter Options",
       ],
-      rows: [],
+      rows: [
+        [`<p class="notation">7</p>`, "Quick jab to start offence and check situations", "10", "High", "+1", ""],
+        [`<p class="notation">x7</p>`, "Mid attack to check situations", "13", "Mid", "-1", ""],
+        [`<p class="notation">z1</p>`, "Low poke to harass opponents", "19", "Low", "-13", ""],
+        [`<p class="notation">s13</p>`, "Low string that shifts into RFF", "19", "Low", "-11", ""],
+        [`<p class="notation">x3</p>`, "Homing attack that shifts into RFF", "16", "Mid", "-8", ""],
+        [`<p class="notation">dd1</p>`, "Mid Attack, useful for approaching and pressure", "20", "Mid", "-8", ""],
+        ["JFSR", "Keepout move, requires a perfect input", "16", "Mid", "-8", ""],
+        [`<img alt="Left Flamingo Stance" class="notation" src="./Assets/Input-Notations/assets_generic/R9_LFS.png"><img alt "Right Flamingo Stance" class="notation" src="./Assets/Input-Notations/assets_generic/R9_RFS.png">`,
+          "Learn your options out of these stances",
+          "-", "-", "-", "-"],
+      ],
     },
     {
       headers: [
@@ -1462,13 +1487,24 @@ const data = {
         "Attack Level",
         "+/- On Block",
       ],
-      rows: [],
+      rows: [
+        [`<p class="notation">a4</p>`, "Punch parry, press 4 on successful parry", "-", "-", "-"],
+        [`<p class="notation">a6</p>`, "Punch parry, press 4 on successful parry", "-", "-", "-"],
+        [`<p class="notation">x13</p>`, "Power Crush", "24", "Mid Mid", "-14"],
+      ],
     },
+    {
+
+    }
   ],
   Jack: [
     {
       headers: ["Term", "Notation", "Input"],
-      rows: [],
+      rows: [
+        ["Gamma Howl", `<img alt="Gamma Howl" class="notation" src="./Assets/Input-Notations/assets_generic/R9_GMH.png">`,`<p class="notation">2</p>`],
+        ["Sit Stance", `<img alt="Sit Stance" class="notation" src="./Assets/Input-Notations/assets_generic/R9_SIT.png">`, `<p class="notation">s2</p>`],
+        ["Gamma Charge", "GMC", `<p class="notation">s2</p>`] 
+      ],
     },
     {
       headers: [
@@ -1479,7 +1515,16 @@ const data = {
         "+/- On Block",
         "Counter Options",
       ],
-      rows: [],
+      rows: [
+        [`<p class="notation">9</p>`, "Jab to start offence, has extentions", "11", "High", "+1", ""],
+        [`<p class="notation">d9</p>`, "Quick high to challenge situations", "10", "High", "-12", ""],
+        [`<p class="notation">x7</p>`, "Mid Poke to harass the opponent, has extentions", "14", "Mid", "-4", ""],
+        [`<p class="notation">dd7</p>`, "Approach tool for mid-range, can shift into GMH", "15", "Mid", "-6", ""],
+        [`<p class="notation">ddD8</p>`, "Approach tool that leaves you at advantage on block", "20", "Mid", "+3", ""],
+        [`<p class="notation">z7</p>`, "Low poke to harass the opppnent, can also be done in full crouch, although this will add one frame of start up at the cost of one less frame for recovery", 
+          "13", "Low", "-12", ""],
+        [`<p class="notation">e9</p>`, "Low crushing attack, good for wall pressure", "24", "Mid", "+4", "",]
+      ],
     },
     {
       headers: [
@@ -1489,7 +1534,11 @@ const data = {
         "Attack Level",
         "+/- On Block",
       ],
-      rows: [],
+      rows: [
+        [`<p class="notation">q8</p>`, "Power Crush", "20", "High", "-9"],
+        [`<p class="notation">d8</p>`, "Power crush,", "Mid, Mid", "-15"],
+        [`<p class="notation">2</p>`, "Power Crush, Briefly gains Gamma Charge upon absorbing an attack", "N/A", "SP", "N/A"]
+    ],
     },
   ],
   Jin: [
@@ -1499,18 +1548,21 @@ const data = {
         [
           "Electric Wind Hook Fist",
           `<img alt="Electric Wind God Fist" class='notation' src='./Assets/Input-Notations/assets_generic/R9_EWGF.png'>`,
-          "d5sx9",
+          `<p class="notation">d5sx9</p>`,
         ],
         [
           "Crouch Dash",
           `<img alt="Crouch Dash" class='notation' src='./Assets/Input-Notations/assets_generic/R9_CD_Jin.png'>`,
-          "d5sx",
+          `<p class="notation">d5sx</p>`,
         ],
         [
           "Zen",
           `<img alt="Zen" class='notation' src='./Assets/Input-Notations/assets_generic/R9_ZEN.png'>`,
-          "a2/d2",
-        ],
+          `<p class="notation">a2</p>`],
+        [
+          "Zen",
+          `<img alt="Zen" class='notation' src='./Assets/Input-Notations/assets_generic/R9_ZEN.png'>`,
+          `<p class="notation">d2</p>`],
       ],
     },
     {
