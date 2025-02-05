@@ -2425,23 +2425,36 @@ const data = {
           "+1",
           "",
         ],
+        [`<p class="notation">x7</p>`, "Mid attack to harass the opponent", "13", "Mid", "-1", ""],
+        [`<p class="notation">a7</p>`, "Quick homing attack to check opponents side stepping", "15", "Mid", "-6", ""],
+        [`<p class="notation">e3</p>`, "A safe launcher that goes over lows", "25", "Mid", "-8", ""],
+        [`<p class="notation">a3</p>`, "Mid knee attack with counterhit properties", "15", "Mid", "-8", ""],
+        [`<img class="notation" src="./Assets/Input-Notations/assets_generic/R5_02_FC.png"><p class="notation">x9</p>`, "Counter hit launcher from crouching position", "15", "Mid", "-8", ""],
+        [`<p class="notation">dD8</p>`, "Safe approach that launches on counterhit", "16", "Mid", "-9", ""],
+        [`<p class="notation">z3</p>`, "Risky low sweep that launches on counterhit", "21", "Low", "-26", ""]
       ],
     },
     {
       headers: [
         "Input",
-        "Decription",
+        "Escape",
         "Startup Frames",
         "Attack Level",
-        "+/- On Block",
       ],
-      rows: [],
+      rows: [
+        [`<p class="notation">e8</p>`, "1+2 Escape", "12", "Throw, High, High"],
+        [`<img class="notation" src="./Assets/Input-Notations/assets_generic/R5_03_WR.png"><p class="notation">4</p>`, "1+2 Escape", "12", "Throw, High, High"],
+        [`<img class="notation" src="./Assets/Input-Notations/assets_generic/R9_DEN.png"><p class="notation">M</p>`, "1+2 Escape", "12", "Throw, High, High"],
+        [`<p class="notation">e28</p>`, "1+2 Escape", "9", "sp Throw, High, High"],
+      ],
     },
   ],
   Law: [
     {
       headers: ["Term", "Notation", "Input"],
-      rows: [],
+      rows: [
+        ["Dragon Sign Stance", `<img class="notation" src="./Assets/Input-Notations/assets_generic/R9_DSS.png">`,`<p class="notation">s8</p>`]
+      ],
     },
     {
       headers: [
@@ -2452,7 +2465,16 @@ const data = {
         "+/- On Block",
         "Counter Options",
       ],
-      rows: [],
+      rows: [
+        [`<p class="notation">7</p>`, "Quick jab to start offence and check situations", "10", "High", "+1", ""],
+        [`<p class="notation">x7</p>`, "Mid poke to harass the opponent", "13", "Mid", "-1", ""],
+        [`<p class="notation">d8</p>`, "A mid attack for pressure that launches on counter", "20", "Mid", "+3", "",],
+        [`<p class="notation">x9</p>`, "Launching uppercut, Good as a keepout tool","15", "Mid", "-7", ""],
+        [`<p class="notation">z1</p>`, "Low poke to pressure the opponent", "17", "Low", "-13", ""],
+        [`<p class="notation">a3</p>`, "Homing attack for space control", "14", "Mid", "-7", ""],
+        [`<p class="notation">s91</p>`, "Risky counterhit launcher to challenge situations", "23", "Mid", "-15", ""],
+        [`<img class="notation" src="./Assets/Input-Notations/assets_generic/R5_02_FC.png"><p class="notation">xsx1</p>`, "A Long range low that enables his crouching Mixup", "-", "Low", "-", ""],
+        ],
     },
     {
       headers: [
@@ -2462,13 +2484,21 @@ const data = {
         "Attack Level",
         "+/- On Block",
       ],
-      rows: [],
+      rows: [
+        [`<p class="notation">a4</p>`, "Parry - On success, press forward to enter DSS","2", "N/A", "+14 on successful parry"],
+        [`<p class="notation">a6</p>`, "Reversal, punches only", "-", "Throw", "-"],
+        [`<p class="notation">a8</p>`, "Power Crush", "20", "Mid", "-14"],
+        [`<img class="notation" src="./Assets/Input-Notations/assets_generic/R5_01_HEAT.png"><p class="notation">s8</p>`, "Has Punch Parry Properties, Enter into DSS", "N/A", "N/A", "N/A"],
+      ],
     },
   ],
   Lee: [
     {
       headers: ["Term", "Notation", "Input"],
-      rows: [],
+      rows: [
+        ["Hitman", `<img class="notation" src="./Assets/Input-Notations/assets_generic/R9_HMS.png">`, `<p class="notation">2</p>`],
+        ["Mist Step", `MS`, `<p class="notation">d5</p>`]
+      ],
     },
     {
       headers: [
@@ -2479,7 +2509,15 @@ const data = {
         "+/- On Block",
         "Counter Options",
       ],
-      rows: [],
+      rows: [
+        [`<p class="notation">7</p>`, "Quick jab to start offence", "10", "High", "+1", ""],
+        [`<p class="notation">991</p>`, "Fast counterhit string to challenge situations","21", "High, Mid, High", "-3", ""],
+        [`<p class="notation">x7</p>`, "Mid poke to harass the opponent and create situations", "13", "Mid", "-1", ""],
+        [`<p class="notation">8(2)</p>`, "Counterhit launcher, can shift into HMS for additional pressure", "21", "High, High", "-6", ""],
+        [`<p class="notation">a11d</p>`, "Quick low poke to harass the opponent, can be +4 when pressing forward as it transitiions to MS", "19", "Low, High", "-12", ""],
+        [`<p class="notation">dd3</p>`, "Evasive High attack that launches", "16", "High", "-5", ""],
+        [`<img class="notation" src="./Assets/Input-Notations/assets_generic/R5_02_FC.png"><p class="notation">xsx1</p>`, "Slide attack that is the core of his full crouch mixup, Frame advantage will vary depending on spacing from -15 to -9", "18", "Low", "-15", ""],
+      ],
     },
     {
       headers: [
@@ -2489,13 +2527,18 @@ const data = {
         "Attack Level",
         "+/- On Block",
       ],
-      rows: [],
+      rows: [
+        [`<p class="notation">a4</p>`, "Punch parry, alternative input is B+2+4, Can also be done while in HMS", "N/A", "N/A", "N/A"],
+      ],
     },
   ],
   Leo: [
     {
       headers: ["Term", "Notation", "Input"],
-      rows: [],
+      rows: [
+        ["Kin Kei", `<img class="notation" src="./Assets/Input-Notations/assets_generic/R9_KNK.png">`, `<p class="notation">d3</p>`],
+        ["Bokuho", `<img class="notation" src="./Assets/Input-Notations/assets_generic/R9_BOK.png">`, `<p class="notation">s8</p>`],
+      ],
     },
     {
       headers: [
@@ -2506,7 +2549,16 @@ const data = {
         "+/- On Block",
         "Counter Options",
       ],
-      rows: [],
+      rows: [  
+        [`<p class="notation">7</p>`, "Quick Jab ot start offence, has extensions", "10", "High", "+1", ""],
+        [`<p class="notation">x7</p>`, "Mid poke, has extensions to discourage retaliation", "13", "Mid", "-1", ""],
+        [`<p class="notation">s9</p>`,"Conuterhit launcher that can also be used for pressure", "21", "Mid", "+4", ""],
+        [`<p class="notation">sxd7</p>`, "Low Poke with good range and counterhit", "-", "Low", "-", ""],
+        [`<p class="notation">z37</p>`, "Risky low option that can knock opponent down, Clean hit is +2, Staggers on block", "20", "Low", "-31", ""],
+        [`<p class="notation">dd9</p>`, "Long range mid attack for approaching", "14", "Mid", "-9", ""],
+        [`<p class="notation">x1</p>`, "Homing attack to check sidestep, can wallsplat", "17", "Mid", "-9", ""],
+        [`<p class="notation">z1</p>`, "Evasive launching attack", "31", "High", "-8", ""],
+      ],
     },
     {
       headers: [
@@ -2516,7 +2568,13 @@ const data = {
         "Attack Level",
         "+/- On Block",
       ],
-      rows: [],
+      rows: [
+        [`<p class="notation">q7</p>`, "High and Mid Kick Parry", "N/A", "N/A", "N/A"],
+        [`<p class="notation">a4</p>`, "Parries high and mid kicks and punches", "N/A", "N/A", "N/A"],
+        [`<p class="notation">a6</p>`, "Reversal, parries high and mid punches and kicks. Side switch on punch parry (+5), 25 damage on kick parry", "N/A", "N/A", "N/A"],
+        [`<p class="notation">aM</p>`, "Parries high and mid punches", "30", "Mid", "-8"],
+        [`<p class="notation">8</p>`, "Power Crush", "25", "Mid", "12"],
+      ],
     },
   ],
   Leroy: [
