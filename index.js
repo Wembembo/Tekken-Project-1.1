@@ -2943,7 +2943,17 @@ const data = {
         "+/- On Block",
         "Counter Options",
       ],
-      rows: [`<p class="notation">q9</p>`],
+      rows: [
+        [`<p class="notation">7</p>`, "Quick jab to start offence", "10", "High", "+1", ""],
+        [`<p class="notation">x7</p>`, "Mid poke with extensions to harass the opponent", "13", "Mid", "-5", ""],
+        [`<p class="notation">dD9</p>`, "Long reaching attack that shifts into horse stance except on whiff", "13", "Mid", "+5", ""],
+        [`<p class="notation">ddD7</p>`, "Approach / Pressure tool", "13", "High", "+6", ""],
+        [`<p class="notation">z3</p>`, "Useful against opponents that are stand blocking too much", "22", "Low", "-13", ""],
+        [`<p class="notation">s9</p>`, "Useful against opponents that are stand blocking too much", "18", "Low", "-14", ""],
+        [`<p class="notation">a3</p>`, "Homing tool, guaranteed followup on counterhit", "16", "Low", "-13", ""],
+        [`<p class="notation">z1</p>`, "Low that can shift into HOR except on Whiff, has a clean hit", "16", "Low", "-11", ""],
+        [`<p class="notation">dD1</p>`, "Long reaching launcher that can hit grounded opponents", "19", "Mid", "-14", ""] 
+      ],
     },
     {
       headers: [
@@ -2953,13 +2963,21 @@ const data = {
         "Attack Level",
         "+/- On Block",
       ],
-      rows: [],
+      rows: [
+        [`<p class="notation">z2</p>`, "Has Low Parry", "22", "Mid", "-3"],
+        [`<p class="notation">e7</p>`, "Has high attack parry properties", "23", "Mid", "-6"],
+        [`<p class="notation">a8</p>`, "Power Crush", "20", "Mid", "-13"],
+        ["HAE", "During heat, has reversal properties", "-","-","-"]
+      ],
     },
   ],
   Lili: [
     {
       headers: ["Term", "Notation", "Input"],
-      rows: [],
+      rows: [
+        ["Back Turn", `<img alt="Back Turn" class="notation" src="./Assets/Input-Notations/assets_generic/R5_02_BT.png">`, `<p class="notation">a2</p>`],
+        ["Dew Glide", `<img alt="Dew Glide" class="notation" src="./Assets/Input-Notations/assets_generic/R9_DEW.png">`, `<p class="notation">sxd</p>`],
+      ],
     },
     {
       headers: [
@@ -2970,7 +2988,15 @@ const data = {
         "+/- On Block",
         "Counter Options",
       ],
-      rows: [],
+      rows: [
+        [`<p class="notation">7</p>`, "Quick jab to start offence and check situations", "10", "High", "+1", ""],
+        [`<p class="notation">x7</p>`, "Mid Poke to check the opponent", "13", "Mid", "-1", ""],
+        [`<p class="notation">s1</p>`, "Low attack to harass the opponent", "19", "Low", "-12", ""],
+        [`<p class="notation">d3</p>`, "A Mid counterhit launcher with good range", "17", "Mid", "-9", ""],
+        [`<p class="notation">x1</p>`, "Long reaching launcher that leaves you in back turn", "20", "Mid", "+3", ""],
+        [`<p class="notation">sxd2</p>`, "High Homing attack, useful to start pressure", "", "", "", ""],
+        [`<p class="notation">dd3A</p>`, "A low that can transition into Back turn by holding back afterwards for pressure", "18", "Mid", "-12", ""],
+      ],
     },
     {
       headers: [
@@ -2980,7 +3006,11 @@ const data = {
         "Attack Level",
         "+/- On Block",
       ],
-      rows: [],
+      rows: [
+        [`<p class="notation">a4</p>`, "Alternative inputL b+2+4, Has parry properties", "23", "Mid", "-12"],
+        [`<p class="notation">s8</p>`, "Power Crush", "20", "Mid", "-13"],
+        [`<img alt="Back Turn" class="notation" src="./Assets/Input-Notations/assets_generic/R5_02_BT.png"><p class="notation">9</p>`, "Power Crush", "14", "Mid", "-13"]
+      ],
     },
   ],
   Nina: [
