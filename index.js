@@ -88,10 +88,26 @@ function renderTables(character, containerID) {
     return;
   }
 
+  // Define headings for each section
+  const sectionTitles = [
+    " Key Terminology ",
+    " Important Moves ",
+    character === "King" || character === "Lars"
+      ? " Command Grabs "
+      : " Defensive Options ",
+  ];
+
   tables.forEach((tableData, index) => {
+    const tableWrapper = document.createElement("div");
+
+    // table titles
+    const heading = document.createElement("h2");
+    heading.innerText = sectionTitles[index];
+    tableWrapper.appendChild(heading);
+
     const table = document.createElement("table");
 
-    //headers
+    // table headers
     const headerRow = document.createElement("tr");
     tableData.headers.forEach((header) => {
       const th = document.createElement("th");
@@ -101,13 +117,12 @@ function renderTables(character, containerID) {
 
     table.appendChild(headerRow);
 
-    //rows
+    // table rows and data
     tableData.rows.forEach((row) => {
       const tr = document.createElement("tr");
       row.forEach((cell) => {
         const td = document.createElement("td");
 
-        //this might add the notation class - we'll see.
         if (cell.includes("notation")) {
           td.classList.add("notation");
         }
@@ -118,7 +133,8 @@ function renderTables(character, containerID) {
       table.appendChild(tr);
     });
 
-    container.appendChild(table);
+    tableWrapper.appendChild(table);
+    container.appendChild(tableWrapper);
   });
 }
 
@@ -143,47 +159,25 @@ document
 function showMatch() {
   const playerOne = document.getElementById("playerOneSelection").value;
   const playerTwo = document.getElementById("playerTwoSelection").value;
+  const videoContainer = document.getElementById("videoContainer");
+
+  videoContainer.innerHTML = ""; // clearing old video
 
   if (matches[playerOne] && matches[playerOne][playerTwo]) {
     const videoURL = matches[playerOne][playerTwo];
-    const videoContainer = document.getElementById("videoContainer");
-    videoContainer.innerHTML = `
-            <iframe width="560" height="315"
-                    src="${videoURL}"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-            </iframe>`;
+    const iframe = document.createElement("iframe");
+
+    iframe.width = "560";
+    iframe.height = "315";
+    iframe.src = videoURL;
+    iframe.allowFullscreen = true;
+
+    videoContainer.appendChild(iframe);
   } else {
-    alert("No match found for this character combination!");
+    videoContainer.innerHTML =
+      "<p>No match found for this character combination!</p>";
   }
 }
-
-//Test area for Character Data
-
-// Template: {
-//    image: ""
-//    moves:[
-//   {
-//     headers:["Term", "Notation", "Input"],
-//     rows:[
-
-//     ],
-//   },
-//   {
-//     headers:["Input", "Description", "Startup Frames", "Attack Level", "+/- On Block", "Counter Options"],
-//     rows:[
-
-//     ],
-//   },
-//   {
-//     headers: ["Input", "Decription", "Startup Frames", "Attack Level", "+/- On Block"],
-//     rows:[
-
-//     ],
-//   },
-// ],
-// };
 
 const data = {
   Alisa: [
@@ -4536,437 +4530,435 @@ const data = {
 
 const matches = {
   Alisa: {
-    Alisa: [], // Add video links or data here
-    Asuka: [], // Add video links or data here
-    Azucena: [], // Add video links or data here
-    Bryan: [],
-    Claudio: [],
-    Clive: [],
-    Devil: [],
-    Dragunov: [],
-    Eddy: [],
-    Feng: [],
-    Heihachi: [],
-    Hwoarang: [],
-    Jack: [],
-    Jin: [],
-    Jun: [],
-    Kazuya: [],
-    King: [],
-    Kuma: [],
-    Lars: [],
-    Law: [],
-    Lee: [],
-    Leo: [],
-    Leroy: [],
-    Lidia: [],
-    Lili: [],
-    Nina: [],
-    Panda: [],
-    Paul: [],
-    Raven: [],
-    Reina: [],
-    Shaheen: [],
-    Steve: [],
-    Victor: [],
-    Xiaoyu: [],
-    Yoshimitsu: [],
-    Zafina: [],
+    Alisa: ["https://www.youtube.com/embed/u30q2WboW1o"], // Add video links or data here
+    Asuka: ["https://www.youtube.com/embed/SZsMmM3e2EU"], // Add video links or data here
+    Azucena: ["https://www.youtube.com/embed/yRXkF-4DZ3I"], // Add video links or data here
+    Bryan: ["https://www.youtube.com/embed/8L6nBsKIkfU"],
+    Claudio: ["https://www.youtube.com/embed/5t5nckMW-y0"],
+    Clive: ["https://www.youtube.com/embed/H4Gu8H9AL7o"],
+    Devil: ["https://www.youtube.com/embed/A51LH6BRG1o"],
+    Dragunov: ["https://www.youtube.com/embed/-VK_qiDdk84"],
+    Eddy: ["https://www.youtube.com/embed/kjF38-GjCa8"],
+    Feng: ["https://www.youtube.com/embed/ZOJ8fu_tJeM"],
+    Heihachi: ["https://www.youtube.com/embed/Ro-LbOHsgpw"],
+    Hwoarang: ["https://www.youtube.com/embed/Pao-z55EWuE"],
+    Jack: ["https://www.youtube.com/embed/9ABkYPqKkq0"],
+    Jin: ["https://www.youtube.com/embed/DizsmslsTU4"],
+    Jun: ["https://www.youtube.com/embed/OQNohpTtZyM"],
+    Kazuya: ["https://www.youtube.com/embed/6yzegvP_ClQ"],
+    King: ["https://www.youtube.com/embed/e92Q_O0l7tk"],
+    Kuma: ["https://www.youtube.com/embed/DoVMfRbarZE"],
+    Lars: ["https://www.youtube.com/embed/sP20NMwxD9Q"],
+    Law: ["https://www.youtube.com/embed/UcAEEJ-trKg"],
+    Lee: ["https://www.youtube.com/embed/ISpLais1f28"],
+    Leo: ["https://www.youtube.com/embed/Ljmx5JpSPe0"],
+    Leroy: ["https://www.youtube.com/embed/UhR41T94vp0"],
+    Lidia: ["https://www.youtube.com/embed/BFraTYqzSFg"],
+    Lili: ["https://www.youtube.com/embed/K5Ikg9zdbKM"],
+    Nina: ["https://www.youtube.com/embed/eo8hn-C5oGk"],
+    Panda: ["https://www.youtube.com/embed/xptlM3wNtgA"],
+    Paul: ["https://www.youtube.com/embed/ujtdTwR6Axo"],
+    Raven: ["https://www.youtube.com/embed/OXHcCcgqmro"],
+    Reina: ["https://www.youtube.com/embed/QQ9uEcazyQk"],
+    Shaheen: ["https://www.youtube.com/embed/R7E6cY0Q4Lk"],
+    Steve: ["https://www.youtube.com/embed/tnJz-Likl-M"],
+    Victor: ["https://www.youtube.com/embed/oBjv_oL68VU"],
+    Xiaoyu: ["https://www.youtube.com/embed/g_8Y5BmM3TI"],
+    Yoshimitsu: ["https://www.youtube.com/embed/tqwNO8ZsalE"],
+    Zafina: ["https://www.youtube.com/embed/rEQ4Gnf8Hfo"],
   },
   Asuka: {
-    Alisa: [], // Add video links or data here
-    Asuka: [], // Add video links or data here
-    Azucena: [], // Add video links or data here
-    Bryan: [],
-    Claudio: [],
-    Clive: [],
-    Devil: [],
-    Dragunov: [],
-    Eddy: [],
-    Feng: [],
-    Heihachi: [],
-    Hwoarang: [],
-    Jack: [],
-    Jin: [],
-    Jun: [],
-    Kazuya: [],
-    King: [],
-    Kuma: [],
-    Lars: [],
-    Law: [],
-    Lee: [],
-    Leo: [],
-    Leroy: [],
-    Lidia: [],
-    Lili: [],
-    Nina: [],
-    Panda: [],
-    Paul: [],
-    Raven: [],
-    Reina: [],
-    Shaheen: [],
-    Steve: [],
-    Victor: [],
-    Xiaoyu: [],
-    Yoshimitsu: [],
-    Zafina: [],
+    Alisa: ["https://www.youtube.com/embed/SZsMmM3e2EU"], // Add video links or data here
+    Asuka: ["https://www.youtube.com/embed/c1aoqEhwWCY"], // Add video links or data here
+    Azucena: ["https://www.youtube.com/embed/OE4p-1Ni-28"], // Add video links or data here
+    Bryan: ["https://www.youtube.com/embed/JzehgjNOFZQ"],
+    Claudio: ["https://www.youtube.com/embed/T2riFhiqrqY"],
+    Clive: ["https://www.youtube.com/embed/K1VYTjp3inQ"],
+    Devil: ["https://www.youtube.com/embed/LkPVdSEKwHQ"],
+    Dragunov: ["https://www.youtube.com/embed/U1_T1eJY96w"],
+    Eddy: ["https://www.youtube.com/embed/u7fwuShXRu4"],
+    Feng: ["https://www.youtube.com/embed/XYZc6VraiCY"],
+    Heihachi: ["https://www.youtube.com/embed/dLyJS1OaD34"],
+    Hwoarang: ["https://www.youtube.com/embed/UiOnHtKPhtU"],
+    Jack: ["https://www.youtube.com/embed/DhOr-DlvI5M"],
+    Jin: ["https://www.youtube.com/embed/K27SZWgiLec"],
+    Jun: ["https://www.youtube.com/embed/VP1C4viagx8"],
+    Kazuya: ["https://www.youtube.com/embed/KwoKhDqj9oE"],
+    King: ["https://www.youtube.com/embed/9vfwyqxI5Cc"],
+    Kuma: ["https://www.youtube.com/embed/NEt-MR0nuKw"],
+    Lars: ["https://www.youtube.com/embed/jzX2kTZnHGE"],
+    Law: ["https://www.youtube.com/embed/eUgB0fiCnbw"],
+    Lee: ["https://www.youtube.com/embed/KkB7IwtAmqY"],
+    Leo: ["https://www.youtube.com/embed/1NBQX-cbe6I"],
+    Leroy: ["https://www.youtube.com/embed/TM5d6n6V4bs"],
+    Lidia: ["https://www.youtube.com/embed/0gEGFv1Dkn8"],
+    Lili: ["https://www.youtube.com/embed/TsBw5igzSHE"],
+    Nina: ["https://www.youtube.com/embed/tiXakl6znzI"],
+    Panda: ["https://www.youtube.com/embed/WNGO9b32Xc4"],
+    Paul: ["https://www.youtube.com/embed/SAUD4pwUahA"],
+    Raven: ["https://www.youtube.com/embed/LtOFS194zNo"],
+    Reina: ["https://www.youtube.com/embed/eYX7vd_7D2c"],
+    Shaheen: ["https://www.youtube.com/embed/Xgm0XJau8ZU"],
+    Steve: ["https://www.youtube.com/embed/lSjesRz-ej8"],
+    Victor: ["https://www.youtube.com/embed/HUEI92iL8Pw"],
+    Xiaoyu: ["https://www.youtube.com/embed/K-klmyOxGos"],
+    Yoshimitsu: ["https://www.youtube.com/embed/Holhii16f44"],
+    Zafina: ["https://www.youtube.com/embed/sqmMfPD6WMM"],
   },
   Azucena: {
-    Alisa: [], // Add video links or data here
-    Asuka: [], // Add video links or data here
-    Azucena: [], // Add video links or data here
-    Bryan: [],
-    Claudio: [],
-    Clive: [],
-    Devil: [],
-    Dragunov: [],
-    Eddy: [],
-    Feng: [],
-    Heihachi: [],
-    Hwoarang: [],
-    Jack: [],
-    Jin: [],
-    Jun: [],
-    Kazuya: [
-      `<iframe width="893" height="502" src="https://www.youtube.com/embed/S0v3djPH7M0" title="Tekken 8  ▰ Arslan Ash (Azucena) Vs TheMainManSWE (Kazuya) ▰ Player Matches" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
-    ],
-    King: [],
-    Kuma: [],
-    Lars: [],
-    Law: [],
-    Lee: [],
-    Leo: [],
-    Leroy: [],
-    Lidia: [],
-    Lili: [],
-    Nina: [],
-    Panda: [],
-    Paul: [],
-    Raven: [],
-    Reina: [],
-    Shaheen: [],
-    Steve: [],
-    Victor: [],
-    Xiaoyu: [],
-    Yoshimitsu: [],
-    Zafina: [],
+    Alisa: ["https://www.youtube.com/embed/yRXkF-4DZ3I"], // Add video links or data here
+    Asuka: ["https://www.youtube.com/embed/OE4p-1Ni-28"], // Add video links or data here
+    Azucena: ["https://www.youtube.com/embed/nM4Br6in8ek"], // Add video links or data here
+    Bryan: ["https://www.youtube.com/embed/MIKJrCnh-CY"],
+    Claudio: ["https://www.youtube.com/embed/vAaRNPSuGYo"],
+    Clive: ["https://www.youtube.com/embed/Ud-kC9-1s6c"],
+    Devil: ["https://www.youtube.com/embed/3XxgP9ZEQbc"],
+    Dragunov: ["https://www.youtube.com/embed/ea9O9frNCHA"],
+    Eddy: ["https://www.youtube.com/embed/8UP3LcLEQdU"],
+    Feng: ["https://www.youtube.com/embed/oCvPOvs0AmM"],
+    Heihachi: ["https://www.youtube.com/embed/i5TY_wzID5Q"],
+    Hwoarang: ["https://www.youtube.com/embed/j94fcbrqQCI"],
+    Jack: ["https://www.youtube.com/embed/MKV5d8AsXAs"],
+    Jin: ["https://www.youtube.com/embed/YxG9cXPNPS8"],
+    Jun: ["https://www.youtube.com/embed/jUq3ZXklfrw"],
+    Kazuya: [`https://www.youtube.com/embed/S0v3djPH7M0`],
+    King: ["https://www.youtube.com/embed/eLNt9G7pqNQ"],
+    Kuma: ["https://www.youtube.com/embed/SalYmTWefxs"],
+    Lars: ["https://www.youtube.com/embed/-Ys04NLqHwc"],
+    Law: ["https://www.youtube.com/embed/4duUAnejKKI"],
+    Lee: ["https://www.youtube.com/embed/taxA0F0X8Lc"],
+    Leo: ["https://www.youtube.com/embed/JW1sGp38dzc"],
+    Leroy: ["https://www.youtube.com/embed/yb9VtUO2Gvw"],
+    Lidia: ["https://www.youtube.com/embed/d7hm0q_cn2A"],
+    Lili: ["https://www.youtube.com/embed/5_1ZB8xtWYM"],
+    Nina: ["https://www.youtube.com/embed/yF-sNnGG6i4"],
+    Panda: ["https://www.youtube.com/embed/dxScAYrRQ5k"],
+    Paul: ["https://www.youtube.com/embed/U1ERpZrb6BQ"],
+    Raven: ["https://www.youtube.com/embed/9DMhy0rkrcs"],
+    Reina: ["https://www.youtube.com/embed/sOs-rLWl6r8"],
+    Shaheen: ["https://www.youtube.com/embed/nnLld581f04"],
+    Steve: ["https://www.youtube.com/embed/Xy6SLAsHew4"],
+    Victor: ["https://www.youtube.com/embed/cZyx5JWPRlQ"],
+    Xiaoyu: ["https://www.youtube.com/embed/KOVwxOqRt30"],
+    Yoshimitsu: ["https://www.youtube.com/embed/X3U1ECIxud8"],
+    Zafina: ["https://www.youtube.com/embed/MSrbzLMUhzQ"],
   },
   Bryan: {
-    Alisa: [], // Add video links or data here
-    Asuka: [], // Add video links or data here
-    Azucena: [], // Add video links or data here
-    Bryan: [],
-    Claudio: [],
-    Clive: [],
-    Devil: [],
-    Dragunov: [],
-    Eddy: [],
-    Feng: [],
-    Heihachi: [],
-    Hwoarang: [],
-    Jack: [],
-    Jin: [],
-    Jun: [],
-    Kazuya: [],
-    King: [],
-    Kuma: [],
-    Lars: [],
-    Law: [],
-    Lee: [],
-    Leo: [],
-    Leroy: [],
-    Lidia: [],
-    Lili: [],
-    Nina: [],
-    Panda: [],
-    Paul: [],
-    Raven: [],
-    Reina: [],
-    Shaheen: [],
-    Steve: [],
-    Victor: [],
-    Xiaoyu: [],
-    Yoshimitsu: [],
-    Zafina: [],
+    Alisa: ["https://www.youtube.com/embed/8L6nBsKIkfU" ], // Add video links or data here
+    Asuka: ["https://www.youtube.com/embed/JzehgjNOFZQ"], // Add video links or data here
+    Azucena: ["https://www.youtube.com/embed/MIKJrCnh-CY"], // Add video links or data here
+    Bryan: ["https://www.youtube.com/embed/gCaSklARFUg"],
+    Claudio: ["https://www.youtube.com/embed/eFLDGP_lSuY"],
+    Clive: ["https://www.youtube.com/embed/78T_ZOTeBcM"],
+    Devil: ["https://www.youtube.com/embed/SwaiSShvafU"],
+    Dragunov: ["https://www.youtube.com/embed/h2ymx7vCtSQ"],
+    Eddy: ["https://www.youtube.com/embed/s4AwyvEagwk"],
+    Feng: ["https://www.youtube.com/embed/Fh-6DUg5VqY"],
+    Heihachi: ["https://www.youtube.com/embed/MwejAEJHYXo"],
+    Hwoarang: ["https://www.youtube.com/embed/3RwTfLFRu_M"],
+    Jack: ["https://www.youtube.com/embed/OcnTLv3F0dg"],
+    Jin: ["https://www.youtube.com/embed/n2XRQpCNV5E"],
+    Jun: ["https://www.youtube.com/embed/UxXu8JaggVk"],
+    Kazuya: ["https://www.youtube.com/embed/9dXtGBCbEYc"],
+    King: ["https://www.youtube.com/embed/UO6NJdMvXeE"],
+    Kuma: ["https://www.youtube.com/embed/IXfl2Gx5k_4"],
+    Lars: ["https://www.youtube.com/embed/NIWRMvdp6-4"],
+    Law: ["https://www.youtube.com/embed/dMKPWlSxoh8"],
+    Lee: ["https://www.youtube.com/embed/yXIHycRrqmQ"],
+    Leo: ["https://www.youtube.com/embed/KfRKtn8QRAo"],
+    Leroy: ["https://www.youtube.com/embed/43qrOAtx2u4"],
+    Lidia: ["https://www.youtube.com/embed/GFI35uHOsww"],
+    Lili: ["https://www.youtube.com/embed/LoFlPI78Lrg"],
+    Nina: ["https://www.youtube.com/embed/26P3_zi3uIU"],
+    Panda: ["https://www.youtube.com/embed/9S_HgpEHwCM"],
+    Paul: ["https://www.youtube.com/embed/v8wSSJ_iQmU"],
+    Raven: ["https://www.youtube.com/embed/vHbKq_xkuVM"],
+    Reina: ["https://www.youtube.com/embed/DtVUoO3kR5U"],
+    Shaheen: ["https://www.youtube.com/embed/3IxZdjDwoxQ"],
+    Steve: ["https://www.youtube.com/embed/ACcwhqbIfv4"],
+    Victor: ["https://www.youtube.com/embed/g4Sa1CdgHWM"],
+    Xiaoyu: ["https://www.youtube.com/embed/iarFb5waUy4"],
+    Yoshimitsu: ["https://www.youtube.com/embed/kzbocP-KK6A"],
+    Zafina: ["https://www.youtube.com/embed/3O1iukSaWSU"],
   },
   Claudio: {
-    Alisa: [], // Add video links or data here
-    Asuka: [], // Add video links or data here
-    Azucena: [], // Add video links or data here
-    Bryan: [],
-    Claudio: [],
-    Clive: [],
-    Devil: [],
-    Dragunov: [],
-    Eddy: [],
-    Feng: [],
-    Heihachi: [],
-    Hwoarang: [],
-    Jack: [],
-    Jin: [],
-    Jun: [],
-    Kazuya: [],
-    King: [],
-    Kuma: [],
-    Lars: [],
-    Law: [],
-    Lee: [],
-    Leo: [],
-    Leroy: [],
-    Lidia: [],
-    Lili: [],
-    Nina: [],
-    Panda: [],
-    Paul: [],
-    Raven: [],
-    Reina: [],
-    Shaheen: [],
-    Steve: [],
-    Victor: [],
-    Xiaoyu: [],
-    Yoshimitsu: [],
+    Alisa: ["https://www.youtube.com/embed/5t5nckMW-y0"], // Add video links or data here
+    Asuka: ["https://www.youtube.com/embed/T2riFhiqrqY"], // Add video links or data here
+    Azucena: ["https://www.youtube.com/embed/vAaRNPSuGYo"], // Add video links or data here
+    Bryan: ["https://www.youtube.com/embed/eFLDGP_lSuY"],
+    Claudio: ["https://www.youtube.com/embed/4Lxt76IgG2Q"],
+    Clive: ["https://www.youtube.com/embed/GnGgdmShCiY"],
+    Devil: ["https://www.youtube.com/embed/eBPpShDFr_0"],
+    Dragunov: ["https://www.youtube.com/embed/SDQETPAT2B8"],
+    Eddy: ["https://www.youtube.com/embed/IJ12wyGMWbM"],
+    Feng: ["https://www.youtube.com/embed/ZesOgXTqDOA"],
+    Heihachi: ["https://www.youtube.com/embed/WoYISBa8JDI"],
+    Hwoarang: ["https://www.youtube.com/embed/Hn_jGWh5iIY"],
+    Jack: ["https://www.youtube.com/embed/nrd6v6dvwWs"],
+    Jin: ["https://www.youtube.com/embed/t4IE78SJTJY"],
+    Jun: ["https://www.youtube.com/embed/QBUwEQw3kWE"],
+    Kazuya: ["https://www.youtube.com/embed/Pb9CLJuT5UI"],
+    King: ["https://www.youtube.com/embed/cZFYOJn24CI"],
+    Kuma: ["https://www.youtube.com/embed/VibWC9afReA"],
+    Lars: ["https://www.youtube.com/embed/6eiNb8Ou_h4"],
+    Law: ["https://www.youtube.com/embed/auVwyNOdyXc"],
+    Lee: ["https://www.youtube.com/embed/BGWgsH0_ucA"],
+    Leo: ["https://www.youtube.com/embed/Eoj2Nn2JkgA"],
+    Leroy: ["https://www.youtube.com/embed/hCelXuKJFi0"],
+    Lidia: ["https://www.youtube.com/embed/aUF6UKZ-y80"],
+    Lili: ["https://www.youtube.com/embed/KMKSIxrzRzE"],
+    Nina: ["https://www.youtube.com/embed/FOS3_qTRMfA"],
+    Panda: ["https://www.youtube.com/embed/vhKySRczay0"],
+    Paul: ["https://www.youtube.com/embed/Q1MHIsGOhGM"],
+    Raven: ["https://www.youtube.com/embed/XW4H0JGLevY"],
+    Reina: ["https://www.youtube.com/embed/jQ6ZtTx373A"],
+    Shaheen: ["https://www.youtube.com/embed/W9d-Yoe_P-Q"],
+    Steve: ["https://www.youtube.com/embed/93GpW0X-T4g"],
+    Victor: ["https://www.youtube.com/embed/JaVnSh43sNo"],
+    Xiaoyu: ["https://www.youtube.com/embed/F16D0a0acUc"],
+    Yoshimitsu: ["https://www.youtube.com/embed/in-t33vibp8"],
     Zafina: [],
   },
   Clive: {
-    Alisa: [], // Add video links or data here
-    Asuka: [], // Add video links or data here
-    Azucena: [], // Add video links or data here
-    Bryan: [],
-    Claudio: [],
-    Clive: [],
-    Devil: [],
-    Dragunov: [],
-    Eddy: [],
-    Feng: [],
-    Heihachi: [],
-    Hwoarang: [],
-    Jack: [],
-    Jin: [],
-    Jun: [],
-    Kazuya: [],
-    King: [],
-    Kuma: [],
-    Lars: [],
-    Law: [],
-    Lee: [],
-    Leo: [],
-    Leroy: [],
-    Lidia: [],
-    Lili: [],
-    Nina: [],
-    Panda: [],
-    Paul: [],
-    Raven: [],
-    Reina: [],
-    Shaheen: [],
-    Steve: [],
-    Victor: [],
-    Xiaoyu: [],
-    Yoshimitsu: [],
-    Zafina: [],
+    Alisa: ["https://www.youtube.com/embed/H4Gu8H9AL7o"], // Add video links or data here
+    Asuka: ["https://www.youtube.com/embed/K1VYTjp3inQ"], // Add video links or data here
+    Azucena: ["https://www.youtube.com/embed/Ud-kC9-1s6c"], // Add video links or data here
+    Bryan: ["https://www.youtube.com/embed/78T_ZOTeBcM"],
+    Claudio: ["https://www.youtube.com/embed/GnGgdmShCiY"],
+    Clive: ["https://www.youtube.com/embed/80Y-p4AoPvU"],
+    Devil: ["https://www.youtube.com/embed/_7TkVUi-qn0"],
+    Dragunov: ["https://www.youtube.com/embed/PjqNXqZA604"],
+    Eddy: ["https://www.youtube.com/embed/zlcYcQAqt6E"],
+    Feng: ["https://www.youtube.com/embed/In6SN1Nuj0k"],
+    Heihachi: ["https://www.youtube.com/embed/dpFFltV76QA"],
+    Hwoarang: ["https://www.youtube.com/embed/GeOtdhWRhoc"],
+    Jack: ["https://www.youtube.com/embed/UeY-a2f2XmA"],
+    Jin: ["https://www.youtube.com/embed/lqjaEQ4t86I"],
+    Jun: ["https://www.youtube.com/embed/dXwn_SHyTfk"],
+    Kazuya: ["https://www.youtube.com/embed/5ru75HIFh_Q"],
+    King: ["https://www.youtube.com/embed/0fDg5e3biu4"],
+    Kuma: ["https://www.youtube.com/embed/D-uKbELuJHQ"],
+    Lars: ["https://www.youtube.com/embed/uDntqPD1UWA"],
+    Law: ["https://www.youtube.com/embed/P2682s36NVc"],
+    Lee: ["https://www.youtube.com/embed/iZQotPvEcN4"],
+    Leo: ["https://www.youtube.com/embed/UOtRbsF5tsk"],
+    Leroy: ["https://www.youtube.com/embed/ulA-e4XEr_s"],
+    Lidia: ["https://www.youtube.com/embed/N0PUTsPHK7o"],
+    Lili: ["https://www.youtube.com/embed/iFngzx3RiGY"],
+    Nina: ["https://www.youtube.com/embed/D2VS1kTotS0"],
+    Panda: ["https://www.youtube.com/embed/IjqzYHUFXFc"],
+    Paul: ["https://www.youtube.com/embed/WCK8SA5zh30"],
+    Raven: ["https://www.youtube.com/embed/AX_Ie7PKrYk"],
+    Reina: ["https://www.youtube.com/embed/aN2B0qBjvpI"],
+    Shaheen: ["https://www.youtube.com/embed/Poy83jzMGZw"],
+    Steve: ["https://www.youtube.com/embed/t77hdliFtAk"],
+    Victor: ["https://www.youtube.com/embed/NRazal7mLog"],
+    Xiaoyu: ["https://www.youtube.com/embed/xeju4jqq9uc"],
+    Yoshimitsu: ["https://www.youtube.com/embed/gUczI_sxqEc"],
+    Zafina: ["https://www.youtube.com/embed/KpzTubVfKS4"],
   },
   Devil: {
-    Alisa: [], // Add video links or data here
-    Asuka: [], // Add video links or data here
-    Azucena: [], // Add video links or data here
-    Bryan: [],
-    Claudio: [],
-    Clive: [],
-    Devil: [],
-    Dragunov: [],
-    Eddy: [],
-    Feng: [],
-    Heihachi: [],
-    Hwoarang: [],
-    Jack: [],
-    Jin: [],
-    Jun: [],
-    Kazuya: [],
-    King: [],
-    Kuma: [],
-    Lars: [],
-    Law: [],
-    Lee: [],
-    Leo: [],
-    Leroy: [],
-    Lidia: [],
-    Lili: [],
-    Nina: [],
-    Panda: [],
-    Paul: [],
-    Raven: [],
-    Reina: [],
-    Shaheen: [],
-    Steve: [],
-    Victor: [],
-    Xiaoyu: [],
-    Yoshimitsu: [],
-    Zafina: [],
+    Alisa: ["https://www.youtube.com/embed/A51LH6BRG1o"], // Add video links or data here
+    Asuka: ["https://www.youtube.com/embed/LkPVdSEKwHQ"], // Add video links or data here
+    Azucena: ["https://www.youtube.com/embed/3XxgP9ZEQbc"], // Add video links or data here
+    Bryan: ["https://www.youtube.com/embed/SwaiSShvafU"],
+    Claudio: ["https://www.youtube.com/embed/eBPpShDFr_0"],
+    Clive: ["https://www.youtube.com/embed/_7TkVUi-qn0"],
+    Devil: ["https://www.youtube.com/embed/NEVfSbC9wIo"],
+    Dragunov: ["https://www.youtube.com/embed/Lxfo2ilYCMg"],
+    Eddy: ["https://www.youtube.com/embed/_Me2vPqkFXA"],
+    Feng: ["https://www.youtube.com/embed/LrTUw-3_Ni0"],
+    Heihachi: ["https://www.youtube.com/embed/gWd0rff8NSw"],
+    Hwoarang: ["https://www.youtube.com/embed/0vYOVdpWq9E"],
+    Jack: ["https://www.youtube.com/embed/i2UTbOhXh9M"],
+    Jin: ["https://www.youtube.com/embed/5tiIRAzsBXs"],
+    Jun: ["https://www.youtube.com/embed/wNsLssI_lIw"],
+    Kazuya: ["https://www.youtube.com/embed/_n1GyJiL43o"],
+    King: ["https://www.youtube.com/embed/2DiqKplwtjI"],
+    Kuma: ["https://www.youtube.com/embed/wuoxjQFgqXk"],
+    Lars: ["https://www.youtube.com/embed/UBFShZSXrg0"],
+    Law: ["https://www.youtube.com/embed/cHywJu9eKfo"],
+    Lee: ["https://www.youtube.com/embed/SeGqSsyFd1k"],
+    Leo: ["https://www.youtube.com/embed/kSfdAAm5O2A"],
+    Leroy: ["https://www.youtube.com/embed/8fawaWcyVoM"],
+    Lidia: ["https://www.youtube.com/embed/SUjfXyUp3uI"],
+    Lili: ["https://www.youtube.com/embed/cVsW7aLjRHQ"],
+    Nina: ["https://www.youtube.com/embed/5ssyDi1AKAI"],
+    Panda: ["https://www.youtube.com/embed/gyAAKCOyrm8"],
+    Paul: ["https://www.youtube.com/embed/He8n1tOqIEU"],
+    Raven: ["https://www.youtube.com/embed/KW6ecZx_qDU"],
+    Reina: ["https://www.youtube.com/embed/K4xhIpUfsy8"],
+    Shaheen: ["https://www.youtube.com/embed/cl2hfVyNMUw"],
+    Steve: ["https://www.youtube.com/embed/LQioKg1qKfk"],
+    Victor: ["https://www.youtube.com/embed/atzR3MKUrMo"],
+    Xiaoyu: ["https://www.youtube.com/embed/SgQkiAemiMo"],
+    Yoshimitsu: ["https://www.youtube.com/embed/ix-Rmq-3Vsk"],
+    Zafina: ["https://www.youtube.com/embed/0d1BtDOsNgk"],
   },
-  Dragonov: {
-    Alisa: [], // Add video links or data here
-    Asuka: [], // Add video links or data here
-    Azucena: [], // Add video links or data here
-    Bryan: [],
-    Claudio: [],
-    Clive: [],
-    Devil: [],
-    Dragunov: [],
-    Eddy: [],
-    Feng: [],
-    Heihachi: [],
-    Hwoarang: [],
-    Jack: [],
-    Jin: [],
-    Jun: [],
-    Kazuya: [],
-    King: [],
-    Kuma: [],
-    Lars: [],
-    Law: [],
-    Lee: [],
-    Leo: [],
-    Leroy: [],
-    Lidia: [],
-    Lili: [],
-    Nina: [],
-    Panda: [],
-    Paul: [],
-    Raven: [],
-    Reina: [],
-    Shaheen: [],
-    Steve: [],
-    Victor: [],
-    Xiaoyu: [],
-    Yoshimitsu: [],
-    Zafina: [],
+  Dragunov: {
+    Alisa: ["https://www.youtube.com/embed/-VK_qiDdk84"], // Add video links or data here
+    Asuka: ["https://www.youtube.com/embed/U1_T1eJY96w"], // Add video links or data here
+    Azucena: ["https://www.youtube.com/embed/ea9O9frNCHA"], // Add video links or data here
+    Bryan: ["https://www.youtube.com/embed/h2ymx7vCtSQ"],
+    Claudio: ["https://www.youtube.com/embed/SDQETPAT2B8"],
+    Clive: ["https://www.youtube.com/embed/PjqNXqZA604"],
+    Devil: ["https://www.youtube.com/embed/Lxfo2ilYCMg"],
+    Dragunov: ["https://www.youtube.com/embed/9J1Z99mF5Y0"],
+    Eddy: ["https://www.youtube.com/embed/15__ZRtBoxA"],
+    Feng: ["https://www.youtube.com/embed/zrhHIWtXbHM"],
+    Heihachi: ["https://www.youtube.com/embed/VfhcquEjZ00"],
+    Hwoarang: ["https://www.youtube.com/embed/JvVVMB1VLQ4"],
+    Jack: ["https://www.youtube.com/embed/ytoruJhDXlM"],
+    Jin: ["https://www.youtube.com/embed/XB31ikjAmIk"],
+    Jun: ["https://www.youtube.com/embed/yFya0snsiKU"],
+    Kazuya: ["https://www.youtube.com/embed/eOOuvodACf0"],
+    King: ["https://www.youtube.com/embed/4yKorDwA3b8"],
+    Kuma: ["https://www.youtube.com/embed/T4TegaoNKd8"],
+    Lars: ["https://www.youtube.com/embed/B38yY_CN2gc"],
+    Law: ["https://www.youtube.com/embed/_CWzUMLFkAc"],
+    Lee: ["https://www.youtube.com/embed/NnaVfl5kTZw"],
+    Leo: ["https://www.youtube.com/embed/ZRnuQGaInGM"],
+    Leroy: ["https://www.youtube.com/embed/3T3BfAq0DpU"],
+    Lidia: ["https://www.youtube.com/embed/YMkzGgYRyYE"],
+    Lili: ["https://www.youtube.com/embed/roajOB02Wvk"],
+    Nina: ["https://www.youtube.com/embed/BvHtH7GKPhQ"],
+    Panda: ["https://www.youtube.com/embed/9R1TUAXROEo"],
+    Paul: ["https://www.youtube.com/embed/AFV_YwLOzJ0"],
+    Raven: ["https://www.youtube.com/embed/7CHxzcQaebI"],
+    Reina: ["https://www.youtube.com/embed/c7eoMXwoehs"],
+    Shaheen: ["https://www.youtube.com/embed/sJUL1-tfGDk"],
+    Steve: ["https://www.youtube.com/embed/cl4cRi-53B8"],
+    Victor: ["https://www.youtube.com/embed/RVsslHDTrLY"],
+    Xiaoyu: ["https://www.youtube.com/embed/CMoM_6T2WUE"],
+    Yoshimitsu: ["https://www.youtube.com/embed/AkMPpx_SdBA"],
+    Zafina: ["https://www.youtube.com/embed/IpBcfZ87vqM"],
   },
   Eddy: {
-    Alisa: [], // Add video links or data here
-    Asuka: [], // Add video links or data here
-    Azucena: [], // Add video links or data here
-    Bryan: [],
-    Claudio: [],
-    Clive: [],
-    Devil: [],
-    Dragunov: [],
-    Eddy: [],
-    Feng: [],
-    Heihachi: [],
-    Hwoarang: [],
-    Jack: [],
-    Jin: [],
-    Jun: [],
-    Kazuya: [],
-    King: [],
-    Kuma: [],
-    Lars: [],
-    Law: [],
-    Lee: [],
-    Leo: [],
-    Leroy: [],
-    Lidia: [],
-    Lili: [],
-    Nina: [],
-    Panda: [],
-    Paul: [],
-    Raven: [],
-    Reina: [],
-    Shaheen: [],
-    Steve: [],
-    Victor: [],
-    Xiaoyu: [],
-    Yoshimitsu: [],
-    Zafina: [],
+    Alisa: ["https://www.youtube.com/embed/kjF38-GjCa8"], // Add video links or data here
+    Asuka: ["https://www.youtube.com/embed/u7fwuShXRu4"], // Add video links or data here
+    Azucena: ["https://www.youtube.com/embed/8UP3LcLEQdU"], // Add video links or data here
+    Bryan: ["https://www.youtube.com/embed/s4AwyvEagwk"],
+    Claudio: ["https://www.youtube.com/embed/IJ12wyGMWbM"],
+    Clive: ["https://www.youtube.com/embed/zlcYcQAqt6E"],
+    Devil: ["https://www.youtube.com/embed/_Me2vPqkFXA"],
+    Dragunov: ["https://www.youtube.com/embed/15__ZRtBoxA"],
+    Eddy: ["https://www.youtube.com/embed/LJR-JK13x9A"],
+    Feng: ["https://www.youtube.com/embed/aVyBK-jIadA"],
+    Heihachi: ["https://www.youtube.com/embed/oG_ynupDpqk"],
+    Hwoarang: ["https://www.youtube.com/embed/zkvQWNTDxoo"],
+    Jack: ["https://www.youtube.com/embed/sx2cYMZB4Dg"],
+    Jin: ["https://www.youtube.com/embed/_czdLnSxji4"],
+    Jun: ["https://www.youtube.com/embed/tzSHxwhGgRc"],
+    Kazuya: ["https://www.youtube.com/embed/4yCEvDHkjKs"],
+    King: ["https://www.youtube.com/embed/3e2wJLQkxMw"],
+    Kuma: ["https://www.youtube.com/embed/XyAGC6A4jRo"],
+    Lars: ["https://www.youtube.com/embed/vM2tJ80slNU"],
+    Law: ["https://www.youtube.com/embed/ZbI4W_VaQ2Y"],
+    Lee: ["https://www.youtube.com/embed/IigpfkgLXF8"],
+    Leo: ["https://www.youtube.com/embed/wH4sPAtS0KY"],
+    Leroy: ["https://www.youtube.com/embed/3adYTII2i7M"],
+    Lidia: ["https://www.youtube.com/embed/gs0mYxJkKa8"],
+    Lili: ["https://www.youtube.com/embed/X68ofpABqJE"],
+    Nina: ["https://www.youtube.com/embed/CHRtZ3IOkT0"],
+    Panda: ["https://www.youtube.com/embed/-Go6KkzshPI"],
+    Paul: ["https://www.youtube.com/embed/9uYESKCFKtQ"],
+    Raven: ["https://www.youtube.com/embed/LFgJaCSlNTs"],
+    Reina: ["https://www.youtube.com/embed/mMvm-Efl9iw"],
+    Shaheen: ["https://www.youtube.com/embed/cmrU6NaKJNo"],
+    Steve: ["https://www.youtube.com/embed/UXIF11sT8mo"],
+    Victor: ["https://www.youtube.com/embed/wxokvJj7ghw"],
+    Xiaoyu: ["https://www.youtube.com/embed/L-syT6BJ2dc"],
+    Yoshimitsu: ["https://www.youtube.com/embed/YiNYHv8_6ok"],
+    Zafina: ["https://www.youtube.com/embed/BJTAItSWk5I"],
   },
   Feng: {
-    Alisa: [], // Add video links or data here
-    Asuka: [], // Add video links or data here
-    Azucena: [], // Add video links or data here
-    Bryan: [],
-    Claudio: [],
-    Clive: [],
-    Devil: [],
-    Dragunov: [],
-    Eddy: [],
-    Feng: [],
-    Heihachi: [],
-    Hwoarang: [],
-    Jack: [],
-    Jin: [],
-    Jun: [],
-    Kazuya: [],
-    King: [],
-    Kuma: [],
-    Lars: [],
-    Law: [],
-    Lee: [],
-    Leo: [],
-    Leroy: [],
-    Lidia: [],
-    Lili: [],
-    Nina: [],
-    Panda: [],
-    Paul: [],
-    Raven: [],
-    Reina: [],
-    Shaheen: [],
-    Steve: [],
-    Victor: [],
-    Xiaoyu: [],
-    Yoshimitsu: [],
-    Zafina: [],
+    Alisa: ["https://www.youtube.com/embed/ZOJ8fu_tJeM"], // Add video links or data here
+    Asuka: ["https://www.youtube.com/embed/XYZc6VraiCY"], // Add video links or data here
+    Azucena: ["https://www.youtube.com/embed/oCvPOvs0AmM"], // Add video links or data here
+    Bryan: ["https://www.youtube.com/embed/Fh-6DUg5VqY"],
+    Claudio: ["https://www.youtube.com/embed/ZesOgXTqDOA"],
+    Clive: ["https://www.youtube.com/embed/In6SN1Nuj0k"],
+    Devil: ["https://www.youtube.com/embed/LrTUw-3_Ni0"],
+    Dragunov: ["https://www.youtube.com/embed/zrhHIWtXbHM"],
+    Eddy: ["https://www.youtube.com/embed/aVyBK-jIadA"],
+    Feng: ["https://www.youtube.com/embed/V5x3VbgJIzk"],
+    Heihachi: ["https://www.youtube.com/embed/qxduWO7aVAk"],
+    Hwoarang: ["https://www.youtube.com/embed/Lq7qs9p-E1c"],
+    Jack: ["https://www.youtube.com/embed/zfpqqZ9zrIo"],
+    Jin: ["https://www.youtube.com/embed/rCwdIgnXg08"],
+    Jun: ["https://www.youtube.com/embed/gWulpF_83ZY"],
+    Kazuya: ["https://www.youtube.com/embed/R7WIdkDM3aM"],
+    King: ["https://www.youtube.com/embed/QSg-4Q0mebA"],
+    Kuma: ["https://www.youtube.com/embed/SbQv0ke6FMg"],
+    Lars: ["https://www.youtube.com/embed/G8N1ZmFW4vo"],
+    Law: ["https://www.youtube.com/embed/SbPtJGZD3Ns"],
+    Lee: ["https://www.youtube.com/embed/E0bNLZvtkwU"],
+    Leo: ["https://www.youtube.com/embed/PL2_7R_RFW8"],
+    Leroy: ["https://www.youtube.com/embed/vn7NjzRMZo4"],
+    Lidia: ["https://www.youtube.com/embed/o5lnns2v9XM"],
+    Lili: ["https://www.youtube.com/embed/XkS4qPZumpc"],
+    Nina: ["https://www.youtube.com/embed/0oVckKCkZFE"],
+    Panda: ["https://www.youtube.com/embed/LcIEpWTU76c"],
+    Paul: ["https://www.youtube.com/embed/C-9SseDU3tU"],
+    Raven: ["https://www.youtube.com/embed/vvBRz4nrEbk"],
+    Reina: ["https://www.youtube.com/embed/D1EqdfTRpZU"],
+    Shaheen: ["https://www.youtube.com/embed/WN8gpBEZNic"],
+    Steve: ["https://www.youtube.com/embed/WkNiPmOIWEQ"],
+    Victor: ["https://www.youtube.com/embed/nKX562ofIGU"],
+    Xiaoyu: ["https://www.youtube.com/embed/YI4ypF4N9WQ"],
+    Yoshimitsu: ["https://www.youtube.com/embed/fp_DEYSHt-M"],
+    Zafina: ["https://www.youtube.com/embed/k21l8kfWwyQ"],
   },
   Heihachi: {
-    Alisa: [], // Add video links or data here
-    Asuka: [], // Add video links or data here
-    Azucena: [], // Add video links or data here
-    Bryan: [],
-    Claudio: [],
-    Clive: [],
-    Devil: [],
-    Dragunov: [],
-    Eddy: [],
-    Feng: [],
-    Heihachi: [],
-    Hwoarang: [],
-    Jack: [],
-    Jin: [],
-    Jun: [],
-    Kazuya: [],
-    King: [],
-    Kuma: [],
-    Lars: [],
-    Law: [],
-    Lee: [],
-    Leo: [],
-    Leroy: [],
-    Lidia: [],
-    Lili: [],
-    Nina: [],
-    Panda: [],
-    Paul: [],
-    Raven: [],
-    Reina: [],
-    Shaheen: [],
-    Steve: [],
-    Victor: [],
-    Xiaoyu: [],
-    Yoshimitsu: [],
-    Zafina: [],
+    Alisa: ["https://www.youtube.com/embed/Ro-LbOHsgpw"], // Add video links or data here
+    Asuka: ["https://www.youtube.com/embed/dLyJS1OaD34"], // Add video links or data here
+    Azucena: ["https://www.youtube.com/embed/i5TY_wzID5Q"], // Add video links or data here
+    Bryan: ["https://www.youtube.com/embed/MwejAEJHYXo"],
+    Claudio: ["https://www.youtube.com/embed/WoYISBa8JDI"],
+    Clive: ["https://www.youtube.com/embed/dpFFltV76QA"],
+    Devil: ["https://www.youtube.com/embed/gWd0rff8NSw"],
+    Dragunov: ["https://www.youtube.com/embed/VfhcquEjZ00"],
+    Eddy: ["https://www.youtube.com/embed/oG_ynupDpqk"],
+    Feng: ["https://www.youtube.com/embed/qxduWO7aVAk"],
+    Heihachi: ["https://www.youtube.com/embed/2fVrGsOoKPI"],
+    Hwoarang: ["https://www.youtube.com/embed/bQo4cxLz31k"],
+    Jack: ["https://www.youtube.com/embed/ahh_hZj9-dU"],
+    Jin: ["https://www.youtube.com/embed/uKDpZMVocQw"],
+    Jun: ["https://www.youtube.com/embed/HTRLxHRMHmo"],
+    Kazuya: ["https://www.youtube.com/embed/62oA9gLFef8"],
+    King: ["https://www.youtube.com/embed/FFF75G1lt-Y"],
+    Kuma: ["https://www.youtube.com/embed/NSMi2NcjgQQ"],
+    Lars: ["https://www.youtube.com/embed/fbvinXHTrpc"],
+    Law: ["https://www.youtube.com/embed/1-XWqoJdXqY"],
+    Lee: ["https://www.youtube.com/embed/8vIm-To8wEM"],
+    Leo: ["https://www.youtube.com/embed/Bum_r8G9yjQ"],
+    Leroy: ["https://www.youtube.com/embed/g-0iCwzkKbM"],
+    Lidia: ["https://www.youtube.com/embed/m_KDVgt3Ulc"],
+    Lili: ["https://www.youtube.com/embed/yoT5nXGH08M"],
+    Nina: ["https://www.youtube.com/embed/EGC2ZjjbZ30"],
+    Panda: ["https://www.youtube.com/embed/93hq0YU3Gqk"],
+    Paul: ["https://www.youtube.com/embed/B0Xat6dF-QM"],
+    Raven: ["https://www.youtube.com/embed/TNg1J7okZgM"],
+    Reina: ["https://www.youtube.com/embed/usLxVbzCYNo"],
+    Shaheen: ["https://www.youtube.com/embed/80xUzZ8StDA"],
+    Steve: ["https://www.youtube.com/embed/V2rbtPmlJ5A"],
+    Victor: ["https://www.youtube.com/embed/5vziUrbD490"],
+    Xiaoyu: ["https://www.youtube.com/embed/5Yd98XkZnm4"],
+    Yoshimitsu: ["https://www.youtube.com/embed/VZhKPprtL3Y"],
+    Zafina: ["https://www.youtube.com/embed/vEqi7Jd_Uxc"],
   },
   Hwoarang: {
-    Alisa: [], // Add video links or data here
-    Asuka: [], // Add video links or data here
-    Azucena: [], // Add video links or data here
-    Bryan: [],
-    Claudio: [],
-    Clive: [],
-    Devil: [],
-    Dragunov: [],
-    Eddy: [],
-    Feng: [],
-    Heihachi: [],
+    Alisa: ["https://www.youtube.com/embed/Pao-z55EWuE"], // Add video links or data here
+    Asuka: ["https://www.youtube.com/embed/UiOnHtKPhtU"], // Add video links or data here
+    Azucena: ["https://www.youtube.com/embed/j94fcbrqQCI"], // Add video links or data here
+    Bryan: ["https://www.youtube.com/embed/3RwTfLFRu_M"],
+    Claudio: ["https://www.youtube.com/embed/Hn_jGWh5iIY"],
+    Clive: ["https://www.youtube.com/embed/GeOtdhWRhoc"],
+    Devil: ["https://www.youtube.com/embed/0vYOVdpWq9E"],
+    Dragunov: ["https://www.youtube.com/embed/JvVVMB1VLQ4"],
+    Eddy: ["https://www.youtube.com/embed/zkvQWNTDxoo"],
+    Feng: ["https://www.youtube.com/embed/Lq7qs9p-E1c"],
+    Heihachi: ["https://www.youtube.com/embed/bQo4cxLz31k"],
     Hwoarang: [],
     Jack: [],
     Jin: [],
@@ -4994,17 +4986,17 @@ const matches = {
     Zafina: [],
   },
   Jack: {
-    Alisa: [], // Add video links or data here
-    Asuka: [], // Add video links or data here
-    Azucena: [], // Add video links or data here
-    Bryan: [],
-    Claudio: [],
-    Clive: [],
-    Devil: [],
-    Dragunov: [],
-    Eddy: [],
-    Feng: [],
-    Heihachi: [],
+    Alisa: ["https://www.youtube.com/embed/9ABkYPqKkq0"], // Add video links or data here
+    Asuka: ["https://www.youtube.com/embed/DhOr-DlvI5M"], // Add video links or data here
+    Azucena: ["https://www.youtube.com/embed/MKV5d8AsXAs"], // Add video links or data here
+    Bryan: ["https://www.youtube.com/embed/OcnTLv3F0dg"],
+    Claudio: ["https://www.youtube.com/embed/nrd6v6dvwWs"],
+    Clive: ["https://www.youtube.com/embed/UeY-a2f2XmA"],
+    Devil: ["https://www.youtube.com/embed/i2UTbOhXh9M"],
+    Dragunov: ["https://www.youtube.com/embed/ytoruJhDXlM"],
+    Eddy: ["https://www.youtube.com/embed/sx2cYMZB4Dg"],
+    Feng: ["https://www.youtube.com/embed/zfpqqZ9zrIo"],
+    Heihachi: ["https://www.youtube.com/embed/ahh_hZj9-dU"],
     Hwoarang: [],
     Jack: [],
     Jin: [],
@@ -5032,17 +5024,17 @@ const matches = {
     Zafina: [],
   },
   Jin: {
-    Alisa: [], // Add video links or data here
-    Asuka: [], // Add video links or data here
-    Azucena: [], // Add video links or data here
-    Bryan: [],
-    Claudio: [],
-    Clive: [],
-    Devil: [],
-    Dragunov: [],
-    Eddy: [],
-    Feng: [],
-    Heihachi: [],
+    Alisa: ["https://www.youtube.com/embed/DizsmslsTU4"], // Add video links or data here
+    Asuka: ["https://www.youtube.com/embed/K27SZWgiLec"], // Add video links or data here
+    Azucena: ["https://www.youtube.com/embed/YxG9cXPNPS8"], // Add video links or data here
+    Bryan: ["https://www.youtube.com/embed/n2XRQpCNV5E"],
+    Claudio: ["https://www.youtube.com/embed/t4IE78SJTJY"],
+    Clive: ["https://www.youtube.com/embed/lqjaEQ4t86I"],
+    Devil: ["https://www.youtube.com/embed/5tiIRAzsBXs"],
+    Dragunov: ["https://www.youtube.com/embed/XB31ikjAmIk"],
+    Eddy: ["https://www.youtube.com/embed/_czdLnSxji4"],
+    Feng: ["https://www.youtube.com/embed/rCwdIgnXg08"],
+    Heihachi: ["https://www.youtube.com/embed/uKDpZMVocQw"],
     Hwoarang: [],
     Jack: [],
     Jin: [],
@@ -5070,17 +5062,17 @@ const matches = {
     Zafina: [],
   },
   Jun: {
-    Alisa: [], // Add video links or data here
-    Asuka: [], // Add video links or data here
-    Azucena: [], // Add video links or data here
-    Bryan: [],
-    Claudio: [],
-    Clive: [],
-    Devil: [],
-    Dragunov: [],
-    Eddy: [],
-    Feng: [],
-    Heihachi: [],
+    Alisa: ["https://www.youtube.com/embed/OQNohpTtZyM"], // Add video links or data here
+    Asuka: ["https://www.youtube.com/embed/VP1C4viagx8"], // Add video links or data here
+    Azucena: ["https://www.youtube.com/embed/jUq3ZXklfrw"], // Add video links or data here
+    Bryan: ["https://www.youtube.com/embed/UxXu8JaggVk"],
+    Claudio: ["https://www.youtube.com/embed/QBUwEQw3kWE"],
+    Clive: ["https://www.youtube.com/embed/dXwn_SHyTfk"],
+    Devil: ["https://www.youtube.com/embed/wNsLssI_lIw"],
+    Dragunov: ["https://www.youtube.com/embed/yFya0snsiKU"],
+    Eddy: ["https://www.youtube.com/embed/tzSHxwhGgRc"],
+    Feng: ["https://www.youtube.com/embed/gWulpF_83ZY"],
+    Heihachi: ["https://www.youtube.com/embed/HTRLxHRMHmo"],
     Hwoarang: [],
     Jack: [],
     Jin: [],
@@ -5108,19 +5100,17 @@ const matches = {
     Zafina: [],
   },
   Kazuya: {
-    Alisa: [], // Add video links or data here
-    Asuka: [], // Add video links or data here
-    Azucena: [
-      `<iframe width="893" height="502" src="https://www.youtube.com/embed/S0v3djPH7M0" title="Tekken 8  ▰ Arslan Ash (Azucena) Vs TheMainManSWE (Kazuya) ▰ Player Matches" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
-    ], // Add video links or data here
-    Bryan: [],
-    Claudio: [],
-    Clive: [],
-    Devil: [],
-    Dragunov: [],
-    Eddy: [],
-    Feng: [],
-    Heihachi: [],
+    Alisa: ["https://www.youtube.com/embed/6yzegvP_ClQ"], // Add video links or data here
+    Asuka: ["https://www.youtube.com/embed/KwoKhDqj9oE"], // Add video links or data here
+    Azucena: [`https://www.youtube.com/embed/S0v3djPH7M0`], // Add video links or data here
+    Bryan: ["https://www.youtube.com/embed/9dXtGBCbEYc"],
+    Claudio: ["https://www.youtube.com/embed/Pb9CLJuT5UI"],
+    Clive: ["https://www.youtube.com/embed/5ru75HIFh_Q"],
+    Devil: ["https://www.youtube.com/embed/_n1GyJiL43o"],
+    Dragunov: ["https://www.youtube.com/embed/eOOuvodACf0"],
+    Eddy: ["https://www.youtube.com/embed/4yCEvDHkjKs"],
+    Feng: ["https://www.youtube.com/embed/R7WIdkDM3aM"],
+    Heihachi: ["https://www.youtube.com/embed/62oA9gLFef8"],
     Hwoarang: [],
     Jack: [],
     Jin: [],
@@ -5148,17 +5138,17 @@ const matches = {
     Zafina: [],
   },
   King: {
-    Alisa: [], // Add video links or data here
-    Asuka: [], // Add video links or data here
-    Azucena: [], // Add video links or data here
-    Bryan: [],
-    Claudio: [],
-    Clive: [],
-    Devil: [],
-    Dragunov: [],
-    Eddy: [],
-    Feng: [],
-    Heihachi: [],
+    Alisa: ["https://www.youtube.com/embed/e92Q_O0l7tk"], // Add video links or data here
+    Asuka: ["https://www.youtube.com/embed/9vfwyqxI5Cc"], // Add video links or data here
+    Azucena: ["https://www.youtube.com/embed/eLNt9G7pqNQ"], // Add video links or data here
+    Bryan: ["https://www.youtube.com/embed/UO6NJdMvXeE"],
+    Claudio: ["https://www.youtube.com/embed/cZFYOJn24CI"],
+    Clive: ["https://www.youtube.com/embed/0fDg5e3biu4"],
+    Devil: ["https://www.youtube.com/embed/2DiqKplwtjI"],
+    Dragunov: ["https://www.youtube.com/embed/4yKorDwA3b8"],
+    Eddy: ["https://www.youtube.com/embed/3e2wJLQkxMw"],
+    Feng: ["https://www.youtube.com/embed/QSg-4Q0mebA"],
+    Heihachi: ["https://www.youtube.com/embed/FFF75G1lt-Y"],
     Hwoarang: [],
     Jack: [],
     Jin: [],
@@ -5186,17 +5176,17 @@ const matches = {
     Zafina: [],
   },
   Kuma: {
-    Alisa: [], // Add video links or data here
-    Asuka: [], // Add video links or data here
-    Azucena: [], // Add video links or data here
-    Bryan: [],
-    Claudio: [],
-    Clive: [],
-    Devil: [],
-    Dragunov: [],
-    Eddy: [],
-    Feng: [],
-    Heihachi: [],
+    Alisa: ["https://www.youtube.com/embed/DoVMfRbarZE"], // Add video links or data here
+    Asuka: ["https://www.youtube.com/embed/NEt-MR0nuKw"], // Add video links or data here
+    Azucena: ["https://www.youtube.com/embed/SalYmTWefxs"], // Add video links or data here
+    Bryan: ["https://www.youtube.com/embed/IXfl2Gx5k_4"],
+    Claudio: ["https://www.youtube.com/embed/VibWC9afReA"],
+    Clive: ["https://www.youtube.com/embed/D-uKbELuJHQ"],
+    Devil: ["https://www.youtube.com/embed/wuoxjQFgqXk"],
+    Dragunov: ["https://www.youtube.com/embed/T4TegaoNKd8"],
+    Eddy: ["https://www.youtube.com/embed/XyAGC6A4jRo"],
+    Feng: ["https://www.youtube.com/embed/SbQv0ke6FMg"],
+    Heihachi: ["https://www.youtube.com/embed/NSMi2NcjgQQ"],
     Hwoarang: [],
     Jack: [],
     Jin: [],
@@ -5224,17 +5214,17 @@ const matches = {
     Zafina: [],
   },
   Lars: {
-    Alisa: [], // Add video links or data here
-    Asuka: [], // Add video links or data here
-    Azucena: [], // Add video links or data here
-    Bryan: [],
-    Claudio: [],
-    Clive: [],
-    Devil: [],
-    Dragunov: [],
-    Eddy: [],
-    Feng: [],
-    Heihachi: [],
+    Alisa: ["https://www.youtube.com/embed/sP20NMwxD9Q"], // Add video links or data here
+    Asuka: ["https://www.youtube.com/embed/jzX2kTZnHGE"], // Add video links or data here
+    Azucena: ["https://www.youtube.com/embed/-Ys04NLqHwc"], // Add video links or data here
+    Bryan: ["https://www.youtube.com/embed/NIWRMvdp6-4"],
+    Claudio: ["https://www.youtube.com/embed/6eiNb8Ou_h4"],
+    Clive: ["https://www.youtube.com/embed/uDntqPD1UWA"],
+    Devil: ["https://www.youtube.com/embed/UBFShZSXrg0"],
+    Dragunov: ["https://www.youtube.com/embed/B38yY_CN2gc"],
+    Eddy: ["https://www.youtube.com/embed/vM2tJ80slNU"],
+    Feng: ["https://www.youtube.com/embed/G8N1ZmFW4vo"],
+    Heihachi: ["https://www.youtube.com/embed/fbvinXHTrpc"],
     Hwoarang: [],
     Jack: [],
     Jin: [],
@@ -5262,17 +5252,17 @@ const matches = {
     Zafina: [],
   },
   Law: {
-    Alisa: [], // Add video links or data here
-    Asuka: [], // Add video links or data here
-    Azucena: [], // Add video links or data here
-    Bryan: [],
-    Claudio: [],
-    Clive: [],
-    Devil: [],
-    Dragunov: [],
-    Eddy: [],
-    Feng: [],
-    Heihachi: [],
+    Alisa: ["https://www.youtube.com/embed/UcAEEJ-trKg"], // Add video links or data here
+    Asuka: ["https://www.youtube.com/embed/eUgB0fiCnbw"], // Add video links or data here
+    Azucena: ["https://www.youtube.com/embed/4duUAnejKKI"], // Add video links or data here
+    Bryan: ["https://www.youtube.com/embed/dMKPWlSxoh8"],
+    Claudio: ["https://www.youtube.com/embed/auVwyNOdyXc"],
+    Clive: ["https://www.youtube.com/embed/P2682s36NVc"],
+    Devil: ["https://www.youtube.com/embed/cHywJu9eKfo"],
+    Dragunov: ["https://www.youtube.com/embed/_CWzUMLFkAc"],
+    Eddy: ["https://www.youtube.com/embed/ZbI4W_VaQ2Y"],
+    Feng: ["https://www.youtube.com/embed/SbPtJGZD3Ns"],
+    Heihachi: ["https://www.youtube.com/embed/1-XWqoJdXqY"],
     Hwoarang: [],
     Jack: [],
     Jin: [],
@@ -5300,17 +5290,17 @@ const matches = {
     Zafina: [],
   },
   Lee: {
-    Alisa: [], // Add video links or data here
-    Asuka: [], // Add video links or data here
-    Azucena: [], // Add video links or data here
-    Bryan: [],
-    Claudio: [],
-    Clive: [],
-    Devil: [],
-    Dragunov: [],
-    Eddy: [],
-    Feng: [],
-    Heihachi: [],
+    Alisa: ["https://www.youtube.com/embed/ISpLais1f28"], // Add video links or data here
+    Asuka: ["https://www.youtube.com/embed/KkB7IwtAmqY"], // Add video links or data here
+    Azucena: ["https://www.youtube.com/embed/taxA0F0X8Lc"], // Add video links or data here
+    Bryan: ["https://www.youtube.com/embed/yXIHycRrqmQ"],
+    Claudio: ["https://www.youtube.com/embed/BGWgsH0_ucA"],
+    Clive: ["https://www.youtube.com/embed/iZQotPvEcN4"],
+    Devil: ["https://www.youtube.com/embed/SeGqSsyFd1k"],
+    Dragunov: ["https://www.youtube.com/embed/NnaVfl5kTZw"],
+    Eddy: ["https://www.youtube.com/embed/IigpfkgLXF8"],
+    Feng: ["https://www.youtube.com/embed/E0bNLZvtkwU"],
+    Heihachi: ["https://www.youtube.com/embed/8vIm-To8wEM"],
     Hwoarang: [],
     Jack: [],
     Jin: [],
@@ -5338,17 +5328,17 @@ const matches = {
     Zafina: [],
   },
   Leo: {
-    Alisa: [], // Add video links or data here
-    Asuka: [], // Add video links or data here
-    Azucena: [], // Add video links or data here
-    Bryan: [],
-    Claudio: [],
-    Clive: [],
-    Devil: [],
-    Dragunov: [],
-    Eddy: [],
-    Feng: [],
-    Heihachi: [],
+    Alisa: ["https://www.youtube.com/embed/Ljmx5JpSPe0"], // Add video links or data here
+    Asuka: ["https://www.youtube.com/embed/1NBQX-cbe6I"], // Add video links or data here
+    Azucena: ["https://www.youtube.com/embed/JW1sGp38dzc"], // Add video links or data here
+    Bryan: ["https://www.youtube.com/embed/KfRKtn8QRAo"],
+    Claudio: ["https://www.youtube.com/embed/Eoj2Nn2JkgA"],
+    Clive: ["https://www.youtube.com/embed/UOtRbsF5tsk"],
+    Devil: ["https://www.youtube.com/embed/kSfdAAm5O2A"],
+    Dragunov: ["https://www.youtube.com/embed/ZRnuQGaInGM"],
+    Eddy: ["https://www.youtube.com/embed/wH4sPAtS0KY"],
+    Feng: ["https://www.youtube.com/embed/PL2_7R_RFW8"],
+    Heihachi: ["https://www.youtube.com/embed/Bum_r8G9yjQ"],
     Hwoarang: [],
     Jack: [],
     Jin: [],
@@ -5376,17 +5366,17 @@ const matches = {
     Zafina: [],
   },
   Leroy: {
-    Alisa: [], // Add video links or data here
-    Asuka: [], // Add video links or data here
-    Azucena: [], // Add video links or data here
-    Bryan: [],
-    Claudio: [],
-    Clive: [],
-    Devil: [],
-    Dragunov: [],
-    Eddy: [],
-    Feng: [],
-    Heihachi: [],
+    Alisa: ["https://www.youtube.com/embed/UhR41T94vp0"], // Add video links or data here
+    Asuka: ["https://www.youtube.com/embed/TM5d6n6V4bs"], // Add video links or data here
+    Azucena: ["https://www.youtube.com/embed/yb9VtUO2Gvw"], // Add video links or data here
+    Bryan: ["https://www.youtube.com/embed/43qrOAtx2u4"],
+    Claudio: ["https://www.youtube.com/embed/hCelXuKJFi0"],
+    Clive: ["https://www.youtube.com/embed/ulA-e4XEr_s"],
+    Devil: ["https://www.youtube.com/embed/8fawaWcyVoM"],
+    Dragunov: ["https://www.youtube.com/embed/3T3BfAq0DpU"],
+    Eddy: ["https://www.youtube.com/embed/3adYTII2i7M"],
+    Feng: ["https://www.youtube.com/embed/vn7NjzRMZo4"],
+    Heihachi: ["https://www.youtube.com/embed/g-0iCwzkKbM"],
     Hwoarang: [],
     Jack: [],
     Jin: [],
@@ -5414,17 +5404,17 @@ const matches = {
     Zafina: [],
   },
   Lidia: {
-    Alisa: [], // Add video links or data here
-    Asuka: [], // Add video links or data here
-    Azucena: [], // Add video links or data here
-    Bryan: [],
-    Claudio: [],
-    Clive: [],
-    Devil: [],
-    Dragunov: [],
-    Eddy: [],
-    Feng: [],
-    Heihachi: [],
+    Alisa: ["https://www.youtube.com/embed/BFraTYqzSFg"], // Add video links or data here
+    Asuka: ["https://www.youtube.com/embed/0gEGFv1Dkn8"], // Add video links or data here
+    Azucena: ["https://www.youtube.com/embed/d7hm0q_cn2A"], // Add video links or data here
+    Bryan: ["https://www.youtube.com/embed/GFI35uHOsww"],
+    Claudio: ["https://www.youtube.com/embed/aUF6UKZ-y80"],
+    Clive: ["https://www.youtube.com/embed/N0PUTsPHK7o"],
+    Devil: ["https://www.youtube.com/embed/SUjfXyUp3uI"],
+    Dragunov: ["https://www.youtube.com/embed/YMkzGgYRyYE"],
+    Eddy: ["https://www.youtube.com/embed/gs0mYxJkKa8"],
+    Feng: ["https://www.youtube.com/embed/o5lnns2v9XM"],
+    Heihachi: ["https://www.youtube.com/embed/m_KDVgt3Ulc"],
     Hwoarang: [],
     Jack: [],
     Jin: [],
@@ -5452,17 +5442,17 @@ const matches = {
     Zafina: [],
   },
   Lili: {
-    Alisa: [], // Add video links or data here
-    Asuka: [], // Add video links or data here
-    Azucena: [], // Add video links or data here
-    Bryan: [],
-    Claudio: [],
-    Clive: [],
-    Devil: [],
-    Dragunov: [],
-    Eddy: [],
-    Feng: [],
-    Heihachi: [],
+    Alisa: ["https://www.youtube.com/embed/K5Ikg9zdbKM"], // Add video links or data here
+    Asuka: ["https://www.youtube.com/embed/TsBw5igzSHE"], // Add video links or data here
+    Azucena: ["https://www.youtube.com/embed/5_1ZB8xtWYM"], // Add video links or data here
+    Bryan: ["https://www.youtube.com/embed/LoFlPI78Lrg"],
+    Claudio: ["https://www.youtube.com/embed/KMKSIxrzRzE"],
+    Clive: ["https://www.youtube.com/embed/iFngzx3RiGY"],
+    Devil: ["https://www.youtube.com/embed/cVsW7aLjRHQ"],
+    Dragunov: ["https://www.youtube.com/embed/roajOB02Wvk"],
+    Eddy: ["https://www.youtube.com/embed/X68ofpABqJE"],
+    Feng: ["https://www.youtube.com/embed/XkS4qPZumpc"],
+    Heihachi: ["https://www.youtube.com/embed/yoT5nXGH08M"],
     Hwoarang: [],
     Jack: [],
     Jin: [],
@@ -5490,17 +5480,17 @@ const matches = {
     Zafina: [],
   },
   Nina: {
-    Alisa: [], // Add video links or data here
-    Asuka: [], // Add video links or data here
-    Azucena: [], // Add video links or data here
-    Bryan: [],
-    Claudio: [],
-    Clive: [],
-    Devil: [],
-    Dragunov: [],
-    Eddy: [],
-    Feng: [],
-    Heihachi: [],
+    Alisa: ["https://www.youtube.com/embed/eo8hn-C5oGk"], // Add video links or data here
+    Asuka: ["https://www.youtube.com/embed/tiXakl6znzI"], // Add video links or data here
+    Azucena: ["https://www.youtube.com/embed/yF-sNnGG6i4"], // Add video links or data here
+    Bryan: ["https://www.youtube.com/embed/26P3_zi3uIU"],
+    Claudio: ["https://www.youtube.com/embed/FOS3_qTRMfA"],
+    Clive: ["https://www.youtube.com/embed/D2VS1kTotS0"],
+    Devil: ["https://www.youtube.com/embed/5ssyDi1AKAI"],
+    Dragunov: ["https://www.youtube.com/embed/BvHtH7GKPhQ"],
+    Eddy: ["https://www.youtube.com/embed/CHRtZ3IOkT0"],
+    Feng: ["https://www.youtube.com/embed/0oVckKCkZFE"],
+    Heihachi: ["https://www.youtube.com/embed/EGC2ZjjbZ30"],
     Hwoarang: [],
     Jack: [],
     Jin: [],
@@ -5528,17 +5518,17 @@ const matches = {
     Zafina: [],
   },
   Panda: {
-    Alisa: [], // Add video links or data here
-    Asuka: [], // Add video links or data here
-    Azucena: [], // Add video links or data here
-    Bryan: [],
-    Claudio: [],
-    Clive: [],
-    Devil: [],
-    Dragunov: [],
-    Eddy: [],
-    Feng: [],
-    Heihachi: [],
+    Alisa: ["https://www.youtube.com/embed/xptlM3wNtgA"], // Add video links or data here
+    Asuka: ["https://www.youtube.com/embed/WNGO9b32Xc4"], // Add video links or data here
+    Azucena: ["https://www.youtube.com/embed/dxScAYrRQ5k"], // Add video links or data here
+    Bryan: ["https://www.youtube.com/embed/9S_HgpEHwCM"],
+    Claudio: ["https://www.youtube.com/embed/vhKySRczay0"],
+    Clive: ["https://www.youtube.com/embed/IjqzYHUFXFc"],
+    Devil: ["https://www.youtube.com/embed/gyAAKCOyrm8"],
+    Dragunov: ["https://www.youtube.com/embed/9R1TUAXROEo"],
+    Eddy: ["https://www.youtube.com/embed/-Go6KkzshPI"],
+    Feng: ["https://www.youtube.com/embed/LcIEpWTU76c"],
+    Heihachi: ["https://www.youtube.com/embed/93hq0YU3Gqk"],
     Hwoarang: [],
     Jack: [],
     Jin: [],
@@ -5566,17 +5556,17 @@ const matches = {
     Zafina: [],
   },
   Paul: {
-    Alisa: [], // Add video links or data here
-    Asuka: [], // Add video links or data here
-    Azucena: [], // Add video links or data here
-    Bryan: [],
-    Claudio: [],
-    Clive: [],
-    Devil: [],
-    Dragunov: [],
-    Eddy: [],
-    Feng: [],
-    Heihachi: [],
+    Alisa: ["https://www.youtube.com/embed/ujtdTwR6Axo"], // Add video links or data here
+    Asuka: ["https://www.youtube.com/embed/SAUD4pwUahA"], // Add video links or data here
+    Azucena: ["https://www.youtube.com/embed/U1ERpZrb6BQ"], // Add video links or data here
+    Bryan: ["https://www.youtube.com/embed/v8wSSJ_iQmU"],
+    Claudio: ["https://www.youtube.com/embed/Q1MHIsGOhGM"],
+    Clive: ["https://www.youtube.com/embed/WCK8SA5zh30"],
+    Devil: ["https://www.youtube.com/embed/He8n1tOqIEU"],
+    Dragunov: ["https://www.youtube.com/embed/AFV_YwLOzJ0"],
+    Eddy: ["https://www.youtube.com/embed/9uYESKCFKtQ"],
+    Feng: ["https://www.youtube.com/embed/C-9SseDU3tU"],
+    Heihachi: ["https://www.youtube.com/embed/B0Xat6dF-QM"],
     Hwoarang: [],
     Jack: [],
     Jin: [],
@@ -5604,17 +5594,17 @@ const matches = {
     Zafina: [],
   },
   Raven: {
-    Alisa: [], // Add video links or data here
-    Asuka: [], // Add video links or data here
-    Azucena: [], // Add video links or data here
-    Bryan: [],
-    Claudio: [],
-    Clive: [],
-    Devil: [],
-    Dragunov: [],
-    Eddy: [],
-    Feng: [],
-    Heihachi: [],
+    Alisa: ["https://www.youtube.com/embed/OXHcCcgqmro"], // Add video links or data here
+    Asuka: ["https://www.youtube.com/embed/LtOFS194zNo"], // Add video links or data here
+    Azucena: ["https://www.youtube.com/embed/9DMhy0rkrcs"], // Add video links or data here
+    Bryan: ["https://www.youtube.com/embed/vHbKq_xkuVM"],
+    Claudio: ["https://www.youtube.com/embed/XW4H0JGLevY"],
+    Clive: ["https://www.youtube.com/embed/AX_Ie7PKrYk"],
+    Devil: ["https://www.youtube.com/embed/KW6ecZx_qDU"],
+    Dragunov: ["https://www.youtube.com/embed/7CHxzcQaebI"],
+    Eddy: ["https://www.youtube.com/embed/LFgJaCSlNTs"],
+    Feng: ["https://www.youtube.com/embed/vvBRz4nrEbk"],
+    Heihachi: ["https://www.youtube.com/embed/TNg1J7okZgM"],
     Hwoarang: [],
     Jack: [],
     Jin: [],
@@ -5642,17 +5632,17 @@ const matches = {
     Zafina: [],
   },
   Reina: {
-    Alisa: [], // Add video links or data here
-    Asuka: [], // Add video links or data here
-    Azucena: [], // Add video links or data here
-    Bryan: [],
-    Claudio: [],
-    Clive: [],
-    Devil: [],
-    Dragunov: [],
-    Eddy: [],
-    Feng: [],
-    Heihachi: [],
+    Alisa: ["https://www.youtube.com/embed/QQ9uEcazyQk"], // Add video links or data here
+    Asuka: ["https://www.youtube.com/embed/eYX7vd_7D2c"], // Add video links or data here
+    Azucena: ["https://www.youtube.com/embed/sOs-rLWl6r8"], // Add video links or data here
+    Bryan: ["https://www.youtube.com/embed/DtVUoO3kR5U"],
+    Claudio: ["https://www.youtube.com/embed/jQ6ZtTx373A"],
+    Clive: ["https://www.youtube.com/embed/aN2B0qBjvpI"],
+    Devil: ["https://www.youtube.com/embed/K4xhIpUfsy8"],
+    Dragunov: ["https://www.youtube.com/embed/c7eoMXwoehs"],
+    Eddy: ["https://www.youtube.com/embed/mMvm-Efl9iw"],
+    Feng: ["https://www.youtube.com/embed/D1EqdfTRpZU"],
+    Heihachi: ["https://www.youtube.com/embed/usLxVbzCYNo"],
     Hwoarang: [],
     Jack: [],
     Jin: [],
@@ -5680,17 +5670,17 @@ const matches = {
     Zafina: [],
   },
   Shaheen: {
-    Alisa: [], // Add video links or data here
-    Asuka: [], // Add video links or data here
-    Azucena: [], // Add video links or data here
-    Bryan: [],
-    Claudio: [],
-    Clive: [],
-    Devil: [],
-    Dragunov: [],
-    Eddy: [],
-    Feng: [],
-    Heihachi: [],
+    Alisa: ["https://www.youtube.com/embed/R7E6cY0Q4Lk"], // Add video links or data here
+    Asuka: ["https://www.youtube.com/embed/Xgm0XJau8ZU"], // Add video links or data here
+    Azucena: ["https://www.youtube.com/embed/nnLld581f04"], // Add video links or data here
+    Bryan: ["https://www.youtube.com/embed/3IxZdjDwoxQ"],
+    Claudio: ["https://www.youtube.com/embed/W9d-Yoe_P-Q"],
+    Clive: ["https://www.youtube.com/embed/Poy83jzMGZw"],
+    Devil: ["https://www.youtube.com/embed/cl2hfVyNMUw"],
+    Dragunov: ["https://www.youtube.com/embed/sJUL1-tfGDk"],
+    Eddy: ["https://www.youtube.com/embed/cmrU6NaKJNo"],
+    Feng: ["https://www.youtube.com/embed/WN8gpBEZNic"],
+    Heihachi: ["https://www.youtube.com/embed/80xUzZ8StDA"],
     Hwoarang: [],
     Jack: [],
     Jin: [],
@@ -5718,17 +5708,17 @@ const matches = {
     Zafina: [],
   },
   Steve: {
-    Alisa: [], // Add video links or data here
-    Asuka: [], // Add video links or data here
-    Azucena: [], // Add video links or data here
-    Bryan: [],
-    Claudio: [],
-    Clive: [],
-    Devil: [],
-    Dragunov: [],
-    Eddy: [],
-    Feng: [],
-    Heihachi: [],
+    Alisa: ["https://www.youtube.com/embed/tnJz-Likl-M"], // Add video links or data here
+    Asuka: ["https://www.youtube.com/embed/lSjesRz-ej8"], // Add video links or data here
+    Azucena: ["https://www.youtube.com/embed/Xy6SLAsHew4"], // Add video links or data here
+    Bryan: ["https://www.youtube.com/embed/ACcwhqbIfv4"],
+    Claudio: ["https://www.youtube.com/embed/93GpW0X-T4g"],
+    Clive: ["https://www.youtube.com/embed/t77hdliFtAk"],
+    Devil: ["https://www.youtube.com/embed/LQioKg1qKfk"],
+    Dragunov: ["https://www.youtube.com/embed/cl4cRi-53B8"],
+    Eddy: ["https://www.youtube.com/embed/UXIF11sT8mo"],
+    Feng: ["https://www.youtube.com/embed/WkNiPmOIWEQ"],
+    Heihachi: ["https://www.youtube.com/embed/V2rbtPmlJ5A"],
     Hwoarang: [],
     Jack: [],
     Jin: [],
@@ -5756,17 +5746,17 @@ const matches = {
     Zafina: [],
   },
   Victor: {
-    Alisa: [], // Add video links or data here
-    Asuka: [], // Add video links or data here
-    Azucena: [], // Add video links or data here
-    Bryan: [],
-    Claudio: [],
-    Clive: [],
-    Devil: [],
-    Dragunov: [],
-    Eddy: [],
-    Feng: [],
-    Heihachi: [],
+    Alisa: ["https://www.youtube.com/embed/oBjv_oL68VU"], // Add video links or data here
+    Asuka: ["https://www.youtube.com/embed/HUEI92iL8Pw"], // Add video links or data here
+    Azucena: ["https://www.youtube.com/embed/cZyx5JWPRlQ"], // Add video links or data here
+    Bryan: ["https://www.youtube.com/embed/g4Sa1CdgHWM"],
+    Claudio: ["https://www.youtube.com/embed/JaVnSh43sNo"],
+    Clive: ["https://www.youtube.com/embed/NRazal7mLog"],
+    Devil: ["https://www.youtube.com/embed/atzR3MKUrMo"],
+    Dragunov: ["https://www.youtube.com/embed/RVsslHDTrLY"],
+    Eddy: ["https://www.youtube.com/embed/wxokvJj7ghw"],
+    Feng: ["https://www.youtube.com/embed/nKX562ofIGU"],
+    Heihachi: ["https://www.youtube.com/embed/5vziUrbD490"],
     Hwoarang: [],
     Jack: [],
     Jin: [],
@@ -5794,17 +5784,17 @@ const matches = {
     Zafina: [],
   },
   Xiaoyu: {
-    Alisa: [], // Add video links or data here
-    Asuka: [], // Add video links or data here
-    Azucena: [], // Add video links or data here
-    Bryan: [],
-    Claudio: [],
-    Clive: [],
-    Devil: [],
-    Dragunov: [],
-    Eddy: [],
-    Feng: [],
-    Heihachi: [],
+    Alisa: ["https://www.youtube.com/embed/g_8Y5BmM3TI"], // Add video links or data here
+    Asuka: ["https://www.youtube.com/embed/K-klmyOxGos"], // Add video links or data here
+    Azucena: ["https://www.youtube.com/embed/KOVwxOqRt30"], // Add video links or data here
+    Bryan: ["https://www.youtube.com/embed/iarFb5waUy4"],
+    Claudio: ["https://www.youtube.com/embed/F16D0a0acUc"],
+    Clive: ["https://www.youtube.com/embed/xeju4jqq9uc"],
+    Devil: ["https://www.youtube.com/embed/SgQkiAemiMo"],
+    Dragunov: ["https://www.youtube.com/embed/CMoM_6T2WUE"],
+    Eddy: ["https://www.youtube.com/embed/L-syT6BJ2dc"],
+    Feng: ["https://www.youtube.com/embed/YI4ypF4N9WQ"],
+    Heihachi: ["https://www.youtube.com/embed/5Yd98XkZnm4"],
     Hwoarang: [],
     Jack: [],
     Jin: [],
@@ -5832,17 +5822,17 @@ const matches = {
     Zafina: [],
   },
   Yoshimitsu: {
-    Alisa: [], // Add video links or data here
-    Asuka: [], // Add video links or data here
-    Azucena: [], // Add video links or data here
-    Bryan: [],
-    Claudio: [],
-    Clive: [],
-    Devil: [],
-    Dragunov: [],
-    Eddy: [],
-    Feng: [],
-    Heihachi: [],
+    Alisa: ["https://www.youtube.com/embed/tqwNO8ZsalE"], // Add video links or data here
+    Asuka: ["https://www.youtube.com/embed/Holhii16f44"], // Add video links or data here
+    Azucena: ["https://www.youtube.com/embed/X3U1ECIxud8"], // Add video links or data here
+    Bryan: ["https://www.youtube.com/embed/kzbocP-KK6A"],
+    Claudio: ["https://www.youtube.com/embed/in-t33vibp8"],
+    Clive: ["https://www.youtube.com/embed/gUczI_sxqEc"],
+    Devil: ["https://www.youtube.com/embed/ix-Rmq-3Vsk"],
+    Dragunov: ["https://www.youtube.com/embed/AkMPpx_SdBA"],
+    Eddy: ["https://www.youtube.com/embed/YiNYHv8_6ok"],
+    Feng: ["https://www.youtube.com/embed/fp_DEYSHt-M"],
+    Heihachi: ["https://www.youtube.com/embed/VZhKPprtL3Y"],
     Hwoarang: [],
     Jack: [],
     Jin: [],
@@ -5870,17 +5860,17 @@ const matches = {
     Zafina: [],
   },
   Zafina: {
-    Alisa: [], // Add video links or data here
-    Asuka: [], // Add video links or data here
-    Azucena: [], // Add video links or data here
-    Bryan: [],
-    Claudio: [],
-    Clive: [],
-    Devil: [],
-    Dragunov: [],
-    Eddy: [],
-    Feng: [],
-    Heihachi: [],
+    Alisa: ["https://www.youtube.com/embed/rEQ4Gnf8Hfo"], // Add video links or data here
+    Asuka: ["https://www.youtube.com/embed/sqmMfPD6WMM"], // Add video links or data here
+    Azucena: ["https://www.youtube.com/embed/MSrbzLMUhzQ"], // Add video links or data here
+    Bryan: ["https://www.youtube.com/embed/3O1iukSaWSU"],
+    Claudio: ["https://www.youtube.com/embed/5uxPknfXnG4"],
+    Clive: ["https://www.youtube.com/embed/KpzTubVfKS4"],
+    Devil: ["https://www.youtube.com/embed/0d1BtDOsNgk"],
+    Dragunov: ["https://www.youtube.com/embed/IpBcfZ87vqM"],
+    Eddy: ["https://www.youtube.com/embed/BJTAItSWk5I"],
+    Feng: ["https://www.youtube.com/embed/k21l8kfWwyQ"],
+    Heihachi: ["https://www.youtube.com/embed/vEqi7Jd_Uxc"],
     Hwoarang: [],
     Jack: [],
     Jin: [],
