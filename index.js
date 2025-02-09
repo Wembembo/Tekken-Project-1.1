@@ -80,7 +80,7 @@ const characters2 = [
 
 function renderTables(character, containerID) {
   const container = document.getElementById(containerID);
-  container.innerHTML = ""; // clears previous content
+  container.innerHTML = ""; // Clear previous content
 
   const tables = data[character];
   if (!tables) {
@@ -88,10 +88,26 @@ function renderTables(character, containerID) {
     return;
   }
 
+  // Define headings for each section
+  const sectionTitles = [
+    " Key Terminology ",
+    " Important Moves ",
+    character === "King" || character === "Lars"
+      ? " Command Grabs "
+      : " Defensive Options ",
+  ];
+
   tables.forEach((tableData, index) => {
+    const tableWrapper = document.createElement("div");
+
+    // table titles
+    const heading = document.createElement("h2");
+    heading.innerText = sectionTitles[index];
+    tableWrapper.appendChild(heading);
+
     const table = document.createElement("table");
 
-    //headers
+    // table headers
     const headerRow = document.createElement("tr");
     tableData.headers.forEach((header) => {
       const th = document.createElement("th");
@@ -101,13 +117,12 @@ function renderTables(character, containerID) {
 
     table.appendChild(headerRow);
 
-    //rows
+    // table rows and data
     tableData.rows.forEach((row) => {
       const tr = document.createElement("tr");
       row.forEach((cell) => {
         const td = document.createElement("td");
 
-        //this might add the notation class - we'll see.
         if (cell.includes("notation")) {
           td.classList.add("notation");
         }
@@ -118,7 +133,8 @@ function renderTables(character, containerID) {
       table.appendChild(tr);
     });
 
-    container.appendChild(table);
+    tableWrapper.appendChild(table);
+    container.appendChild(tableWrapper);
   });
 }
 
