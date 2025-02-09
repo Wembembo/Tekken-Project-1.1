@@ -1,4 +1,4 @@
-html{
+html {
   max-width: 100%;
 }
 
@@ -7,16 +7,9 @@ body {
   height: auto;
   background-attachment: fixed;
   background-size: cover;
-}
-.tables {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 100;
   font-style: normal;
-  max-width: 100%;
-}
-
-.display-picture{
-  height: 80px;
 }
 
 @font-face {
@@ -69,7 +62,7 @@ h2 {
   margin: 10px;
 }
 
-#Nav{
+#Nav {
   background-color: #dd1d5b;
   text-align: center;
   font-family: "Bebas Neue", sans-serif;
@@ -78,10 +71,9 @@ h2 {
   margin: 10px;
 }
 
-#help{
+#help {
   color: #9a9b9c;
 }
-
 
 @keyframes fadeInOpacity {
   0% {
@@ -107,12 +99,17 @@ select :hover {
   color: aliceblue;
 }
 
-.container {
+.dataContainer {
   display: flex;
-  flex-direction: row;
-  justify-content: stretch;
-  column-gap: 10px;
-  margin: 10px;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+#playerOneContainer,
+#playerTwoContainer {
+  flex: 1;
+  min-width: 45%;
+  max-width: 50%;
 }
 
 .Tables1 {
@@ -126,7 +123,7 @@ select :hover {
   height: -100;
 }
 
-.video{
+.video {
   position: relative;
   justify-items: center;
   margin-top: 1em;
@@ -156,30 +153,29 @@ tr:nth-child(odd) {
   color: #b4b4b4;
 }
 
-@media (max-width: 900px){
-  .video{
+@media (max-width: 900px) {
+  .video {
     display: none;
   }
 }
 
-@media (max-width: 768px){
-  .notation{
+@media (max-width: 768px) {
+  .notation {
     font-size: 1rem;
   }
-  .tables{
+  .tables {
     font-size: 0.75rem;
   }
-  .Tables1{
+  .Tables1 {
     margin-top: 0.6em;
   }
 }
 
-
-@media (max-width: 400px){
-  .notation{
+@media (max-width: 400px) {
+  .notation {
     font-size: 1rem;
   }
-  .tables{
+  .tables {
     font-size: 0.75rem;
   }
 }
