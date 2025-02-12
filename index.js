@@ -88,7 +88,7 @@ function renderTables(character, containerID) {
     return;
   }
 
-  // Define headings for each section
+  // section headers
   const sectionTitles = [
     " Key Terminology ",
     " Important Moves ",
@@ -104,8 +104,10 @@ function renderTables(character, containerID) {
     const heading = document.createElement("h2");
     heading.innerText = sectionTitles[index];
     tableWrapper.appendChild(heading);
+      heading.classList.add("fade-in")
 
     const table = document.createElement("table");
+      table.classList.add("fade-in");
 
     // table headers
     const headerRow = document.createElement("tr");
