@@ -42,9 +42,14 @@ h2 {
   color: #9b9999f8;
 }
 
-.invisible {
-  display: none;
-}
+.Footer{
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: large;
+    color: #9b9999f8;
+  }
 
 .fade-in {
   opacity: 1;
@@ -84,14 +89,6 @@ h2 {
   }
 }
 
-select {
-  background-color: #9a9b9c;
-}
-
-select :hover {
-  background-color: #771336;
-}
-
 .notation {
   height: 30px;
   font-family: ironFist;
@@ -103,6 +100,7 @@ select :hover {
   display: flex;
   justify-content: space-between;
   gap: 20px;
+  padding: 50px;
 }
 
 #playerOneContainer,
@@ -112,20 +110,9 @@ select :hover {
   max-width: 50%;
 }
 
-.Tables1 {
-  min-width: 50%;
-  height: -100;
-  margin-top: 0.6em;
-  max-width: 50%;
-}
-
-.Tables2 {
-  height: -100;
-}
-
-.video {
-  position: relative;
-  justify-items: center;
+.video-function{
+  display: inline-block;  
+  justify-content: center;
   margin-top: 1em;
   min-width: 33%;
   max-width: 33%;
@@ -154,28 +141,36 @@ tr:nth-child(odd) {
 }
 
 @media (max-width: 900px) {
-  .video {
-    display: none;
-  }
 }
 
 @media (max-width: 768px) {
   .notation {
     font-size: 1rem;
   }
-  .tables {
-    font-size: 0.75rem;
-  }
-  .Tables1 {
-    margin-top: 0.6em;
+  .dataContainer {
+    padding: 5px;
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 717px) {
   .notation {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
-  .tables {
-    font-size: 0.75rem;
+  img{
+    height: 50%;
+  }
+  .dataContainer{
+    padding: 0;
+    size: 1rem;
+    min-width: 100%;
+  }
+  #playerTwoSelection{
+    display: none;
+  }
+  #playerTwoContainer{
+    display: none;
+  }
+  .video-function{
+    display: none;
   }
 }
