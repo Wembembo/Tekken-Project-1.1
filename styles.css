@@ -111,11 +111,22 @@ h2 {
 }
 
 .video-function{
-  display: inline-block;  
-  justify-content: center;
+  display: flex;  
+  justify-content: space-evenly;
   margin-top: 1em;
-  min-width: 33%;
-  max-width: 33%;
+  min-width: 100%;
+}
+
+#videoButton{
+  justify-content: center;
+  max-height: fit-content;
+  display: flex;
+  justify-content: center;
+  padding-top: 3px;
+}
+
+#videoContainer{
+  justify-content: center;
 }
 
 table {
@@ -163,6 +174,8 @@ tr:nth-child(odd) {
     padding: 0;
     size: 1rem;
     min-width: 100%;
+    display: flex;
+    justify-content: center;
   }
   #playerTwoSelection{
     display: none;
@@ -172,5 +185,17 @@ tr:nth-child(odd) {
   }
   .video-function{
     display: none;
+  }
+  #videoButton{
+    display: none;
+  }
+}
+
+@media (max-width: 450px){
+  .dataContainer{
+    max-width: 100%;
+    padding: 0px;
+    display: flex;
+    justify-content: flex-start;
   }
 }
