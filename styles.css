@@ -42,9 +42,14 @@ h2 {
   color: #9b9999f8;
 }
 
-.invisible {
-  display: none;
-}
+.Footer{
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: large;
+    color: #9b9999f8;
+  }
 
 .fade-in {
   opacity: 1;
@@ -84,14 +89,6 @@ h2 {
   }
 }
 
-select {
-  background-color: #9a9b9c;
-}
-
-select :hover {
-  background-color: #771336;
-}
-
 .notation {
   height: 30px;
   font-family: ironFist;
@@ -103,39 +100,33 @@ select :hover {
   display: flex;
   justify-content: space-between;
   gap: 20px;
+  padding: 50px;
 }
 
 #playerOneContainer,
 #playerTwoContainer {
   flex: 1;
   min-width: 45%;
-}
-
-#playerOneContainer {
-  text-align: left;
-}
-
-#playerTwoContainer {
-  text-align: right;
-}
-
-.Tables1 {
-  min-width: 50%;
-  height: -100;
-  margin-top: 0.6em;
   max-width: 50%;
 }
 
-.Tables2 {
-  height: -100;
+.video-function{
+  display: flex;  
+  justify-content: space-evenly;
+  margin-top: 1em;
+  min-width: 100%;
 }
 
-.video {
-  position: relative;
-  justify-items: center;
-  margin-top: 1em;
-  min-width: 33%;
-  max-width: 33%;
+#videoButton{
+  justify-content: center;
+  max-height: fit-content;
+  display: flex;
+  justify-content: center;
+  padding-top: 3px;
+}
+
+#videoContainer{
+  justify-content: center;
 }
 
 table {
@@ -161,28 +152,50 @@ tr:nth-child(odd) {
 }
 
 @media (max-width: 900px) {
-  .video {
-    display: none;
-  }
 }
 
 @media (max-width: 768px) {
   .notation {
     font-size: 1rem;
   }
-  .tables {
-    font-size: 0.75rem;
-  }
-  .Tables1 {
-    margin-top: 0.6em;
+  .dataContainer {
+    padding: 5px;
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 717px) {
   .notation {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
-  .tables {
-    font-size: 0.75rem;
+  img{
+    height: 50%;
+  }
+  .dataContainer{
+    padding: 0;
+    size: 1rem;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  #playerTwoSelection{
+    display: none;
+  }
+  #playerTwoContainer{
+    display: none;
+  }
+  .video-function{
+    display: none;
+  }
+  #videoButton{
+    display: none;
+  }
+}
+
+@media (max-width: 450px){
+  .dataContainer{
+    max-width: 100%;
+    padding: 0px;
+    display: flex;
+    justify-content: flex-start;
   }
 }

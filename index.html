@@ -13,10 +13,8 @@
 <!--Site starter-->
 
 <header class="header">
-    <h1 class="header_title">Tekken 8 Quick Matchup Guide</h1>
+    <h1 class="header_title">Learn Tekken 8</h1>
     <p class="header_subtitle">A quick referencing tool for matchups, aimed at beginners and commentators</p>
-    <p>This is an ongoing project, and has some more stuff planned for better functionality. For more information, please see <a href="./To-Do/to-do.html">here</a></p>
-    <p>Project made by Tim Fitzgerald (@wembembo on everything), notation font made by @Theweirdologist</p>
     <p>The information here is subject to change depending on the latest patch. I'll be trying to keep on top of everything, but this will need some time to update as patches are released. </p>
     <p>You can find the latest patch notes <a href="https://en.bandainamcoent.eu/tekken/news/tekken-8-patch-111">here</a></p>
 </header>
@@ -105,15 +103,24 @@
     </select>
 </div>
 
-<button onclick="showMatch()">View Match (Currently Testing)</button>
-    
-<div id="videoContainer" style="margin-top: 20px;">
-    <!-- Video will be embedded here -->
-    </div>    
+<div id="videoButton">
+    <button onclick="showMatch()" id="videoButton">View High Level Match</button>
+</div>
 
+<div class="video-function">
+
+    <div id="videoContainer" style="margin-top: 20px;">
+        <!-- Video will be embedded here -->
+        </div>    
+</div>
 <div class="dataContainer">
     <div class="dataTable" id="playerOneContainer"></div>
     <div class="dataTable" id="playerTwoContainer"></div>
+</div>
+
+<div class="Footer">
+    <p>This is an ongoing project, and has some more stuff planned for better functionality. For more information, please see <a href="./To-Do/to-do.html">here</a></p>
+    <p>Project made by Tim Fitzgerald (@wembembo on everything), notation font made by @Theweirdologist</p>
 </div>
 
 </div>
