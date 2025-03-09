@@ -2,6 +2,7 @@
 
 const characters = [
   "Alisa",
+  "Anna",
   "Asuka",
   "Azucena",
   "Bryan",
@@ -41,6 +42,7 @@ const characters = [
 
 const characters2 = [
   "Alisa",
+  "Anna",
   "Asuka",
   "Azucena",
   "Bryan",
@@ -4559,7 +4561,7 @@ const data = {
 const matches = {
   Alisa: {
     Alisa: ["https://www.youtube.com/embed/u30q2WboW1o"], // Add video links or data here
-    Anna: [],
+    Anna: [""],
     Asuka: ["https://www.youtube.com/embed/SZsMmM3e2EU"], // Add video links or data here
     Azucena: ["https://www.youtube.com/embed/yRXkF-4DZ3I"], // Add video links or data here
     Bryan: ["https://www.youtube.com/embed/8L6nBsKIkfU"],
