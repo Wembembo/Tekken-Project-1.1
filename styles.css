@@ -183,7 +183,7 @@ tr:nth-child(odd) {
   #playerTwoContainer{
     display: none;
   }
-  .videocontainer{
+  #videocontainer{
     display: none;
   }
   #videoButton{
