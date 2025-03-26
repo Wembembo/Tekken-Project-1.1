@@ -110,25 +110,12 @@ h2 {
   max-width: 50%;
 }
 
-.video-function{
-  display: flex;  
-  justify-content: space-evenly;
-  margin-top: 1em;
-  min-width: 100%;
-}
-
-#videoButton{
-  justify-content: center;
-  max-height: fit-content;
+#videoDiv{
   display: flex;
   justify-content: center;
-  padding-top: 3px;
+  flex-direction: column;
+  align-items: center;
 }
-
-#videoContainer{
-  justify-content: center;
-}
-
 table {
   background-color: #c8acd6;
 }
