@@ -310,7 +310,11 @@ const data = {
   Anna: [
     {
       headers: ["Term", "Notation", "Input"],
-      rows: [],
+      rows: [
+        ["Chaos Judgement", "CJM", `<p class = notation>a1</p>`],
+        ["HCS", "HCS", "<p class = notation>d1</p>"],
+        ["PTS", "PTS", "?"],
+      ],
     },
     {
       headers: [
@@ -321,7 +325,13 @@ const data = {
         "+/- On Block",
         "Counter Options",
       ],
-      rows: [],
+      rows: [
+        ["<p class=`notation`>7</p>", "Quick jab to start offence", "", "High", "", ""],
+        ["<p class=`notation`>x8</p>", "", "", "", "", ""],
+        ["<p class=`notation`>dD9</p>", "Homing attack to start pressure", "", "", "", ""],
+        ["<p class=`notation`>z3</p>", "Low move that shifts into ??? Stance", "", "", "", ""],
+        ["<p class=`notation`>x3</p>", "Full Crouch only", "", "", "", ""],
+      ],
     },
     {
       headers: [
@@ -331,7 +341,9 @@ const data = {
         "Attack Level",
         "+/- On Block",
       ],
-      rows: [],
+      rows: [
+        ["<p class=`notation`>a8</p>", "Power Crush", "", "", ""],
+      ],
     },
   ],
   Asuka: [
