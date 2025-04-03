@@ -4623,7 +4623,7 @@ const matches = {
     Claudio: ["https://www.youtube.com/embed/Xr01KC4jbX8"],
     Clive: ["https://www.youtube.com/embed/YO0gO17deLU"],
     Devil: ["https://www.youtube.com/embed/xCVNUEF6tpI"],
-    Dragunov: ["https://www.youtube.com/embed/"],
+    Dragunov: ["https://www.youtube.com/embed/OZdHBu0o_vg"],
     Eddy: ["https://www.youtube.com/embed/OXcR68pNf8c"],
     Feng: ["https://www.youtube.com/embed/i9IwGmeTUwI"],
     Heihachi: ["https://www.youtube.com/embed/4ji2mUrXFow"],
@@ -4637,14 +4637,14 @@ const matches = {
     Lars: ["https://www.youtube.com/embed/x4EnUZvq6dM"],
     Law: ["https://www.youtube.com/embed/UP96gKHUUpg"],
     Lee: ["https://www.youtube.com/embed/DbbLFTxF--8"],
-    Leo: ["https://www.youtube.com/embed/"],
-    Leroy: ["https://www.youtube.com/embed/"],
+    Leo: ["https://www.youtube.com/embed/ByCgQFFYUVo"],
+    Leroy: ["https://www.youtube.com/embed/FuDQ5OaHAVA"],
     Lidia: ["https://www.youtube.com/embed/DXJ1C-jY_LU"],
     Lili: ["https://www.youtube.com/embed/3VZXB0VTSmA"],
     Nina: ["https://www.youtube.com/embed/nMhMnlriha0"],
     Panda: ["https://www.youtube.com/embed/NDke4TqiUEA"],
     Paul: ["https://www.youtube.com/embed/SIGh-AO10sY"],
-    Raven: ["https://www.youtube.com/embed/"],
+    Raven: ["https://www.youtube.com/embed/89nrEsGZ_HA"],
     Reina: ["https://www.youtube.com/embed/T__scyDvTrU"],
     Shaheen: ["https://www.youtube.com/embed/yFOCxnzpCMY"],
     Steve: ["https://www.youtube.com/embed/KyHJxAr0JfQ"],
@@ -4889,7 +4889,7 @@ const matches = {
   },
   Dragunov: {
     Alisa: ["https://www.youtube.com/embed/-VK_qiDdk84"], // Add video links or data here
-    Anna: ["https://www.youtube.com/embed/"],
+    Anna: ["https://www.youtube.com/embed/OZdHBu0o_vg"],
     Asuka: ["https://www.youtube.com/embed/U1_T1eJY96w"], // Add video links or data here
     Azucena: ["https://www.youtube.com/embed/ea9O9frNCHA"], // Add video links or data here
     Bryan: ["https://www.youtube.com/embed/h2ymx7vCtSQ"],
@@ -5435,7 +5435,7 @@ const matches = {
   },
   Leo: {
     Alisa: ["https://www.youtube.com/embed/Ljmx5JpSPe0"], // Add video links or data here
-    Anna: ["https://www.youtube.com/embed/"],
+    Anna: ["https://www.youtube.com/embed/ByCgQFFYUVo"],
     Asuka: ["https://www.youtube.com/embed/1NBQX-cbe6I"], // Add video links or data here
     Azucena: ["https://www.youtube.com/embed/JW1sGp38dzc"], // Add video links or data here
     Bryan: ["https://www.youtube.com/embed/KfRKtn8QRAo"],
@@ -5474,7 +5474,7 @@ const matches = {
   },
   Leroy: {
     Alisa: ["https://www.youtube.com/embed/UhR41T94vp0"], // Add video links or data here
-    Anna: ["https://www.youtube.com/embed/"],
+    Anna: ["https://www.youtube.com/embed/FuDQ5OaHAVA"],
     Asuka: ["https://www.youtube.com/embed/TM5d6n6V4bs"], // Add video links or data here
     Azucena: ["https://www.youtube.com/embed/yb9VtUO2Gvw"], // Add video links or data here
     Bryan: ["https://www.youtube.com/embed/43qrOAtx2u4"],
@@ -5708,7 +5708,7 @@ const matches = {
   },
   Raven: {
     Alisa: ["https://www.youtube.com/embed/OXHcCcgqmro"], // Add video links or data here
-    Anna: ["https://www.youtube.com/embed/"],
+    Anna: ["https://www.youtube.com/embed/89nrEsGZ_HA"],
     Asuka: ["https://www.youtube.com/embed/LtOFS194zNo"], // Add video links or data here
     Azucena: ["https://www.youtube.com/embed/9DMhy0rkrcs"], // Add video links or data here
     Bryan: ["https://www.youtube.com/embed/vHbKq_xkuVM"],
