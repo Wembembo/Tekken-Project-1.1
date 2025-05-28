@@ -3,6 +3,7 @@
 const characters = [
   "Alisa",
   "Anna",
+  "Armour",
   "Asuka",
   "Azucena",
   "Bryan",
@@ -11,6 +12,7 @@ const characters = [
   "Devil",
   "Dragunov",
   "Eddy",
+  "Fahkumram",
   "Feng",
   "Heihachi",
   "Hwoarang",
@@ -43,6 +45,7 @@ const characters = [
 const characters2 = [
   "Alisa",
   "Anna",
+  "Armour",
   "Asuka",
   "Azucena",
   "Bryan",
@@ -51,6 +54,7 @@ const characters2 = [
   "Devil",
   "Dragunov",
   "Eddy",
+  "Fahkumram",
   "Feng",
   "Heihachi",
   "Hwoarang",
@@ -349,6 +353,33 @@ const data = {
         ["During CJM", "Has low parry properties, can reverse grab attempts", "N/A", "N/A", "N/A"],
       ],
     },
+  ],
+  Armour: [
+  {
+    headers: ["Term", "Notation", "Input"],
+    rows: [],
+  },
+  {
+    headers: [
+      "Input",
+      "Description",
+      "Startup Frames",
+      "Attack Level",
+      "+/- On Block",
+      "Counter Options",
+    ],
+    rows: [],
+  },
+  {
+    headers: [
+      "Input",
+      "Decription",
+      "Startup Frames",
+      "Attack Level",
+      "+/- On Block",
+    ],
+    rows: [],
+  },
   ],
   Asuka: [
     {
@@ -1302,6 +1333,33 @@ const data = {
           "-9",
         ],
       ],
+    },
+  ],
+  Fahkumram: [
+    {
+      headers: ["Term", "Notation", "Input"],
+      rows: [],
+    },
+    {
+      headers: [
+        "Input",
+        "Description",
+        "Startup Frames",
+        "Attack Level",
+        "+/- On Block",
+        "Counter Options",
+      ],
+      rows: [],
+    },
+    {
+      headers: [
+        "Input",
+        "Decription",
+        "Startup Frames",
+        "Attack Level",
+        "+/- On Block",
+      ],
+      rows: [],
     },
   ],
   Feng: [
@@ -4578,6 +4636,7 @@ const matches = {
   Alisa: {
     Alisa: ["https://www.youtube.com/embed/u30q2WboW1o"], // Add video links or data here
     Anna: ["https://www.youtube.com/embed/vL8K4zJS6Vs"],
+    Armour:[],
     Asuka: ["https://www.youtube.com/embed/SZsMmM3e2EU"], // Add video links or data here
     Azucena: ["https://www.youtube.com/embed/yRXkF-4DZ3I"], // Add video links or data here
     Bryan: ["https://www.youtube.com/embed/8L6nBsKIkfU"],
@@ -4586,6 +4645,7 @@ const matches = {
     Devil: ["https://www.youtube.com/embed/A51LH6BRG1o"],
     Dragunov: ["https://www.youtube.com/embed/-VK_qiDdk84"],
     Eddy: ["https://www.youtube.com/embed/kjF38-GjCa8"],
+    Fahkumram:[],
     Feng: ["https://www.youtube.com/embed/ZOJ8fu_tJeM"],
     Heihachi: ["https://www.youtube.com/embed/Ro-LbOHsgpw"],
     Hwoarang: ["https://www.youtube.com/embed/Pao-z55EWuE"],
@@ -4617,14 +4677,16 @@ const matches = {
   Anna: {
     Alisa: ["https://www.youtube.com/embed/vL8K4zJS6Vs"], // Add video links or data here
     Anna: ["https://www.youtube.com/embed/7r5WtMHzR-8"],
+    Armour:[],
     Asuka: ["https://www.youtube.com/embed/0-DyDk2XId0"], // Add video links or data here
     Azucena: ["https://www.youtube.com/embed/OGGVblmPPWo"], // Add video links or data here
-    Bryan: ["https://www.youtube.com/embed/fRP6S0ywf7A"],
+    Bryan: ["https://www.youtube.com/embed/9M_nlQVY9Bg"],
     Claudio: ["https://www.youtube.com/embed/Xr01KC4jbX8"],
     Clive: ["https://www.youtube.com/embed/YO0gO17deLU"],
     Devil: ["https://www.youtube.com/embed/xCVNUEF6tpI"],
     Dragunov: ["https://www.youtube.com/embed/OZdHBu0o_vg"],
     Eddy: ["https://www.youtube.com/embed/OXcR68pNf8c"],
+    Fahkumram:[],
     Feng: ["https://www.youtube.com/embed/i9IwGmeTUwI"],
     Heihachi: ["https://www.youtube.com/embed/4ji2mUrXFow"],
     Hwoarang: ["https://www.youtube.com/embed/QUCgR8a6tYo"],
@@ -4653,9 +4715,51 @@ const matches = {
     Yoshimitsu: ["https://www.youtube.com/embed/A7ZwKUXdiBc"],
     Zafina: ["https://www.youtube.com/embed/ebrH4Pj0F6Y"],
   },
+  Armour: {
+    Alisa: [],
+    Anna: [],
+    Armour: [],
+    Asuka: [],
+    Azucena: [],
+    Bryan: [],
+    Claudio: [],
+    Clive: [],
+    Devil: [],
+    Dragunov: [],
+    Eddy: [],
+    Fahkumram: [],
+    Feng: [],
+    Heihachi: [],
+    Hwoarang: [],
+    Jack: [],
+    Jin: [],
+    Jun: [],
+    Kazuya: [],
+    King: [],
+    Kuma: [],
+    Lars: [],
+    Law: [],
+    Lee: [],
+    Leo: [],
+    Leroy: [],
+    Lidia: [],
+    Lili: [],
+    Nina: [],
+    Panda: [],
+    Paul: [],
+    Raven: [],
+    Reina: [],
+    Shaheen: [],
+    Steve: [],
+    Victor: [],
+    Xiaoyu: [],
+    Yoshimitsu: [],
+    Zafina: [],
+  },  
   Asuka: {
     Alisa: ["https://www.youtube.com/embed/SZsMmM3e2EU"], // Add video links or data here
     Anna: ["https://www.youtube.com/embed/0-DyDk2XId0"],
+    Armour:[],
     Asuka: ["https://www.youtube.com/embed/c1aoqEhwWCY"], // Add video links or data here
     Azucena: ["https://www.youtube.com/embed/OE4p-1Ni-28"], // Add video links or data here
     Bryan: ["https://www.youtube.com/embed/JzehgjNOFZQ"],
@@ -4664,6 +4768,7 @@ const matches = {
     Devil: ["https://www.youtube.com/embed/LkPVdSEKwHQ"],
     Dragunov: ["https://www.youtube.com/embed/U1_T1eJY96w"],
     Eddy: ["https://www.youtube.com/embed/u7fwuShXRu4"],
+    Fahkumram:[],
     Feng: ["https://www.youtube.com/embed/XYZc6VraiCY"],
     Heihachi: ["https://www.youtube.com/embed/dLyJS1OaD34"],
     Hwoarang: ["https://www.youtube.com/embed/UiOnHtKPhtU"],
@@ -4695,6 +4800,7 @@ const matches = {
   Azucena: {
     Alisa: ["https://www.youtube.com/embed/yRXkF-4DZ3I"], // Add video links or data here
     Anna: ["https://www.youtube.com/embed/OGGVblmPPWo"],
+    Armour:[],
     Asuka: ["https://www.youtube.com/embed/OE4p-1Ni-28"], // Add video links or data here
     Azucena: ["https://www.youtube.com/embed/nM4Br6in8ek"], // Add video links or data here
     Bryan: ["https://www.youtube.com/embed/MIKJrCnh-CY"],
@@ -4703,6 +4809,7 @@ const matches = {
     Devil: ["https://www.youtube.com/embed/3XxgP9ZEQbc"],
     Dragunov: ["https://www.youtube.com/embed/ea9O9frNCHA"],
     Eddy: ["https://www.youtube.com/embed/8UP3LcLEQdU"],
+    Fahkumram:[],
     Feng: ["https://www.youtube.com/embed/oCvPOvs0AmM"],
     Heihachi: ["https://www.youtube.com/embed/i5TY_wzID5Q"],
     Hwoarang: ["https://www.youtube.com/embed/j94fcbrqQCI"],
@@ -4733,7 +4840,8 @@ const matches = {
   },
   Bryan: {
     Alisa: ["https://www.youtube.com/embed/8L6nBsKIkfU" ], // Add video links or data here
-    Anna: [""],
+    Anna: ["https://www.youtube.com/embed/9M_nlQVY9Bg"],
+    Armour:[],
     Asuka: ["https://www.youtube.com/embed/JzehgjNOFZQ"], // Add video links or data here
     Azucena: ["https://www.youtube.com/embed/MIKJrCnh-CY"], // Add video links or data here
     Bryan: ["https://www.youtube.com/embed/fRP6S0ywf7A"],
@@ -4742,6 +4850,7 @@ const matches = {
     Devil: ["https://www.youtube.com/embed/SwaiSShvafU"],
     Dragunov: ["https://www.youtube.com/embed/h2ymx7vCtSQ"],
     Eddy: ["https://www.youtube.com/embed/s4AwyvEagwk"],
+    Fahkumram:[],
     Feng: ["https://www.youtube.com/embed/Fh-6DUg5VqY"],
     Heihachi: ["https://www.youtube.com/embed/MwejAEJHYXo"],
     Hwoarang: ["https://www.youtube.com/embed/3RwTfLFRu_M"],
@@ -4773,6 +4882,7 @@ const matches = {
   Claudio: {
     Alisa: ["https://www.youtube.com/embed/5t5nckMW-y0"], // Add video links or data here
     Anna: ["https://www.youtube.com/embed/Xr01KC4jbX8"],
+    Armour:[],
     Asuka: ["https://www.youtube.com/embed/T2riFhiqrqY"], // Add video links or data here
     Azucena: ["https://www.youtube.com/embed/vAaRNPSuGYo"], // Add video links or data here
     Bryan: ["https://www.youtube.com/embed/eFLDGP_lSuY"],
@@ -4781,6 +4891,7 @@ const matches = {
     Devil: ["https://www.youtube.com/embed/eBPpShDFr_0"],
     Dragunov: ["https://www.youtube.com/embed/SDQETPAT2B8"],
     Eddy: ["https://www.youtube.com/embed/IJ12wyGMWbM"],
+    Fahkumram:[],
     Feng: ["https://www.youtube.com/embed/ZesOgXTqDOA"],
     Heihachi: ["https://www.youtube.com/embed/WoYISBa8JDI"],
     Hwoarang: ["https://www.youtube.com/embed/Hn_jGWh5iIY"],
@@ -4812,6 +4923,7 @@ const matches = {
   Clive: {
     Alisa: ["https://www.youtube.com/embed/H4Gu8H9AL7o"], // Add video links or data here
     Anna: ["https://www.youtube.com/embed/YO0gO17deLU"],
+    Armour:[],
     Asuka: ["https://www.youtube.com/embed/K1VYTjp3inQ"], // Add video links or data here
     Azucena: ["https://www.youtube.com/embed/Ud-kC9-1s6c"], // Add video links or data here
     Bryan: ["https://www.youtube.com/embed/78T_ZOTeBcM"],
@@ -4820,6 +4932,7 @@ const matches = {
     Devil: ["https://www.youtube.com/embed/_7TkVUi-qn0"],
     Dragunov: ["https://www.youtube.com/embed/PjqNXqZA604"],
     Eddy: ["https://www.youtube.com/embed/zlcYcQAqt6E"],
+    Fahkumram:[],
     Feng: ["https://www.youtube.com/embed/In6SN1Nuj0k"],
     Heihachi: ["https://www.youtube.com/embed/dpFFltV76QA"],
     Hwoarang: ["https://www.youtube.com/embed/GeOtdhWRhoc"],
@@ -4851,6 +4964,7 @@ const matches = {
   Devil: {
     Alisa: ["https://www.youtube.com/embed/A51LH6BRG1o"], // Add video links or data here
     Anna: ["https://www.youtube.com/embed/xCVNUEF6tpI"],
+    Armour:[],
     Asuka: ["https://www.youtube.com/embed/LkPVdSEKwHQ"], // Add video links or data here
     Azucena: ["https://www.youtube.com/embed/3XxgP9ZEQbc"], // Add video links or data here
     Bryan: ["https://www.youtube.com/embed/SwaiSShvafU"],
@@ -4859,6 +4973,7 @@ const matches = {
     Devil: ["https://www.youtube.com/embed/NEVfSbC9wIo"],
     Dragunov: ["https://www.youtube.com/embed/Lxfo2ilYCMg"],
     Eddy: ["https://www.youtube.com/embed/_Me2vPqkFXA"],
+    Fahkumram:[],
     Feng: ["https://www.youtube.com/embed/LrTUw-3_Ni0"],
     Heihachi: ["https://www.youtube.com/embed/gWd0rff8NSw"],
     Hwoarang: ["https://www.youtube.com/embed/0vYOVdpWq9E"],
@@ -4890,6 +5005,7 @@ const matches = {
   Dragunov: {
     Alisa: ["https://www.youtube.com/embed/-VK_qiDdk84"], // Add video links or data here
     Anna: ["https://www.youtube.com/embed/OZdHBu0o_vg"],
+    Armour:[],
     Asuka: ["https://www.youtube.com/embed/U1_T1eJY96w"], // Add video links or data here
     Azucena: ["https://www.youtube.com/embed/ea9O9frNCHA"], // Add video links or data here
     Bryan: ["https://www.youtube.com/embed/h2ymx7vCtSQ"],
@@ -4898,6 +5014,7 @@ const matches = {
     Devil: ["https://www.youtube.com/embed/Lxfo2ilYCMg"],
     Dragunov: ["https://www.youtube.com/embed/9J1Z99mF5Y0"],
     Eddy: ["https://www.youtube.com/embed/15__ZRtBoxA"],
+    Fahkumram:[],
     Feng: ["https://www.youtube.com/embed/zrhHIWtXbHM"],
     Heihachi: ["https://www.youtube.com/embed/VfhcquEjZ00"],
     Hwoarang: ["https://www.youtube.com/embed/JvVVMB1VLQ4"],
@@ -4929,6 +5046,7 @@ const matches = {
   Eddy: {
     Alisa: ["https://www.youtube.com/embed/kjF38-GjCa8"], // Add video links or data here
     Anna: ["https://www.youtube.com/embed/OXcR68pNf8c"],
+    Armour:[],
     Asuka: ["https://www.youtube.com/embed/u7fwuShXRu4"], // Add video links or data here
     Azucena: ["https://www.youtube.com/embed/8UP3LcLEQdU"], // Add video links or data here
     Bryan: ["https://www.youtube.com/embed/s4AwyvEagwk"],
@@ -4937,6 +5055,7 @@ const matches = {
     Devil: ["https://www.youtube.com/embed/_Me2vPqkFXA"],
     Dragunov: ["https://www.youtube.com/embed/15__ZRtBoxA"],
     Eddy: ["https://www.youtube.com/embed/LJR-JK13x9A"],
+    Fahkumram:[],
     Feng: ["https://www.youtube.com/embed/aVyBK-jIadA"],
     Heihachi: ["https://www.youtube.com/embed/oG_ynupDpqk"],
     Hwoarang: ["https://www.youtube.com/embed/zkvQWNTDxoo"],
@@ -4965,9 +5084,51 @@ const matches = {
     Yoshimitsu: ["https://www.youtube.com/embed/YiNYHv8_6ok"],
     Zafina: ["https://www.youtube.com/embed/BJTAItSWk5I"],
   },
+  Fahkumram: {
+    Alisa: [],
+    Anna: [],
+    Armour: [],
+    Asuka: [],
+    Azucena: [],
+    Bryan: [],
+    Claudio: [],
+    Clive: [],
+    Devil: [],
+    Dragunov: [],
+    Eddy: [],
+    Fahkumram: [],
+    Feng: [],
+    Heihachi: [],
+    Hwoarang: [],
+    Jack: [],
+    Jin: [],
+    Jun: [],
+    Kazuya: [],
+    King: [],
+    Kuma: [],
+    Lars: [],
+    Law: [],
+    Lee: [],
+    Leo: [],
+    Leroy: [],
+    Lidia: [],
+    Lili: [],
+    Nina: [],
+    Panda: [],
+    Paul: [],
+    Raven: [],
+    Reina: [],
+    Shaheen: [],
+    Steve: [],
+    Victor: [],
+    Xiaoyu: [],
+    Yoshimitsu: [],
+    Zafina: [],
+  },
   Feng: {
     Alisa: ["https://www.youtube.com/embed/ZOJ8fu_tJeM"], // Add video links or data here
     Anna: ["https://www.youtube.com/embed/i9IwGmeTUwI"],
+    Armour:[],
     Asuka: ["https://www.youtube.com/embed/XYZc6VraiCY"], // Add video links or data here
     Azucena: ["https://www.youtube.com/embed/oCvPOvs0AmM"], // Add video links or data here
     Bryan: ["https://www.youtube.com/embed/Fh-6DUg5VqY"],
@@ -4976,6 +5137,7 @@ const matches = {
     Devil: ["https://www.youtube.com/embed/LrTUw-3_Ni0"],
     Dragunov: ["https://www.youtube.com/embed/zrhHIWtXbHM"],
     Eddy: ["https://www.youtube.com/embed/aVyBK-jIadA"],
+    Fahkumram:[],
     Feng: ["https://www.youtube.com/embed/V5x3VbgJIzk"],
     Heihachi: ["https://www.youtube.com/embed/qxduWO7aVAk"],
     Hwoarang: ["https://www.youtube.com/embed/Lq7qs9p-E1c"],
@@ -5007,6 +5169,7 @@ const matches = {
   Heihachi: {
     Alisa: ["https://www.youtube.com/embed/Ro-LbOHsgpw"], // Add video links or data here
     Anna: ["https://www.youtube.com/embed/4ji2mUrXFow"],
+    Armour:[],
     Asuka: ["https://www.youtube.com/embed/dLyJS1OaD34"], // Add video links or data here
     Azucena: ["https://www.youtube.com/embed/i5TY_wzID5Q"], // Add video links or data here
     Bryan: ["https://www.youtube.com/embed/MwejAEJHYXo"],
@@ -5015,6 +5178,7 @@ const matches = {
     Devil: ["https://www.youtube.com/embed/gWd0rff8NSw"],
     Dragunov: ["https://www.youtube.com/embed/VfhcquEjZ00"],
     Eddy: ["https://www.youtube.com/embed/oG_ynupDpqk"],
+    Fahkumram:[],
     Feng: ["https://www.youtube.com/embed/qxduWO7aVAk"],
     Heihachi: ["https://www.youtube.com/embed/2fVrGsOoKPI"],
     Hwoarang: ["https://www.youtube.com/embed/bQo4cxLz31k"],
@@ -5046,6 +5210,7 @@ const matches = {
   Hwoarang: {
     Alisa: ["https://www.youtube.com/embed/Pao-z55EWuE"], // Add video links or data here
     Anna: ["https://www.youtube.com/embed/QUCgR8a6tYo"],
+    Armour:[],
     Asuka: ["https://www.youtube.com/embed/UiOnHtKPhtU"], // Add video links or data here
     Azucena: ["https://www.youtube.com/embed/j94fcbrqQCI"], // Add video links or data here
     Bryan: ["https://www.youtube.com/embed/3RwTfLFRu_M"],
@@ -5054,6 +5219,7 @@ const matches = {
     Devil: ["https://www.youtube.com/embed/0vYOVdpWq9E"],
     Dragunov: ["https://www.youtube.com/embed/JvVVMB1VLQ4"],
     Eddy: ["https://www.youtube.com/embed/zkvQWNTDxoo"],
+    Fahkumram:[],
     Feng: ["https://www.youtube.com/embed/Lq7qs9p-E1c"],
     Heihachi: ["https://www.youtube.com/embed/bQo4cxLz31k"],
     Hwoarang: ["https://www.youtube.com/embed/Defzg_v_gI4"],
@@ -5085,6 +5251,7 @@ const matches = {
   Jack: {
     Alisa: ["https://www.youtube.com/embed/9ABkYPqKkq0"], // Add video links or data here
     Anna: ["https://www.youtube.com/embed/_9tfDMwVDdk"],
+    Armour:[],
     Asuka: ["https://www.youtube.com/embed/DhOr-DlvI5M"], // Add video links or data here
     Azucena: ["https://www.youtube.com/embed/MKV5d8AsXAs"], // Add video links or data here
     Bryan: ["https://www.youtube.com/embed/OcnTLv3F0dg"],
@@ -5093,6 +5260,7 @@ const matches = {
     Devil: ["https://www.youtube.com/embed/i2UTbOhXh9M"],
     Dragunov: ["https://www.youtube.com/embed/ytoruJhDXlM"],
     Eddy: ["https://www.youtube.com/embed/sx2cYMZB4Dg"],
+    Fahkumram:[],
     Feng: ["https://www.youtube.com/embed/zfpqqZ9zrIo"],
     Heihachi: ["https://www.youtube.com/embed/ahh_hZj9-dU"],
     Hwoarang: ["https://www.youtube.com/embed/thvMoWjPOeo"],
@@ -5124,6 +5292,7 @@ const matches = {
   Jin: {
     Alisa: ["https://www.youtube.com/embed/DizsmslsTU4"], // Add video links or data here
     Anna: ["https://www.youtube.com/embed/DuAnniyMS54"],
+    Armour:[],
     Asuka: ["https://www.youtube.com/embed/K27SZWgiLec"], // Add video links or data here
     Azucena: ["https://www.youtube.com/embed/YxG9cXPNPS8"], // Add video links or data here
     Bryan: ["https://www.youtube.com/embed/n2XRQpCNV5E"],
@@ -5132,6 +5301,7 @@ const matches = {
     Devil: ["https://www.youtube.com/embed/5tiIRAzsBXs"],
     Dragunov: ["https://www.youtube.com/embed/XB31ikjAmIk"],
     Eddy: ["https://www.youtube.com/embed/_czdLnSxji4"],
+    Fahkumram:[],
     Feng: ["https://www.youtube.com/embed/rCwdIgnXg08"],
     Heihachi: ["https://www.youtube.com/embed/uKDpZMVocQw"],
     Hwoarang: ["https://www.youtube.com/embed/qOuf6cCIAyE"],
@@ -5163,6 +5333,7 @@ const matches = {
   Jun: {
     Alisa: ["https://www.youtube.com/embed/OQNohpTtZyM"], // Add video links or data here
     Anna: ["https://www.youtube.com/embed/IHPAkIE3NgE"],
+    Armour:[],
     Asuka: ["https://www.youtube.com/embed/VP1C4viagx8"], // Add video links or data here
     Azucena: ["https://www.youtube.com/embed/jUq3ZXklfrw"], // Add video links or data here
     Bryan: ["https://www.youtube.com/embed/UxXu8JaggVk"],
@@ -5171,6 +5342,7 @@ const matches = {
     Devil: ["https://www.youtube.com/embed/wNsLssI_lIw"],
     Dragunov: ["https://www.youtube.com/embed/yFya0snsiKU"],
     Eddy: ["https://www.youtube.com/embed/tzSHxwhGgRc"],
+    Fahkumram:[],
     Feng: ["https://www.youtube.com/embed/gWulpF_83ZY"],
     Heihachi: ["https://www.youtube.com/embed/HTRLxHRMHmo"],
     Hwoarang: ["https://www.youtube.com/embed/eTbklXC6s2c"],
@@ -5202,6 +5374,7 @@ const matches = {
   Kazuya: {
     Alisa: ["https://www.youtube.com/embed/6yzegvP_ClQ"], // Add video links or data here
     Anna: ["https://www.youtube.com/embed/pErEibFvD9M"],
+    Armour:[],
     Asuka: ["https://www.youtube.com/embed/KwoKhDqj9oE"], // Add video links or data here
     Azucena: [`https://www.youtube.com/embed/S0v3djPH7M0`], // Add video links or data here
     Bryan: ["https://www.youtube.com/embed/9dXtGBCbEYc"],
@@ -5210,6 +5383,7 @@ const matches = {
     Devil: ["https://www.youtube.com/embed/_n1GyJiL43o"],
     Dragunov: ["https://www.youtube.com/embed/eOOuvodACf0"],
     Eddy: ["https://www.youtube.com/embed/4yCEvDHkjKs"],
+    Fahkumram:[],
     Feng: ["https://www.youtube.com/embed/R7WIdkDM3aM"],
     Heihachi: ["https://www.youtube.com/embed/62oA9gLFef8"],
     Hwoarang: ["https://www.youtube.com/embed/lIe_X-qmk3U"],
@@ -5241,6 +5415,7 @@ const matches = {
   King: {
     Alisa: ["https://www.youtube.com/embed/e92Q_O0l7tk"], // Add video links or data here
     Anna: ["https://www.youtube.com/embed/pByVkb_h6xw"],
+    Armour:[],
     Asuka: ["https://www.youtube.com/embed/9vfwyqxI5Cc"], // Add video links or data here
     Azucena: ["https://www.youtube.com/embed/eLNt9G7pqNQ"], // Add video links or data here
     Bryan: ["https://www.youtube.com/embed/UO6NJdMvXeE"],
@@ -5249,6 +5424,7 @@ const matches = {
     Devil: ["https://www.youtube.com/embed/2DiqKplwtjI"],
     Dragunov: ["https://www.youtube.com/embed/4yKorDwA3b8"],
     Eddy: ["https://www.youtube.com/embed/3e2wJLQkxMw"],
+    Fahkumram:[],
     Feng: ["https://www.youtube.com/embed/QSg-4Q0mebA"],
     Heihachi: ["https://www.youtube.com/embed/FFF75G1lt-Y"],
     Hwoarang: ["https://www.youtube.com/embed/LU98uuBtYX0"],
@@ -5280,6 +5456,7 @@ const matches = {
   Kuma: {
     Alisa: ["https://www.youtube.com/embed/DoVMfRbarZE"], // Add video links or data here
     Anna: ["https://www.youtube.com/embed/hQFXaFo5SLQ"],
+    Armour:[],
     Asuka: ["https://www.youtube.com/embed/NEt-MR0nuKw"], // Add video links or data here
     Azucena: ["https://www.youtube.com/embed/SalYmTWefxs"], // Add video links or data here
     Bryan: ["https://www.youtube.com/embed/IXfl2Gx5k_4"],
@@ -5288,6 +5465,7 @@ const matches = {
     Devil: ["https://www.youtube.com/embed/wuoxjQFgqXk"],
     Dragunov: ["https://www.youtube.com/embed/T4TegaoNKd8"],
     Eddy: ["https://www.youtube.com/embed/XyAGC6A4jRo"],
+    Fahkumram:[],
     Feng: ["https://www.youtube.com/embed/SbQv0ke6FMg"],
     Heihachi: ["https://www.youtube.com/embed/NSMi2NcjgQQ"],
     Hwoarang: ["https://www.youtube.com/embed/pzXw9V_34j8"],
@@ -5319,6 +5497,7 @@ const matches = {
   Lars: {
     Alisa: ["https://www.youtube.com/embed/sP20NMwxD9Q"], // Add video links or data here
     Anna: ["https://www.youtube.com/embed/x4EnUZvq6dM"],
+    Armour:[],
     Asuka: ["https://www.youtube.com/embed/jzX2kTZnHGE"], // Add video links or data here
     Azucena: ["https://www.youtube.com/embed/-Ys04NLqHwc"], // Add video links or data here
     Bryan: ["https://www.youtube.com/embed/NIWRMvdp6-4"],
@@ -5327,6 +5506,7 @@ const matches = {
     Devil: ["https://www.youtube.com/embed/UBFShZSXrg0"],
     Dragunov: ["https://www.youtube.com/embed/B38yY_CN2gc"],
     Eddy: ["https://www.youtube.com/embed/vM2tJ80slNU"],
+    Fahkumram:[],
     Feng: ["https://www.youtube.com/embed/G8N1ZmFW4vo"],
     Heihachi: ["https://www.youtube.com/embed/fbvinXHTrpc"],
     Hwoarang: ["https://www.youtube.com/embed/ElkPLEK-MuI"],
@@ -5358,6 +5538,7 @@ const matches = {
   Law: {
     Alisa: ["https://www.youtube.com/embed/UcAEEJ-trKg"], // Add video links or data here
     Anna: ["https://www.youtube.com/embed/UP96gKHUUpg"],
+    Armour:[],
     Asuka: ["https://www.youtube.com/embed/eUgB0fiCnbw"], // Add video links or data here
     Azucena: ["https://www.youtube.com/embed/4duUAnejKKI"], // Add video links or data here
     Bryan: ["https://www.youtube.com/embed/dMKPWlSxoh8"],
@@ -5366,6 +5547,7 @@ const matches = {
     Devil: ["https://www.youtube.com/embed/cHywJu9eKfo"],
     Dragunov: ["https://www.youtube.com/embed/_CWzUMLFkAc"],
     Eddy: ["https://www.youtube.com/embed/ZbI4W_VaQ2Y"],
+    Fahkumram:[],
     Feng: ["https://www.youtube.com/embed/SbPtJGZD3Ns"],
     Heihachi: ["https://www.youtube.com/embed/1-XWqoJdXqY"],
     Hwoarang: ["https://www.youtube.com/embed/V697wVUr9CI"],
@@ -5397,6 +5579,7 @@ const matches = {
   Lee: {
     Alisa: ["https://www.youtube.com/embed/ISpLais1f28"], // Add video links or data here
     Anna: ["https://www.youtube.com/embed/DbbLFTxF--8"],
+    Armour:[],
     Asuka: ["https://www.youtube.com/embed/KkB7IwtAmqY"], // Add video links or data here
     Azucena: ["https://www.youtube.com/embed/taxA0F0X8Lc"], // Add video links or data here
     Bryan: ["https://www.youtube.com/embed/yXIHycRrqmQ"],
@@ -5405,6 +5588,7 @@ const matches = {
     Devil: ["https://www.youtube.com/embed/SeGqSsyFd1k"],
     Dragunov: ["https://www.youtube.com/embed/NnaVfl5kTZw"],
     Eddy: ["https://www.youtube.com/embed/IigpfkgLXF8"],
+    Fahkumram:[],
     Feng: ["https://www.youtube.com/embed/E0bNLZvtkwU"],
     Heihachi: ["https://www.youtube.com/embed/8vIm-To8wEM"],
     Hwoarang: ["https://www.youtube.com/embed/SCwtNWr7BZY"],
@@ -5436,6 +5620,7 @@ const matches = {
   Leo: {
     Alisa: ["https://www.youtube.com/embed/Ljmx5JpSPe0"], // Add video links or data here
     Anna: ["https://www.youtube.com/embed/ByCgQFFYUVo"],
+    Armour:[],
     Asuka: ["https://www.youtube.com/embed/1NBQX-cbe6I"], // Add video links or data here
     Azucena: ["https://www.youtube.com/embed/JW1sGp38dzc"], // Add video links or data here
     Bryan: ["https://www.youtube.com/embed/KfRKtn8QRAo"],
@@ -5444,6 +5629,7 @@ const matches = {
     Devil: ["https://www.youtube.com/embed/kSfdAAm5O2A"],
     Dragunov: ["https://www.youtube.com/embed/ZRnuQGaInGM"],
     Eddy: ["https://www.youtube.com/embed/wH4sPAtS0KY"],
+    Fahkumram:[],
     Feng: ["https://www.youtube.com/embed/PL2_7R_RFW8"],
     Heihachi: ["https://www.youtube.com/embed/Bum_r8G9yjQ"],
     Hwoarang: ["https://www.youtube.com/embed/G_lx1th04T8"],
@@ -5475,6 +5661,7 @@ const matches = {
   Leroy: {
     Alisa: ["https://www.youtube.com/embed/UhR41T94vp0"], // Add video links or data here
     Anna: ["https://www.youtube.com/embed/FuDQ5OaHAVA"],
+    Armour:[],
     Asuka: ["https://www.youtube.com/embed/TM5d6n6V4bs"], // Add video links or data here
     Azucena: ["https://www.youtube.com/embed/yb9VtUO2Gvw"], // Add video links or data here
     Bryan: ["https://www.youtube.com/embed/43qrOAtx2u4"],
@@ -5483,6 +5670,7 @@ const matches = {
     Devil: ["https://www.youtube.com/embed/8fawaWcyVoM"],
     Dragunov: ["https://www.youtube.com/embed/3T3BfAq0DpU"],
     Eddy: ["https://www.youtube.com/embed/3adYTII2i7M"],
+    Fahkumram:[],
     Feng: ["https://www.youtube.com/embed/vn7NjzRMZo4"],
     Heihachi: ["https://www.youtube.com/embed/g-0iCwzkKbM"],
     Hwoarang: ["https://www.youtube.com/embed/S93G04KUiy4"],
@@ -5514,6 +5702,7 @@ const matches = {
   Lidia: {
     Alisa: ["https://www.youtube.com/embed/BFraTYqzSFg"], // Add video links or data here
     Anna: ["https://www.youtube.com/embed/DXJ1C-jY_LU"],
+    Armour:[],
     Asuka: ["https://www.youtube.com/embed/0gEGFv1Dkn8"], // Add video links or data here
     Azucena: ["https://www.youtube.com/embed/d7hm0q_cn2A"], // Add video links or data here
     Bryan: ["https://www.youtube.com/embed/GFI35uHOsww"],
@@ -5522,6 +5711,7 @@ const matches = {
     Devil: ["https://www.youtube.com/embed/SUjfXyUp3uI"],
     Dragunov: ["https://www.youtube.com/embed/YMkzGgYRyYE"],
     Eddy: ["https://www.youtube.com/embed/gs0mYxJkKa8"],
+    Fahkumram:[],
     Feng: ["https://www.youtube.com/embed/o5lnns2v9XM"],
     Heihachi: ["https://www.youtube.com/embed/m_KDVgt3Ulc"],
     Hwoarang: ["https://www.youtube.com/embed/jAAGKivN-BA"],
@@ -5553,6 +5743,7 @@ const matches = {
   Lili: {
     Alisa: ["https://www.youtube.com/embed/K5Ikg9zdbKM"], // Add video links or data here
     Anna: ["https://www.youtube.com/embed/3VZXB0VTSmA"],
+    Armour:[],
     Asuka: ["https://www.youtube.com/embed/TsBw5igzSHE"], // Add video links or data here
     Azucena: ["https://www.youtube.com/embed/5_1ZB8xtWYM"], // Add video links or data here
     Bryan: ["https://www.youtube.com/embed/LoFlPI78Lrg"],
@@ -5561,6 +5752,7 @@ const matches = {
     Devil: ["https://www.youtube.com/embed/cVsW7aLjRHQ"],
     Dragunov: ["https://www.youtube.com/embed/roajOB02Wvk"],
     Eddy: ["https://www.youtube.com/embed/X68ofpABqJE"],
+    Fahkumram:[],
     Feng: ["https://www.youtube.com/embed/XkS4qPZumpc"],
     Heihachi: ["https://www.youtube.com/embed/yoT5nXGH08M"],
     Hwoarang: ["https://www.youtube.com/embed/MEIIkcNvTHM"],
@@ -5592,6 +5784,7 @@ const matches = {
   Nina: {
     Alisa: ["https://www.youtube.com/embed/eo8hn-C5oGk"], // Add video links or data here
     Anna: ["https://www.youtube.com/embed/nMhMnlriha0"],
+    Armour:[],
     Asuka: ["https://www.youtube.com/embed/tiXakl6znzI"], // Add video links or data here
     Azucena: ["https://www.youtube.com/embed/yF-sNnGG6i4"], // Add video links or data here
     Bryan: ["https://www.youtube.com/embed/26P3_zi3uIU"],
@@ -5600,6 +5793,7 @@ const matches = {
     Devil: ["https://www.youtube.com/embed/5ssyDi1AKAI"],
     Dragunov: ["https://www.youtube.com/embed/BvHtH7GKPhQ"],
     Eddy: ["https://www.youtube.com/embed/CHRtZ3IOkT0"],
+    Fahkumram:[],
     Feng: ["https://www.youtube.com/embed/0oVckKCkZFE"],
     Heihachi: ["https://www.youtube.com/embed/EGC2ZjjbZ30"],
     Hwoarang: ["https://www.youtube.com/embed/fxiMTNmHXZE"],
@@ -5631,6 +5825,7 @@ const matches = {
   Panda: {
     Alisa: ["https://www.youtube.com/embed/xptlM3wNtgA"], // Add video links or data here
     Anna: ["https://www.youtube.com/embed/NDke4TqiUEA"],
+    Armour:[],
     Asuka: ["https://www.youtube.com/embed/WNGO9b32Xc4"], // Add video links or data here
     Azucena: ["https://www.youtube.com/embed/dxScAYrRQ5k"], // Add video links or data here
     Bryan: ["https://www.youtube.com/embed/9S_HgpEHwCM"],
@@ -5639,6 +5834,7 @@ const matches = {
     Devil: ["https://www.youtube.com/embed/gyAAKCOyrm8"],
     Dragunov: ["https://www.youtube.com/embed/9R1TUAXROEo"],
     Eddy: ["https://www.youtube.com/embed/-Go6KkzshPI"],
+    Fahkumram:[],
     Feng: ["https://www.youtube.com/embed/LcIEpWTU76c"],
     Heihachi: ["https://www.youtube.com/embed/93hq0YU3Gqk"],
     Hwoarang: ["https://www.youtube.com/embed/YdqST5-1HQ0"],
@@ -5670,6 +5866,7 @@ const matches = {
   Paul: {
     Alisa: ["https://www.youtube.com/embed/ujtdTwR6Axo"], // Add video links or data here
     Anna: ["https://www.youtube.com/embed/SIGh-AO10sY"],
+    Armour:[],
     Asuka: ["https://www.youtube.com/embed/SAUD4pwUahA"], // Add video links or data here
     Azucena: ["https://www.youtube.com/embed/U1ERpZrb6BQ"], // Add video links or data here
     Bryan: ["https://www.youtube.com/embed/v8wSSJ_iQmU"],
@@ -5678,6 +5875,7 @@ const matches = {
     Devil: ["https://www.youtube.com/embed/He8n1tOqIEU"],
     Dragunov: ["https://www.youtube.com/embed/AFV_YwLOzJ0"],
     Eddy: ["https://www.youtube.com/embed/9uYESKCFKtQ"],
+    Fahkumram:[],
     Feng: ["https://www.youtube.com/embed/C-9SseDU3tU"],
     Heihachi: ["https://www.youtube.com/embed/B0Xat6dF-QM"],
     Hwoarang: ["https://www.youtube.com/embed/nXb2rEwXz6c"],
@@ -5709,6 +5907,7 @@ const matches = {
   Raven: {
     Alisa: ["https://www.youtube.com/embed/OXHcCcgqmro"], // Add video links or data here
     Anna: ["https://www.youtube.com/embed/89nrEsGZ_HA"],
+    Armour:[],
     Asuka: ["https://www.youtube.com/embed/LtOFS194zNo"], // Add video links or data here
     Azucena: ["https://www.youtube.com/embed/9DMhy0rkrcs"], // Add video links or data here
     Bryan: ["https://www.youtube.com/embed/vHbKq_xkuVM"],
@@ -5717,6 +5916,7 @@ const matches = {
     Devil: ["https://www.youtube.com/embed/KW6ecZx_qDU"],
     Dragunov: ["https://www.youtube.com/embed/7CHxzcQaebI"],
     Eddy: ["https://www.youtube.com/embed/LFgJaCSlNTs"],
+    Fahkumram:[],
     Feng: ["https://www.youtube.com/embed/vvBRz4nrEbk"],
     Heihachi: ["https://www.youtube.com/embed/TNg1J7okZgM"],
     Hwoarang: ["https://www.youtube.com/embed/2Dgecb_Wfjo"],
@@ -5748,6 +5948,7 @@ const matches = {
   Reina: {
     Alisa: ["https://www.youtube.com/embed/QQ9uEcazyQk"], // Add video links or data here
     Anna: ["https://www.youtube.com/embed/T__scyDvTrU"],
+    Armour:[],
     Asuka: ["https://www.youtube.com/embed/eYX7vd_7D2c"], // Add video links or data here
     Azucena: ["https://www.youtube.com/embed/sOs-rLWl6r8"], // Add video links or data here
     Bryan: ["https://www.youtube.com/embed/DtVUoO3kR5U"],
@@ -5756,6 +5957,7 @@ const matches = {
     Devil: ["https://www.youtube.com/embed/K4xhIpUfsy8"],
     Dragunov: ["https://www.youtube.com/embed/c7eoMXwoehs"],
     Eddy: ["https://www.youtube.com/embed/mMvm-Efl9iw"],
+    Fahkumram:[],
     Feng: ["https://www.youtube.com/embed/D1EqdfTRpZU"],
     Heihachi: ["https://www.youtube.com/embed/usLxVbzCYNo"],
     Hwoarang: ["https://www.youtube.com/embed/pjD8KJbxcKE"],
@@ -5787,6 +5989,7 @@ const matches = {
   Shaheen: {
     Alisa: ["https://www.youtube.com/embed/R7E6cY0Q4Lk"], // Add video links or data here
     Anna: ["https://www.youtube.com/embed/yFOCxnzpCMY"],
+    Armour:[],
     Asuka: ["https://www.youtube.com/embed/Xgm0XJau8ZU"], // Add video links or data here
     Azucena: ["https://www.youtube.com/embed/nnLld581f04"], // Add video links or data here
     Bryan: ["https://www.youtube.com/embed/3IxZdjDwoxQ"],
@@ -5795,6 +5998,7 @@ const matches = {
     Devil: ["https://www.youtube.com/embed/cl2hfVyNMUw"],
     Dragunov: ["https://www.youtube.com/embed/sJUL1-tfGDk"],
     Eddy: ["https://www.youtube.com/embed/cmrU6NaKJNo"],
+    Fahkumram:[],
     Feng: ["https://www.youtube.com/embed/WN8gpBEZNic"],
     Heihachi: ["https://www.youtube.com/embed/80xUzZ8StDA"],
     Hwoarang: ["https://www.youtube.com/embed/bvjRn2-Vklw"],
@@ -5826,6 +6030,7 @@ const matches = {
   Steve: {
     Alisa: ["https://www.youtube.com/embed/tnJz-Likl-M"], // Add video links or data here
     Anna: ["https://www.youtube.com/embed/KyHJxAr0JfQ"],
+    Armour:[],
     Asuka: ["https://www.youtube.com/embed/lSjesRz-ej8"], // Add video links or data here
     Azucena: ["https://www.youtube.com/embed/Xy6SLAsHew4"], // Add video links or data here
     Bryan: ["https://www.youtube.com/embed/ACcwhqbIfv4"],
@@ -5834,6 +6039,7 @@ const matches = {
     Devil: ["https://www.youtube.com/embed/LQioKg1qKfk"],
     Dragunov: ["https://www.youtube.com/embed/cl4cRi-53B8"],
     Eddy: ["https://www.youtube.com/embed/UXIF11sT8mo"],
+    Fahkumram:[],
     Feng: ["https://www.youtube.com/embed/WkNiPmOIWEQ"],
     Heihachi: ["https://www.youtube.com/embed/V2rbtPmlJ5A"],
     Hwoarang: ["https://www.youtube.com/embed/s30L-GPAZUU"],
@@ -5862,9 +6068,51 @@ const matches = {
     Yoshimitsu: ["https://www.youtube.com/embed/-YrtFjLlzJQ"],
     Zafina: ["https://www.youtube.com/embed/bAlpu_XHklA"],
   },
+  Template: {
+    Alisa: [],
+    Anna: [],
+    Armour: [],
+    Asuka: [],
+    Azucena: [],
+    Bryan: [],
+    Claudio: [],
+    Clive: [],
+    Devil: [],
+    Dragunov: [],
+    Eddy: [],
+    Fahkumram: [],
+    Feng: [],
+    Heihachi: [],
+    Hwoarang: [],
+    Jack: [],
+    Jin: [],
+    Jun: [],
+    Kazuya: [],
+    King: [],
+    Kuma: [],
+    Lars: [],
+    Law: [],
+    Lee: [],
+    Leo: [],
+    Leroy: [],
+    Lidia: [],
+    Lili: [],
+    Nina: [],
+    Panda: [],
+    Paul: [],
+    Raven: [],
+    Reina: [],
+    Shaheen: [],
+    Steve: [],
+    Victor: [],
+    Xiaoyu: [],
+    Yoshimitsu: [],
+    Zafina: [],
+},
   Victor: {
     Alisa: ["https://www.youtube.com/embed/oBjv_oL68VU"], // Add video links or data here
     Anna: ["https://www.youtube.com/embed/32c3GVtwSEM"],
+    Armour:[],
     Asuka: ["https://www.youtube.com/embed/HUEI92iL8Pw"], // Add video links or data here
     Azucena: ["https://www.youtube.com/embed/cZyx5JWPRlQ"], // Add video links or data here
     Bryan: ["https://www.youtube.com/embed/g4Sa1CdgHWM"],
@@ -5873,6 +6121,7 @@ const matches = {
     Devil: ["https://www.youtube.com/embed/atzR3MKUrMo"],
     Dragunov: ["https://www.youtube.com/embed/RVsslHDTrLY"],
     Eddy: ["https://www.youtube.com/embed/wxokvJj7ghw"],
+    Fahkumram:[],
     Feng: ["https://www.youtube.com/embed/nKX562ofIGU"],
     Heihachi: ["https://www.youtube.com/embed/5vziUrbD490"],
     Hwoarang: ["https://www.youtube.com/embed/9Div4NHtv2Q"],
@@ -5904,6 +6153,7 @@ const matches = {
   Xiaoyu: {
     Alisa: ["https://www.youtube.com/embed/g_8Y5BmM3TI"], // Add video links or data here
     Anna: ["https://www.youtube.com/embed/bUhXhbCJNeE"],
+    Armour:[],
     Asuka: ["https://www.youtube.com/embed/K-klmyOxGos"], // Add video links or data here
     Azucena: ["https://www.youtube.com/embed/KOVwxOqRt30"], // Add video links or data here
     Bryan: ["https://www.youtube.com/embed/iarFb5waUy4"],
@@ -5912,6 +6162,7 @@ const matches = {
     Devil: ["https://www.youtube.com/embed/SgQkiAemiMo"],
     Dragunov: ["https://www.youtube.com/embed/CMoM_6T2WUE"],
     Eddy: ["https://www.youtube.com/embed/L-syT6BJ2dc"],
+    Fahkumram:[],
     Feng: ["https://www.youtube.com/embed/YI4ypF4N9WQ"],
     Heihachi: ["https://www.youtube.com/embed/5Yd98XkZnm4"],
     Hwoarang: ["https://www.youtube.com/embed/ReQu8jftJIg"],
@@ -5943,6 +6194,7 @@ const matches = {
   Yoshimitsu: {
     Alisa: ["https://www.youtube.com/embed/tqwNO8ZsalE"], // Add video links or data here
     Anna: ["https://www.youtube.com/embed/A7ZwKUXdiBc"],
+    Armour:[],
     Asuka: ["https://www.youtube.com/embed/Holhii16f44"], // Add video links or data here
     Azucena: ["https://www.youtube.com/embed/X3U1ECIxud8"], // Add video links or data here
     Bryan: ["https://www.youtube.com/embed/kzbocP-KK6A"],
@@ -5951,6 +6203,7 @@ const matches = {
     Devil: ["https://www.youtube.com/embed/ix-Rmq-3Vsk"],
     Dragunov: ["https://www.youtube.com/embed/AkMPpx_SdBA"],
     Eddy: ["https://www.youtube.com/embed/YiNYHv8_6ok"],
+    Fahkumram:[],
     Feng: ["https://www.youtube.com/embed/fp_DEYSHt-M"],
     Heihachi: ["https://www.youtube.com/embed/VZhKPprtL3Y"],
     Hwoarang: ["https://www.youtube.com/embed/HF613P8mylQ"],
@@ -5982,6 +6235,7 @@ const matches = {
   Zafina: {
     Alisa: ["https://www.youtube.com/embed/rEQ4Gnf8Hfo"], // Add video links or data here
     Anna: ["https://www.youtube.com/embed/ebrH4Pj0F6Y"],
+    Armour:[],
     Asuka: ["https://www.youtube.com/embed/sqmMfPD6WMM"], // Add video links or data here
     Azucena: ["https://www.youtube.com/embed/MSrbzLMUhzQ"], // Add video links or data here
     Bryan: ["https://www.youtube.com/embed/3O1iukSaWSU"],
@@ -5990,6 +6244,7 @@ const matches = {
     Devil: ["https://www.youtube.com/embed/0d1BtDOsNgk"],
     Dragunov: ["https://www.youtube.com/embed/IpBcfZ87vqM"],
     Eddy: ["https://www.youtube.com/embed/BJTAItSWk5I"],
+    Fahkumram:[],
     Feng: ["https://www.youtube.com/embed/k21l8kfWwyQ"],
     Heihachi: ["https://www.youtube.com/embed/vEqi7Jd_Uxc"],
     Hwoarang: ["https://www.youtube.com/embed/TYRwY5nJpjY"],
