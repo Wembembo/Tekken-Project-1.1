@@ -4241,7 +4241,7 @@ const data = {
       ],
     },
   ],
-  Template: [
+  /*Template: [
     {
       headers: ["Term", "Notation", "Input"],
       rows: [],
@@ -4267,7 +4267,7 @@ const data = {
       ],
       rows: [],
     },
-  ],
+  ],*/
   Xiaoyu: [
     {
       headers: ["Term", "Notation", "Input"],
@@ -6068,7 +6068,7 @@ const matches = {
     Yoshimitsu: ["https://www.youtube.com/embed/-YrtFjLlzJQ"],
     Zafina: ["https://www.youtube.com/embed/bAlpu_XHklA"],
   },
-  Template: {
+  /*Template: {
     Alisa: [],
     Anna: [],
     Armour: [],
@@ -6108,7 +6108,7 @@ const matches = {
     Xiaoyu: [],
     Yoshimitsu: [],
     Zafina: [],
-},
+},*/
   Victor: {
     Alisa: ["https://www.youtube.com/embed/oBjv_oL68VU"], // Add video links or data here
     Anna: ["https://www.youtube.com/embed/32c3GVtwSEM"],
