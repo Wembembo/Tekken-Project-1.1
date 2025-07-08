@@ -1338,7 +1338,9 @@ const data = {
   Fahkumram: [
     {
       headers: ["Term", "Notation", "Input"],
-      rows: [],
+      rows: [
+        ["GRF", "Garuda Force", "Hit the opponent with certain moves to build stocks of this"],
+      ["RMS", "After guard break", "-"]],
     },
     {
       headers: [
@@ -1349,7 +1351,72 @@ const data = {
         "+/- On Block",
         "Counter Options",
       ],
-      rows: [],
+      rows: [
+        [
+          `<p class = "notation">7</p>`,
+          "Fast attack to check situations and start pressure",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          `<p class = "notation">1</p>`,
+          "Quick mid poke to check situations",
+          "-",
+          "Mid",
+          "-",
+          "-"
+        ],
+        [
+          `<p class = "notation">x7</p>`,
+          "Slow mid poke to harass the opponent, has several useful extentions",
+          "-",
+          "Mid",
+          "-",
+          "-"
+        ],
+        [
+          `<p class = "notation">x1 \ x3</p>`,
+          "Low poke to harass the opponent, either input is fine",
+          "-",
+          "Low",
+          "-",
+          "-"
+        ],
+        [
+          `<p class = "notation">2</p>`,
+          "Safe mid counterhit launcher, has lots of range",
+          "-",
+          "Mid",
+          "-",
+          "-"
+        ],
+        [
+          `<p class = "notation">ad3</p>`,
+          "A powerful high launcher that can break through parries and power crushes, On block you can continue your pressure",
+          "-",
+          "High", 
+          "-",
+          "-"
+        ],
+        [
+          `<p class = "notation">d3</p>`,
+          "Slow axe kick that can pressure opponents at close range, very rewarding counterhit",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          `<p class = "notation">ddD3</p>`,
+          "Running knee attack that can be used to approach opponents, can be used to start pressure",
+          "-",
+          "-",
+          "-",
+          "-"
+        ]
+      ],
     },
     {
       headers: [
