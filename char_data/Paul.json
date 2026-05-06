@@ -1,0 +1,41 @@
+{
+"character": "Paul",
+"metadata": {
+    "dlc_pack": "Base Roster",
+    "image_path": "./Assets/Characters/Paul.png"
+},
+"move_tables": [
+    {
+    "table_name": "Stances & Terms",
+    "headers": ["Term", "Notation", "Input"],
+    "rows": [
+        ["Backsway", "-", "<p class=\"notation\">sza</p>"],
+        ["Deep Dive", "-", "<p class=\"notation\">sxdx</p>"],
+        ["Deathfist", "-", "<p class=\"notation\">sxd9</p>"],
+        ["Demoman", "-", "<p class=\"notation\">s39[8]</p>"]
+    ]
+    },
+    {
+    "table_name": "Key Moves",
+    "headers": ["Input", "Description", "Startup", "Level", "Block", "Counter"],
+    "rows": [
+        ["<p class=\"notation\">7</p>", "Quick jab to check situations and start your offence", "10", "High", "+1", "N/A"],
+        ["<p class=\"notation\">x7(A)</p>", "Mid poke with an extension and backsway transition. Mix up your opponents with this", "20", "Mid, (t)", "-15", "N/A"],
+        ["<img alt=\"While Standing\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R5_03_WS.png\"><p class=\"notation\">79</p>", "Similiar use to df+1m it's 2nd hit has counterhit properties", "15", "Mid", "-10", "N/A"],
+        ["<p class=\"notation\">x9</p>", "Useful for punishing mistakes and as a keepout button", "15", "Mid", "-8", "N/A"],
+        ["<p class=\"notation\">z9</p>", "Mid counterhit launcher that can hit grounded opponents", "19", "Mid", "-11", "N/A"],
+        ["<p class=\"notation\">sxd1</p>", "Low with great range that can go under high attacks", "18", "Low", "-14", "N/A"],
+        ["<p class=\"notation\">s39[8]</p>", "A Strong low attack to open up opponents that are stand blocking", "26", "Low, Mid, [Mid]", "-17", "N/A"]
+    ]
+    },
+    {
+    "table_name": "Defensive Options",
+    "headers": ["Input", "Description", "Startup", "Level", "Block"],
+    "rows": [
+        ["<p class=\"notation\">a8</p>", "Power Crush", "24", "High", "-9"],
+        ["<p class=\"notation\">a4</p>", "Reversal, alternative input: b+2+4", "N/A", "N/A", "N/A"],
+        ["<p class=\"notation\">z8</p>", "Powercrush, if an attack is absorbed, the reversal does more chip damage", "20", "Mid", "-14"]
+    ]
+    }
+]
+}

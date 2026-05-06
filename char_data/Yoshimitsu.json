@@ -1,0 +1,70 @@
+{
+"character": "Yoshimitsu",
+"metadata": {
+    "dlc_pack": "Base Roster",
+    "image_path": "./Assets/Characters/Yoshimitsu.png"
+},
+"move_tables": [
+    {
+    "table_name": "Stances & Terms",
+    "headers": ["Term", "Notation", "Input"],
+    "rows": [
+        [
+        "No Sword Stance",
+        "<img alt=\"No Sword Stance\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_NSS.png\">",
+        "<p class=\"notation\">a8</p>"
+        ],
+        [
+        "Back Turn",
+        "<img alt=\"Back Turn\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R5_02_BT.png\">",
+        "<p class=\"notation\">ddN5</p>"
+        ],
+        [
+        "Kincho",
+        "<img alt=\"Kincho\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_KIN.png\">",
+        "<p class=\"notation\">8</p>"
+        ],
+        [
+        "Meditation",
+        "<img alt=\"Meditation\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_MED.png\">",
+        "<p class=\"notation\">2</p>"
+        ],
+        [
+        "Indian Stance",
+        "<img alt=\"Indian Stance\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_IND.png\">",
+        "<p class=\"notation\">s2</p>"
+        ],
+        [
+        "Manji Dragonfly",
+        "<img alt=\"Manji Dragonfly\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_DGF.png\">",
+        "<p class=\"notation\">w8</p>"
+        ],
+        [
+        "Flea",
+        "<img alt=\"Flea\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_FLE.png\">",
+        "<p class=\"notation\">7</p>"
+        ]
+    ]
+    },
+    {
+    "table_name": "Key Moves",
+    "headers": ["Input", "Description", "Startup", "Level", "Block", "Counter"],
+    "rows": [
+        ["<p class=\"notation\">7</p>", "Quick Jab to check situations", "10", "High", "+1", "N/A"],
+        ["<p class=\"notation\">x73</p>", "Mid pokes to harass the opponent", "17", "Mid, Mid", "-12", "N/A"],
+        ["<p class=\"notation\">z11</p>", "Multi hitting low", "15", "Low, Low", "-19", "N/A"],
+        ["<p class=\"notation\">w2</p>", "Very evasive launching attack", "39", "Mid, Mid", "+1", "N/A"],
+        ["<p class=\"notation\">N</p>", "Very fast attack for challenging Situations", "6", "Mid", "-15", "N/A"],
+        ["<img class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_KIN.png\"><img class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_DGF.png\">", "Stances to create strong situations", "-", "-", "-", "N/A"]
+    ]
+    },
+    {
+    "table_name": "Defensive Options",
+    "headers": ["Input", "Description", "Startup", "Level", "Block"],
+    "rows": [
+        ["<p class=\"notation\">N</p>", "Flash, an extremely fast attack", "6", "Mid", "-15"],
+        ["<p class=\"notation\">8</p>", "Parries all highs or mids except unblockables", "N/A", "N/A", "N/A"]
+    ]
+    }
+]
+}

@@ -1,0 +1,57 @@
+{
+"character": "Leo",
+"metadata": {
+    "dlc_pack": "Base Roster",
+    "image_path": "./Assets/Characters/Leo.png"
+},
+"move_tables": [
+    {
+    "table_name": "Stances & Terms",
+    "headers": ["Term", "Notation", "Input"],
+    "rows": [
+        [
+        "Kin Kei",
+        "<img class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_KNK.png\">",
+        "<p class=\"notation\">d3</p>"
+        ],
+        [
+        "Bokuho",
+        "<img class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_BOK.png\">",
+        "<p class=\"notation\">s8</p>"
+        ]
+    ]
+    },
+    {
+    "table_name": "Key Moves",
+    "headers": [
+        "Input",
+        "Description",
+        "Startup",
+        "Level",
+        "Block",
+        "Counter"
+    ],
+    "rows": [
+        ["<p class=\"notation\">7</p>", "Quick Jab ot start offence, has extensions", "10", "High", "+1", "N/A"],
+        ["<p class=\"notation\">x7</p>", "Mid poke, has extensions to discourage retaliation", "13", "Mid", "-1", "N/A"],
+        ["<p class=\"notation\">s9</p>", "Conuterhit launcher that can also be used for pressure", "21", "Mid", "+4", "N/A"],
+        ["<p class=\"notation\">sxd7</p>", "Low Poke with good range and counterhit", "-", "Low", "-", "N/A"],
+        ["<p class=\"notation\">z37</p>", "Risky low option that can knock opponent down, Clean hit is +2", "20", "Low", "-31", "N/A"],
+        ["<p class=\"notation\">dd9</p>", "Long range mid attack for approaching", "14", "Mid", "-9", "N/A"],
+        ["<p class=\"notation\">x1</p>", "Homing attack to check sidestep, can wallsplat", "17", "Mid", "-9", "N/A"],
+        ["<p class=\"notation\">z1</p>", "Evasive launching attack", "31", "High", "-8", "N/A"]
+    ]
+    },
+    {
+    "table_name": "Defensive Options",
+    "headers": ["Input", "Description", "Startup", "Level", "Block"],
+    "rows": [
+        ["<p class=\"notation\">q7</p>", "High and Mid Kick Parry", "N/A", "N/A", "N/A"],
+        ["<p class=\"notation\">a4</p>", "Parries high and mid kicks and punches", "N/A", "N/A", "N/A"],
+        ["<p class=\"notation\">a6</p>", "Reversal, parries high and mid punches and kicks", "N/A", "N/A", "N/A"],
+        ["<p class=\"notation\">aM</p>", "Parries high and mid punches", "30", "Mid", "-8"],
+        ["<p class=\"notation\">8</p>", "Power Crush", "25", "Mid", "12"]
+    ]
+    }
+]
+}

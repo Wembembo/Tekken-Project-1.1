@@ -1,0 +1,153 @@
+{
+"character": "Alisa",
+"metadata": {
+    "dlc_pack": "Base Roster",
+    "image_path": "./Assets/Characters/Alisa.png"
+},
+"move_tables": [
+    {
+    "table_name": "Stances & Terms",
+    "headers": ["Term", "Notation", "Input"],
+    "rows": [
+        [
+        "Single Boot",
+        "SBT",
+        "<p class=\"notation\">d2</p>"
+        ],
+        [
+        "Double Boot",
+        "DBT",
+        "<img alt=\"Double Boot\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_DES.png\"><p class=\"notation\">d1</p>"
+        ],
+        [
+        "Destructive Form",
+        "<img alt=\"Destructive Form\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_DES.png\">",
+        "<p class=\"notation\">s8</p>"
+        ],
+        [
+        "Backup",
+        "<img alt=\"Backup\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_BKP.png\">",
+        "<p class=\"notation\">z1</p>"
+        ]
+    ]
+    },
+    {
+    "table_name": "Key Moves",
+    "headers": [
+        "Input",
+        "Description",
+        "Startup Frames",
+        "Attack Level",
+        "+/- On Block",
+        "Counter Options"
+    ],
+    "rows": [
+        [
+        "<p class=\"notation\">7</p>",
+        "Quick jab to start offence",
+        "10",
+        "High",
+        "+1",
+        "-"
+        ],
+        [
+        "<p class=\"notation\">a7</p>",
+        "Mid Poke with good range",
+        "15",
+        "Mid",
+        "-5",
+        "-"
+        ],
+        [
+        "<p class=\"notation\">z1</p>",
+        "Key low poke to harass the opponent",
+        "16",
+        "Low",
+        "-13",
+        "-"
+        ],
+        [
+        "<p class=\"notation\">x9</p>",
+        "Good keepout and whiff punisher",
+        "16",
+        "Mid",
+        "-9",
+        "-"
+        ],
+        [
+        "<p class=\"notation\">s1</p>",
+        "Long ranged low, mix it with your other approach tools",
+        "23",
+        "Low",
+        "-10",
+        "-"
+        ],
+        [
+        "<p class=\"notation\">a1</p>",
+        "Homing attack with great range and pushback on block",
+        "20",
+        "Mid",
+        "-8",
+        "-"
+        ],
+        [
+        "<img alt=\"While Standing\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R5_03_WS.png\">8",
+        "Homing attack from crouch, Mix it with FC1+2",
+        "20",
+        "Mid",
+        "-8",
+        "-"
+        ],
+        [
+        "<p class=\"notation\">ddD8</p>",
+        "Approach attack, usefule to pressure the opponent",
+        "18",
+        "Mid",
+        "-4",
+        ""
+        ],
+        [
+        "<img alt=\"Destuctive Form\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_DES.png\">",
+        "Explore this stance to form and aggressive gameplan",
+        "-",
+        "-",
+        "-",
+        "-"
+        ]
+    ]
+    },
+    {
+    "table_name": "Defensive Options",
+    "headers": [
+        "Input",
+        "Description",
+        "Startup Frames",
+        "Attack Level",
+        "+/- On Block"
+    ],
+    "rows": [
+        [
+        "<p class=\"notation\">a4</p>",
+        "Parries high attacks",
+        "-",
+        "-",
+        "-"
+        ],
+        [
+        "<p class=\"notation\">a8</p>",
+        "Power Crush",
+        "19",
+        "Mid",
+        "-13"
+        ],
+        [
+        "<p class=\"notation\">q9</p>",
+        "Power Crush",
+        "16",
+        "High",
+        "-9"
+        ]
+    ]
+    }
+]
+}

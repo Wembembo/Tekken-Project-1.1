@@ -1,0 +1,56 @@
+{
+"character": "Heihachi",
+"metadata": {
+    "dlc_pack": "Season 2",
+    "image_path": "./Assets/Characters/Heihachi.png"
+},
+"move_tables": [
+    {
+    "table_name": "Stances & Terms",
+    "headers": ["Term", "Notation", "Input"],
+    "rows": [
+        [
+        "Crouch Dash",
+        "<img alt=\"Crouch Dash\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_CD_All.png\">",
+        "<p class=\"notation\">d5sx</p>"
+        ],
+        ["Omen Thunder God Fist", "OTGF", "<p class=\"notation\">d5sx+7</p>"],
+        ["Raijin", "RAI", "<p class=\"notation\">d2</p>"],
+        ["Fujin", "FUJ", "<p class=\"notation\">s8</p>"],
+        ["Warrior", "Warrior (When in level 3)", "<p class=\"notation\">N</p>"]
+    ]
+    },
+    {
+    "table_name": "Key Moves",
+    "headers": [
+        "Input",
+        "Description",
+        "Startup",
+        "Level",
+        "Block",
+        "Counter"
+    ],
+    "rows": [
+        ["<p class=\"notation\">7</p>", "Use this to start offence and check situations, has many useful followups", "10", "High", "+1", "N/A"],
+        ["<p class=\"notation\">x7</p>", "Mid poke with a high and chargable followups", "13", "Mid", "5", "N/A"],
+        ["<p class=\"notation\">a3</p>", "Long range attack that tracks to his weak side", "18", "Mid", "-8", "N/A"],
+        ["<p class=\"notation\">d3</p>", "Pressure tool with many situational followups", "19", "Mid", "+4", "N/A"],
+        ["<p class=\"notation\">e13</p>", "Low crushing launcher that pressures on block", "20", "Mid, Mid", "+4", "N/A"],
+        ["<p class=\"notation\">z1</p>", "Quick low poke to chip at opponent's health", "16", "Low", "-13", "N/A"],
+        ["OTGF", "High launching attack, useful in many situations", "19", "Mid", "-11", "N/A"],
+        ["RAJ and FUJ", "Explore the options of these two stances to improve pressure", "-", "-", "-", "N/A"]
+    ]
+    },
+    {
+    "table_name": "Defensive Options",
+    "headers": ["Input", "Description", "Startup", "Level", "Block"],
+    "rows": [
+        ["<p class=\"notation\">a8</p>", "Has parry properties", "42", "Mid", "-13"],
+        ["<p class=\"notation\">e7</p>", "Power Crush", "24", "Mid", "-13"],
+        ["<p class=\"notation\">q9</p>", "Has punch parry properties", "27", "Mid", "-11"],
+        ["<img class=\"notation\" alt=\"Heat\" src=\"./Assets/Input-Notations/assets_generic/R5_01_HEAT.png\"><p class=\"notation\">s8</p>", "Reversal", "-", "-", "-"],
+        ["<img class=\"notation\" alt=\"Heat\" src=\"./Assets/Input-Notations/assets_generic/R5_01_HEAT.png\"><p class=\"notation\">z8</p>", "Power Crush", "-", "-", "-"]
+    ]
+    }
+]
+}

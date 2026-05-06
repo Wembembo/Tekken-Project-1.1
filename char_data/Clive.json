@@ -1,0 +1,48 @@
+{
+"character": "Clive",
+"metadata": {
+    "dlc_pack": "Season 2",
+    "image_path": "./Assets/Characters/Clive.png"
+},
+"move_tables": [
+    {
+    "table_name": "Stances & Terms",
+    "headers": ["Term", "Notation", "Input"],
+    "rows": [
+        ["PHS", "Phoenix Step/Stance", "<p class=\"notation\">d3</p>"],
+        ["BHT", "Bahamut", "<p class=\"notation\">2</p>"],
+        ["Updraft", "Updraft", "During Jump"]
+    ]
+    },
+    {
+    "table_name": "Key Moves",
+    "headers": [
+        "Input",
+        "Description",
+        "Startup",
+        "Level",
+        "Block",
+        "Counter"
+    ],
+    "rows": [
+        ["<p class=\"notation\">7</p>", "Quick jab to start offence", "10", "High", "+1", "N/A"],
+        ["<p class=\"notation\">x7</p>", "Mid poke to harass the opponent", "14", "Mid", "-3", "N/A"],
+        ["<p class=\"notation\">s7</p>", "Low poke to harass the opponent", "18", "Low", "-13", "N/A"],
+        ["<p class=\"notation\">z3</p>", "Counterhit launching sweep", "19", "Low", "-18", "N/A"],
+        ["<p class=\"notation\">a9D</p>", "Very long range high attack that can shift into PHX", "20", "High", "-4", "N/A"],
+        ["<p class=\"notation\">a3</p>", "Good button to deal with grounded opponents", "18", "Mid", "9", "N/A"],
+        ["<p class=\"notation\">dd9</p>", "Safe ranged attack to build your Zantetsuken", "21", "Mid", "-7", "N/A"],
+        ["PHX", "Learn your stance options for mixing the opponent, especially after a blocked b+2F, you can start PHX", "-", "-", "-", "N/A"]
+    ]
+    },
+    {
+    "table_name": "Defensive Options",
+    "headers": ["Input", "Description", "Startup", "Level", "Block"],
+    "rows": [
+        ["<p class=\"notation\">a8</p>", "Power Crush", "24", "Mid", "-14"],
+        ["<p class=\"notation\">2</p>", "Has low parry properties", "-", "-", "-"],
+        ["<p class=\"notation\">a1</p>", "Parry, can be followed up with 2 or 1+2 on successful parry", "-", "-", "-"]
+    ]
+    }
+]
+}

@@ -1,0 +1,59 @@
+{
+    "character": "Chaacter Name",
+    "metadata": {
+        "dlc_pack": "Season 3",
+        "image_path": "./Assets/Characters/FileName.png"
+    },
+    "move_tables": [
+        {
+        "table_name": "Stances & Terms",
+        "headers": ["Term", "Notation", "Input"],
+        "rows": [
+            [
+            "Stance Name",
+            "ABC",
+            "<p class='notation'>Input</p>"
+            ],
+            [
+            "Special Move",
+            "<img class='notation' src='./Assets/Path/icon.png'>",
+            "<p class='notation'>d+2</p>"
+            ]
+        ]
+        },
+        {
+        "table_name": "Key Moves",
+        "headers": [
+            "Input",
+            "Description",
+            "Startup",
+            "Level",
+            "Block",
+            "Counter"
+        ],
+        "rows": [
+            [
+            "<p class='notation'>1,2</p>",
+            "Description of the move here.",
+            "10",
+            "High, High",
+            "+1",
+            "N/A"
+            ]
+        ]
+        },
+        {
+        "table_name": "Defensive Options",
+        "headers": ["Input", "Description", "Startup", "Level", "Block"],
+        "rows": [
+            [
+            "<p class='notation'>a+1+2</p>",
+            "Power Crush / Parry details.",
+            "20",
+            "Mid",
+            "-13"
+            ]
+        ]
+        }
+    ]
+}

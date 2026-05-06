@@ -1,0 +1,50 @@
+{
+"character": "Xiaoyu",
+"metadata": {
+    "dlc_pack": "Base Roster",
+    "image_path": "./Assets/Characters/Xiaoyu.png"
+},
+"move_tables": [
+    {
+    "table_name": "Stances & Terms",
+    "headers": ["Term", "Notation", "Input"],
+    "rows": [
+        [
+        "Art of Phoenix",
+        "<img alt=\"Art of Phoenix\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_AOP.png\">",
+        "<p class=\"notation\">s8</p>"
+        ],
+        ["Rain Dance Stance", "RDS", "<p class=\"notation\">a2</p>"],
+        [
+        "Hypontist",
+        "<img alt=\"Hypnotist\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_HYP.png\">",
+        "<p class=\"notation\">z8</p>"
+        ]
+    ]
+    },
+    {
+    "table_name": "Key Moves",
+    "headers": ["Input", "Description", "Startup", "Level", "Block", "Counter"],
+    "rows": [
+        ["<p class=\"notation\">7</p>", "Quick jab to check situations", "10", "High", "+1", "N/A"],
+        ["<p class=\"notation\">x7</p>", "Fast mid poke that high crushes, can go into RDS", "14", "Mid", "-2", "N/A"],
+        ["<p class=\"notation\">z9</p>", "Low poke that goes into RDS", "18", "Low", "-8", "N/A"],
+        ["<img alt=\"Side Step\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R5_05_SS.png\"><p class=\"notation\">3</p>", "Low poke that launches on counterhit", "18", "Low", "-13", "N/A"],
+        ["<p class=\"notation\">d3</p>", "Rewarding high homing attack to check lateral movement", "19", "High", "+1", "N/A"],
+        ["<p class=\"notation\">dd1</p>", "Good approach button to frustrate the opponent", "14", "Mid", "-5", "N/A"],
+        ["<p class=\"notation\">dd3</p>", "Pressure buttpm that goes into HYP stance", "15", "Mid", "-11", "N/A"],
+        ["<p class=\"notation\">ddD1</p>", "Approahc tool that transitions to AOP on hit or block", "23", "Mid", "+7", "N/A"]
+    ]
+    },
+    {
+    "table_name": "Defensive Options",
+    "headers": ["Input", "Description", "Startup", "Level", "Block"],
+    "rows": [
+        ["<p class=\"notation\">a4</p>", "High Mid Parry, Transitions to BT. Also possible during HYP and BT", "N/A", "N/A", "N/A"],
+        ["<p class=\"notation\">z8</p>", "Parry that transitions to HYP", "N/A", "N/A", "N/A"],
+        ["<p class=\"notation\">d8</p>", "Has punch parry properties", "12", "Mid", "16"],
+        ["<p class=\"notation\">q3</p>", "Power Crush", "22", "Mid", "-13"]
+    ]
+    }
+]
+}

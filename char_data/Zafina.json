@@ -1,0 +1,51 @@
+{
+"character": "Zafina",
+"metadata": {
+    "dlc_pack": "Base Roster",
+    "image_path": "./Assets/Characters/Zafina.png"
+},
+"move_tables": [
+    {
+    "table_name": "Stances & Terms",
+    "headers": ["Term", "Notation", "Input"],
+    "rows": [
+        [
+        "Scorpion",
+        "<img alt=\"Scorpion\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_SCR.png\">",
+        "<p class=\"notation\">2</p>"
+        ],
+        [
+        "Tarantula",
+        "<img alt=\"Tarantula\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_TRT.png\">",
+        "<p class=\"notation\">s8</p>"
+        ],
+        [
+        "Mantis",
+        "<img alt=\"Mantis\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_MNT.png\">",
+        "<p class=\"notation\">s2</p>"
+        ]
+    ]
+    },
+    {
+    "table_name": "Key Moves",
+    "headers": ["Input", "Description", "Startup", "Level", "Block", "Counter"],
+    "rows": [
+        ["<p class=\"notation\">7</p>", "Quick jab to check situations", "10", "High", "+1", "N/A"],
+        ["<p class=\"notation\">x7</p>", "Mid poke to harass the opponent", "13", "Mid", "-5", "N/A"],
+        ["<p class=\"notation\">s1S</p>", "Counterhit Launching low that can shift into MNT stance", "22", "Low", "-15", "N/A"],
+        ["<p class=\"notation\">z1</p>", "Quick low that can shift into MNT Stance", "18", "Low", "-8", "N/A"],
+        ["<p class=\"notation\">dd1</p>", "Mid attack, useful for pressure. Shifts into SCR", "20", "Mid", "+4", "N/A"],
+        ["<p class=\"notation\">ddD8</p>", "Strong homing attack to control the midtange, transitions to TRT", "20", "High", "+8", "N/A"],
+        ["<p class=\"notation\">833</p>", "Counterhit launcher with multiple hits", "30", "Mid, Mid, Mid", "-11", "N/A"],
+        ["<img class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_MNT.png\"><img class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_SCR.png\">", "Explore these stances to up your pressure game", "N/A", "N/A", "N/A", "N/A"]
+    ]
+    },
+    {
+    "table_name": "Defensive Options",
+    "headers": ["Input", "Description", "Startup", "Level", "Block"],
+    "rows": [
+        ["<p class=\"notation\">a1</p>", "Power Crush", "24", "Mid", "-14"]
+    ]
+    }
+]
+}

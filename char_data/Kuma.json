@@ -1,0 +1,71 @@
+{
+"character": "Kuma",
+"metadata": {
+    "dlc_pack": "Base Roster",
+    "image_path": "./Assets/Characters/Kuma.png"
+},
+"move_tables": [
+    {
+    "table_name": "Stances & Terms",
+    "headers": ["Term", "Notation", "Input"],
+    "rows": [
+        [
+        "Hunting Bear Stance",
+        "<img alt=\"Hunting Bear Stance\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_HBS.png\">",
+        "<p class=\"notation\">2</p>"
+        ],
+        [
+        "Sit",
+        "<img alt=\"Sit\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_SIT.png\">",
+        "<p class=\"notation\">s2</p>"
+        ],
+        [
+        "Roll",
+        "<img alt=\"Roll\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_ROL.png\">",
+        "<img alt=\"Full Crouch\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R5_02_FC.png\"><p class=\"notation\">8</p>"
+        ]
+    ]
+    },
+    {
+    "table_name": "Key Moves",
+    "headers": [
+        "Input",
+        "Description",
+        "Startup",
+        "Level",
+        "Block",
+        "Counter"
+    ],
+    "rows": [
+        ["<p class=\"notation\">7</p>", "Quick jab to check situations", "10", "High", "+1", "N/A"],
+        ["<p class=\"notation\">777</p>", "Risky counterhit launcher to challenge situations", "22", "High, Mid, Mid", "-16", "N/A"],
+        ["<p class=\"notation\">z9</p>", "Low poke to annoy opponents from mid range", "18", "Low", "-15", "N/A"],
+        ["<p class=\"notation\">z3</p>", "Risky low for pressure, launches on counter hit", "21", "Low", "-23", "N/A"],
+        ["<p class=\"notation\">w8</p>", "Safe mid attack that can shift into HBS by holding down", "18", "Mid", "-4", "N/A"],
+        ["<p class=\"notation\">z79</p>", "Attack string that can be charged at different levels", "17", "High, Mid", "-13", "N/A"],
+        ["<img alt=\"Heat\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R5_01_HEAT.png\"><p class=\"notation\">xM</p>", "Special mid launcher, useful to pressure the opponent", "15", "Special Mid", "+5", "N/A"],
+        ["<img alt=\"Hunting Bear Stance\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_HBS.png\">", "Explore this stance to form an aggressive game plan", "-", "-", "-", "N/A"]
+    ]
+    },
+    {
+    "table_name": "Defensive Options",
+    "headers": ["Input", "Description", "Startup", "Level", "Block"],
+    "rows": [
+        [
+        "<img alt=\"Hunting Bear Stance\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_HBS.png\"><p class=\"notation\">d2</p>",
+        "Transitions into sit stance, hitbox is behind Kuma. Alternative input is forward 3+4",
+        "16",
+        "Low",
+        "+11"
+        ],
+        [
+        "<p class=\"notation\">d</p><img alt=\"Hunting Bear Stance\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_HBS.png\">",
+        "Low parry in stance",
+        "-",
+        "-",
+        "-"
+        ]
+    ]
+    }
+]
+}

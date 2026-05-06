@@ -1,0 +1,55 @@
+{
+"character": "King",
+"metadata": {
+    "dlc_pack": "Base Roster",
+    "image_path": "./Assets/Characters/King.png"
+},
+"move_tables": [
+    {
+    "table_name": "Stances & Terms",
+    "headers": ["Term", "Notation", "Input"],
+    "rows": [
+        ["Jaguar Step", "JAG", "<p class=\"notation\">2</p>"],
+        [
+        "Jaguar Sprint",
+        "<img alt=\"Jaguar Sprint\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_JGS.png\">",
+        "<p class=\"notation\">d2</p>"
+        ],
+        ["Shining Wizard", "SW", "<p class=\"notation\">ddD6</p>"],
+        ["Giant Swing", "GS", "<p class=\"notation\">dazsxd7</p>"]
+    ]
+    },
+    {
+    "table_name": "Key Moves",
+    "headers": [
+        "Input",
+        "Description",
+        "Startup",
+        "Level",
+        "Block",
+        "Counter"
+    ],
+    "rows": [
+        ["<p class=\"notation\">7</p>", "Quick jab to start offence and check situations", "14", "High", "+1", "N/A"],
+        ["<p class=\"notation\">x7</p>", "Quick mid poke to check the opponent", "14", "Mid", "-1", "N/A"],
+        ["<p class=\"notation\">s1</p>", "Low poke to harass the opponent", "17", "Low", "-12", "N/A"],
+        ["<p class=\"notation\">x97</p>", "Counterhit confirmable that knocks down", "20", "Mid, Mid", "-4", "N/A"],
+        ["<p class=\"notation\">dd7</p>", "Homing to discourage side stepping in the mid range", "20", "Mid", "-5", "N/A"],
+        ["<p class=\"notation\">dd59</p>", "Strong low that becomes a throw on counterhit", "18", "Low / Low > Throw", "-13", "N/A"],
+        ["<p class=\"notation\">d1[8]</p>", "Mid to check opponents trying to crouch under throws", "15", "Mid", "-18", "N/A"],
+        ["Throws", "Learn his many throws to improve your offence", "-", "-", "-", "N/A"]
+    ]
+    },
+    {
+    "table_name": "Throw Data",
+    "headers": ["Input", "Escapes", "Startup Frames"],
+    "rows": [
+        ["<p class=\"notation\">dazsxd7</p>", "1 Escape", "10"],
+        ["<p class=\"notation\">dazsxd9</p>", "2 Escape", "12"],
+        ["<p class=\"notation\">ddD6</p>", "1+2 Escape", "10"],
+        ["<p class=\"notation\">sza8</p>", "1+2 Escape", "11"],
+        ["<p class=\"notation\">e8</p>", "1+2 Escape, hold back to throw backwards", "12"]
+    ]
+    }
+]
+}

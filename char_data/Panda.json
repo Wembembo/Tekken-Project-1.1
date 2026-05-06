@@ -1,0 +1,78 @@
+{
+"character": "Panda",
+"metadata": {
+    "dlc_pack": "Base Roster",
+    "image_path": "./Assets/Characters/Panda.png"
+},
+"move_tables": [
+    {
+    "table_name": "Stances & Terms",
+    "headers": ["Term", "Notation", "Input"],
+    "rows": [
+        [
+        "Hunting Bear Stance",
+        "<img alt=\"Hunting Bear Stance\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_HBS.png\">",
+        "<p class=\"notation\">2</p>"
+        ],
+        [
+        "Sit",
+        "<img alt=\"Sit Stance\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_SIT.png\">",
+        "<p class=\"notation\">s2</p>"
+        ],
+        [
+        "Roll",
+        "<img alt=\"Roll Stance\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_ROL.png\">",
+        "<img alt=\"Full Crouch\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R5_02_FC.png\"><p class=\"notation\">8</p>"
+        ]
+    ]
+    },
+    {
+    "table_name": "Key Moves",
+    "headers": ["Input", "Description", "Startup", "Level", "Block", "Counter"],
+    "rows": [
+        ["<p class=\"notation\">7</p>", "Quick jab to check situations", "10", "High", "N/A", "N/A"],
+        ["<p class=\"notation\">777</p>", "Risky counterhit launcher to challenge situations", "22", "High, Mid, Mid", "N/A", "N/A"],
+        ["<p class=\"notation\">z9</p>", "Low poke that can also enter hunting bear stance", "18", "Low", "N/A", "N/A"],
+        ["<p class=\"notation\">z3</p>", "Risky low for pressure, launches on counterhit", "21", "Low", "N/A", "N/A"],
+        ["<p class=\"notation\">w8</p>", "Safe mid attack that can transition into HBS", "18", "Mid", "N/A", "N/A"],
+        ["<p class=\"notation\">z79</p>", "Attack string that can be charged to three different levels", "17-34-47", "High, Mid", "N/A", "N/A"],
+        [
+        "<img alt=\"Heat\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R5_01_HEAT.png\"><img alt=\"Roll\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_ROL.png\">",
+        "Enhanced roll stance, useful for creating mixups",
+        "-",
+        "-",
+        "-",
+        "N/A"
+        ],
+        [
+        "<img alt=\"Hunting Bear Stance\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_HBS.png\">",
+        "Explore this stance to form an aggressive gameplan",
+        "-",
+        "-",
+        "-",
+        "N/A"
+        ]
+    ]
+    },
+    {
+    "table_name": "Defensive Options",
+    "headers": ["Input", "Description", "Startup", "Level", "Block"],
+    "rows": [
+        [
+        "<img alt=\"Hunting Bear Stance\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_HBS.png\"><p class=\"notation\">d</p>",
+        "Low Parry in stance",
+        "-",
+        "Low",
+        "-"
+        ],
+        [
+        "<img alt=\"Hunting Bear Stance\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_HBS.png\"><p class=\"notation\">2</p>",
+        "Power Crush",
+        "25",
+        "Mid",
+        "N/A"
+        ]
+    ]
+    }
+]
+}

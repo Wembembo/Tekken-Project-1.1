@@ -1,0 +1,66 @@
+{
+"character": "Jin",
+"metadata": {
+    "dlc_pack": "Base Roster",
+    "image_path": "./Assets/Characters/Jin.png"
+},
+"move_tables": [
+    {
+    "table_name": "Stances & Terms",
+    "headers": ["Term", "Notation", "Input"],
+    "rows": [
+        [
+        "Electric Wind Hook Fist",
+        "<img alt=\"Electric Wind God Fist\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_EWGF.png\">",
+        "<p class=\"notation\">d5sx9</p>"
+        ],
+        [
+        "Crouch Dash",
+        "<img alt=\"Crouch Dash\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_CD_Jin.png\">",
+        "<p class=\"notation\">d5sx</p>"
+        ],
+        [
+        "Zen",
+        "<img alt=\"Zen\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_ZEN.png\">",
+        "<p class=\"notation\">a2</p>"
+        ],
+        [
+        "Zen",
+        "<img alt=\"Zen\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_ZEN.png\">",
+        "<p class=\"notation\">d2</p>"
+        ]
+    ]
+    },
+    {
+    "table_name": "Key Moves",
+    "headers": [
+        "Input",
+        "Description",
+        "Startup",
+        "Level",
+        "Block",
+        "Counter"
+    ],
+    "rows": [
+        ["<p class=\"notation\">7</p>", "Quick jab to start offense. Has many extensions.", "10", "High", "+1", "N/A"],
+        ["<p class=\"notation\">3</p>", "High Homing Attack to check sidestepping opponents", "13", "High", "-9", "N/A"],
+        ["<p class=\"notation\">x7</p>", "A mid to harass the opponent. Has follow-ups", "12", "Mid", "-3", "N/A"],
+        ["<p class=\"notation\">s9</p>", "Strong low that launches on counter", "22", "Low", "-14", "N/A"],
+        ["<p class=\"notation\">z3</p>", "Good low poke to pressure the opponent", "20", "Low", "-13", "N/A"],
+        ["<p class=\"notation\">d3</p>", "Long range mid that launches on counter", "16", "Mid", "-8", "N/A"],
+        ["<img alt=\"Electric Wind God Fist\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_EWGF.png\">", "High launching attack useful in many situations", "11", "High", "+5", "N/A"],
+        ["<p class=\"notation\">w9</p>", "Evasive punch that can be used to challenge situations", "15", "Mid", "N/A", "N/A"]
+    ]
+    },
+    {
+    "table_name": "Defensive Options",
+    "headers": ["Input", "Description", "Startup", "Level", "Block"],
+    "rows": [
+        ["<p class=\"notation\">a4</p>", "Parry", "N/A", "SP", "N/A"],
+        ["<p class=\"notation\">a6</p>", "Parry", "N/A", "SP", "N/A"],
+        ["<p class=\"notation\">a8</p>", "Has punch parry effect", "23", "Mid", "N/A"],
+        ["<p class=\"notation\">s7</p>", "Power Crush", "21", "Mid, (t) High", "-13"]
+    ]
+    }
+]
+}

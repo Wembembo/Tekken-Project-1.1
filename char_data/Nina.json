@@ -1,0 +1,49 @@
+{
+"character": "Nina",
+"metadata": {
+    "dlc_pack": "Base Roster",
+    "image_path": "./Assets/Characters/Nina.png"
+},
+"move_tables": [
+    {
+    "table_name": "Stances & Terms",
+    "headers": ["Term", "Notation", "Input"],
+    "rows": [
+        ["Can Opener", "-", "<p class=\"notation\">e313</p>"],
+        ["Backsway", "-", "<p class=\"notation\">sza</p>"],
+        [
+        "Crouch Dash",
+        "<img class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_CD_All.png\">",
+        "<p class=\"notation\">sxd</p>"
+        ]
+    ]
+    },
+    {
+    "table_name": "Key Moves",
+    "headers": ["Input", "Description", "Startup", "Level", "Block", "Counter"],
+    "rows": [
+        ["<p class=\"notation\">7</p>", "Quick jab to start offence", "10", "High", "+1", "N/A"],
+        ["<p class=\"notation\">x7</p>", "Mid pokes to check situations, has extensions", "13", "Mid", "-1", "N/A"],
+        ["<p class=\"notation\">a3</p>", "Good keepout button", "14", "High", "-9", "N/A"],
+        ["<p class=\"notation\">z1</p>", "Low poke to harass the opponent", "20", "Low", "-13", "N/A"],
+        ["<p class=\"notation\">s9</p>", "Low pokw to harass the opponent", "20", "Low", "-12", "N/A"],
+        ["<p class=\"notation\">e7</p>", "Safe launcher that jumps over lows", "26", "Mid", "-5", "N/A"],
+        ["<p class=\"notation\">sxd7</p>", "Long range attack that launches on counterhit", "-", "-", "-", "N/A"],
+        ["<p class=\"notation\">a8</p>", "Mid attack that erases opponent's recoverable health", "16", "Mid, Mid", "-7", "N/A"]
+    ]
+    },
+    {
+    "table_name": "Defensive Options",
+    "headers": ["Input", "Description", "Startup", "Level", "Block"],
+    "rows": [
+        [
+        "<p class=\"notation\">a4</p>",
+        "Mid/High Parry, alternative input: b+2+4",
+        "N/A",
+        "N/A",
+        "N/A"
+        ]
+    ]
+    }
+]
+}
