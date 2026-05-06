@@ -1,0 +1,60 @@
+{
+"character": "Leroy",
+"metadata": {
+    "dlc_pack": "Base Roster",
+    "image_path": "./Assets/Characters/Leroy.png"
+},
+"move_tables": [
+    {
+    "table_name": "Stances & Terms",
+    "headers": ["Term", "Notation", "Input"],
+    "rows": [
+        [
+        "Hermit Stance",
+        "<img alt=\"Hermit Stance\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_HRM.png\">",
+        "<p class=\"notation\">2</p>"
+        ],
+        [
+        "Hermit Stance (Exit)",
+        "<img alt=\"Hermit Stance\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_HRM.png\">",
+        "<p class=\"notation\">2</p>"
+        ]
+    ]
+    },
+    {
+    "table_name": "Key Moves",
+    "headers": [
+        "Input",
+        "Description",
+        "Startup",
+        "Level",
+        "Block",
+        "Counter"
+    ],
+    "rows": [
+        ["<p class=\"notation\">7</p>", "Jab to start offence, has a counterhit confirmable extension", "10", "High", "+1", "N/A"],
+        ["<p class=\"notation\">x7</p>", "Mid poke to check situations", "13", "Mid", "-6", "N/A"],
+        ["<p class=\"notation\">a8</p>", "A fast mid counterhit launcher to challenge situations", "12", "Mid", "-10", "N/A"],
+        ["<p class=\"notation\">z1</p>", "Low poke that goes into HRM for pressure", "17", "Low", "-15", "N/A"],
+        ["<p class=\"notation\">s19</p>", "Low poke that goes into HRM for pressure", "24", "Low, High", "-3", "N/A"],
+        ["<p class=\"notation\">e3</p>", "Useful keepout attack that goes over lows", "23", "Mid", "-8", "N/A"],
+        ["<p class=\"notation\">dd1</p>", "Long range high attack for approaching", "18", "High", "-2", "N/A"],
+        ["<p class=\"notation\">zM</p>", "The cane, can only be used once per match", "20", "Low, Mid", "N/A", "N/A"],
+        ["<p class=\"notation\">dM</p>", "The cane, can only be used once per match", "18", "High, Mid", "N/A", "N/A"],
+        ["<img alt=\"Hermit Stance\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_HRM.png\">", "Explore this stance's options to improve your offence", "-", "-", "-", "N/A"]
+    ]
+    },
+    {
+    "table_name": "Defensive Options",
+    "headers": ["Input", "Description", "Startup", "Level", "Block"],
+    "rows": [
+        ["<p class=\"notation\">a9</p>", "Parry, can be done in HRM", "13", "Mid", "N/A"],
+        ["<p class=\"notation\">q9</p>", "Has parry properties", "20", "Mid", "-10"],
+        ["<p class=\"notation\">z8</p>", "Has parry properties, is a heat engager", "32", "Mid", "N/A"],
+        ["<p class=\"notation\">e7</p>", "Has parry properties, follow-up with input 1 or 2", "16", "High", "-9"],
+        ["<img alt=\"Hermit Stance\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_HRM.png\"><p class=\"notation\">d8</p>", "Power Crush", "17", "Mid", "-13"],
+        ["<p class=\"notation\">7</p>", "Has parry properties", "24", "Mid", "N/A"]
+    ]
+    }
+]
+}

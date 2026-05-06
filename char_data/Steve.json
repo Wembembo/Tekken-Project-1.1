@@ -1,0 +1,40 @@
+{
+"character": "Steve",
+"metadata": {
+    "dlc_pack": "Base Roster",
+    "image_path": "./Assets/Characters/Steve.png"
+},
+"move_tables": [
+    {
+    "table_name": "Stances & Terms",
+    "headers": ["Term", "Notation", "Input"],
+    "rows": [
+        ["Ducking in / Exit Ducking in", "DKC", "<p class=\"notation\">d1</p>"],
+        ["Peek-a-Boo", "PAB", "<p class=\"notation\">d2</p>"],
+        ["Flicker Stance", "FLK", "<p class=\"notation\">a2</p>"],
+        ["Sway", "SWY", "<p class=\"notation\">a1</p>"],
+        ["Lion Heart", "LNH", "<p class=\"notation\">q1</p>"],
+        ["Quickspin", "-", "<p class=\"notation\">2</p>"]
+    ]
+    },
+    {
+    "table_name": "Key Moves",
+    "headers": ["Input", "Description", "Startup", "Level", "Block", "Counter"],
+    "rows": [
+        ["<p class=\"notation\">797</p>", "Quick jab string, can PAB by pressing f(-2) or FLK by pressing b(-1)", "14", "High, High, High", "-3", "N/A"],
+        ["<p class=\"notation\">x7</p>", "A quick low poke to harass the opponent. Has a number of extension and stance options", "13", "Mid", "-2", "N/A"],
+        ["<p class=\"notation\">a7</p>", "Counterhit launcher for keepout and checking situations. Input B to move to FLK", "13", "High", "-13", "N/A"],
+        ["<p class=\"notation\">s97</p>", "Low poke, cancels into many options. Input 3 for left weave, 4 for right", "14", "Low, Mid", "-11", "N/A"],
+        ["<p class=\"notation\">z19</p>", "Short ranged low, useful for wall pressure. Transitions into LNH", "15", "Low, High", "-6", "N/A"]
+    ]
+    },
+    {
+    "table_name": "Defensive Options",
+    "headers": ["Input", "Description", "Startup", "Level", "Block"],
+    "rows": [
+        ["<p class=\"notation\">a4</p>", "Punch parry, alternative input is B+2,4", "N/A", "sp", "N/A"],
+        ["<p class=\"notation\">9</p>", "Punch parry properties", "12", "High", "-1"]
+    ]
+    }
+]
+}

@@ -1,0 +1,51 @@
+{
+"character": "Dragunov",
+"metadata": {
+    "dlc_pack": "Base Roster",
+    "image_path": "./Assets/Characters/Dragunov.png"
+},
+"move_tables": [
+    {
+    "table_name": "Stances & Terms",
+    "headers": ["Term", "Notation", "Input"],
+    "rows": [
+        [
+        "Sneak",
+        "<img alt=\"Sneak\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_SNK_Dragunov.png\">",
+        "<p class=\"notation\">sxd</p>"
+        ]
+    ]
+    },
+    {
+    "table_name": "Key Moves",
+    "headers": [
+        "Input",
+        "Description",
+        "Startup",
+        "Level",
+        "Block",
+        "Counter"
+    ],
+    "rows": [
+        ["<p class=\"notation\">7</p>", "Jab to check situations and start your pressure", "10", "High", "+1", "N/A"],
+        ["<p class=\"notation\">x7</p>", "Quick mid attack to check situatoins, df+1,4 can be used to catch opponents challenging this on block", "13", "Mid", "-2", "N/A"],
+        ["<p class=\"notation\">s9</p>", "A low that opens up many strategies", "18", "Low", "-13", "N/A"],
+        ["<p class=\"notation\">ddD9</p>", "Approaching and pressure tool that launches on counter hit", "15", "Mid", "+4", "N/A"],
+        ["<p class=\"notation\">a8</p>", "Pressure tool for when you are in close range", "22", "Mid", "+6", "N/A"],
+        ["<p class=\"notation\">z2</p>", "A risky low that allows you to keep pressure on hit", "20", "Low", "-31", "N/A"],
+        ["<p class=\"notation\"><img alt=\"Full crouch\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R5_02_FC.png\">x73</p>", "Quick low from full crouch, shifts into SNK", "16", "Low, Mid", "N/A", "N/A"],
+        ["Throws", "Use his command throw to harass the opponent and open their defence. They're great against power crushes", "-", "-", "-", "N/A"]
+    ]
+    },
+    {
+    "table_name": "Defensive Options",
+    "headers": ["Input", "Description", "Startup", "Level", "Block"],
+    "rows": [
+        ["<p class=\"notation\">a4</p>", "Reversal", "N/A", "SP", "N/A"],
+        ["<p class=\"notation\">a6</p>", "Reversal", "N/A", "SP", "N/A"],
+        ["<p class=\"notation\">s8</p>", "Parries low attacks", "N/A", "SP", "N/A"],
+        ["<p class=\"notation\">8</p>", "Power crush", "21", "Mid", "-14"]
+    ]
+    }
+]
+}

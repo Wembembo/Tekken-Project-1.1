@@ -1,0 +1,48 @@
+{
+"character": "Lee",
+"metadata": {
+    "dlc_pack": "Base Roster",
+    "image_path": "./Assets/Characters/Lee.png"
+},
+"move_tables": [
+    {
+    "table_name": "Stances & Terms",
+    "headers": ["Term", "Notation", "Input"],
+    "rows": [
+        [
+        "Hitman",
+        "<img class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_HMS.png\">",
+        "<p class=\"notation\">2</p>"
+        ],
+        ["Mist Step", "MS", "<p class=\"notation\">d5</p>"]
+    ]
+    },
+    {
+    "table_name": "Key Moves",
+    "headers": [
+        "Input",
+        "Description",
+        "Startup",
+        "Level",
+        "Block",
+        "Counter"
+    ],
+    "rows": [
+        ["<p class=\"notation\">7</p>", "Quick jab to start offence", "10", "High", "+1", "N/A"],
+        ["<p class=\"notation\">991</p>", "Fast counterhit string to challenge situations", "21", "High, Mid, High", "-3", "N/A"],
+        ["<p class=\"notation\">x7</p>", "Mid poke to harass the opponent and create situations", "13", "Mid", "-1", "N/A"],
+        ["<p class=\"notation\">8(2)</p>", "Counterhit launcher, can shift into HMS for additional pressure", "21", "High, High", "-6", "N/A"],
+        ["<p class=\"notation\">a11d</p>", "Quick low poke to harass the opponent, can be +4 when pressing forward", "19", "Low, High", "-12", "N/A"],
+        ["<p class=\"notation\">dd3</p>", "Evasive High attack that launches", "16", "High", "-5", "N/A"],
+        ["<img class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R5_02_FC.png\"><p class=\"notation\">xsx1</p>", "Slide attack that is the core of his full crouch mixup", "18", "Low", "-15", "N/A"]
+    ]
+    },
+    {
+    "table_name": "Defensive Options",
+    "headers": ["Input", "Description", "Startup", "Level", "Block"],
+    "rows": [
+        ["<p class=\"notation\">a4</p>", "Punch parry, alternative input is B+2+4, Can also be done while in HMS", "N/A", "N/A", "N/A"]
+    ]
+    }
+]
+}

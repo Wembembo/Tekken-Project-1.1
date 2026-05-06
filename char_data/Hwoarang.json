@@ -1,0 +1,66 @@
+{
+"character": "Hwoarang",
+"metadata": {
+    "dlc_pack": "Base Roster",
+    "image_path": "./Assets/Characters/Hwoarang.png"
+},
+"move_tables": [
+    {
+    "table_name": "Stances & Terms",
+    "headers": ["Term", "Notation", "Input"],
+    "rows": [
+        [
+        "Left foot forward",
+        "<img alt=\"Left foot forward\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_LFF.png\">",
+        "Default Stance"
+        ],
+        [
+        "Right Foot Forward",
+        "<img alt=\"Right Foot Forward\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_RFF.png\">",
+        "<p class=\"notation\">2</p>"
+        ],
+        [
+        "Left Flamingo Step",
+        "<img alt=\"Left Flamingo Step\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_LFS.png\">",
+        "<p class=\"notation\">d1</p>"
+        ],
+        [
+        "Right Flamingo Step",
+        "<img alt=\"Right Flamingo Step\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_RFS.png\">",
+        "<p class=\"notation\">d53</p>"
+        ],
+        ["Just Frame Sky Rocket", "JSFR", "<p class=\"notation\">d5x3</p>"]
+    ]
+    },
+    {
+    "table_name": "Key Moves",
+    "headers": [
+        "Input",
+        "Description",
+        "Startup",
+        "Level",
+        "Block",
+        "Counter"
+    ],
+    "rows": [
+        ["<p class=\"notation\">7</p>", "Quick jab to start offence and check situations", "10", "High", "+1", "N/A"],
+        ["<p class=\"notation\">x7</p>", "Mid attack to check situations", "13", "Mid", "-1", "N/A"],
+        ["<p class=\"notation\">z1</p>", "Low poke to harass opponents", "19", "Low", "-13", "N/A"],
+        ["<p class=\"notation\">s13</p>", "Low string that shifts into RFF", "19", "Low", "-11", "N/A"],
+        ["<p class=\"notation\">x3</p>", "Homing attack that shifts into RFF", "16", "Mid", "-8", "N/A"],
+        ["<p class=\"notation\">dd1</p>", "Mid Attack, useful for approaching and pressure", "20", "Mid", "-8", "N/A"],
+        ["JFSR", "Keepout move, requires a perfect input", "16", "Mid", "-8", "N/A"],
+        ["<img alt=\"Left Flamingo Stance\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_LFS.png\"><img alt=\"Right Flamingo Stance\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_RFS.png\">", "Learn your options out of these stances", "-", "-", "-", "N/A"]
+    ]
+    },
+    {
+    "table_name": "Defensive Options",
+    "headers": ["Input", "Description", "Startup", "Level", "Block"],
+    "rows": [
+        ["<p class=\"notation\">a4</p>", "Punch parry, press 4 on successful parry", "-", "-", "-"],
+        ["<p class=\"notation\">a6</p>", "Punch parry, press 4 on successful parry", "-", "-", "-"],
+        ["<p class=\"notation\">x13</p>", "Power Crush", "24", "Mid Mid", "-14"]
+    ]
+    }
+]
+}
