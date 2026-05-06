@@ -47,7 +47,7 @@
         "headers": ["Input", "Description", "Startup", "Level", "Block"],
         "rows": [
             [
-            "<p class='notation'>b+1+2</p>",
+            "<p class='notation'>a+1+2</p>",
             "Power Crush / Parry details.",
             "20",
             "Mid",

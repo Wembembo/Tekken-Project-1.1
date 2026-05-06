@@ -9,8 +9,8 @@
     "table_name": "Stances & Terms",
     "headers": ["Term", "Notation", "Input"],
     "rows": [
-        ["GRF", "Garuda Force", "Hit the opponent with certain moves to build stocks of this"],
-        ["RMS", "After guard break", "-"]
+        ["Garuda Force", "GRF", "Hit the opponent with certain moves to build stocks of this"],
+        ["-", "RMS", "After guard break"]
     ]
     },
     {
