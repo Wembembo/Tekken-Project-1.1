@@ -105,7 +105,7 @@ async function showMatch() {
 }
 
 async function fetchYouTubeMatch(p1, p2) {
-    const API_KEY = 'AIzaSyCCKuZv2vthrzbS3rvrF0eIrctICsR57X8';
+    const API_KEY = 'API KEY HERE'; // Replace with your actual YouTube Data API key
     const query = `Tekken 8 ${p1} vs ${p2} pro match`;
     const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=${encodeURIComponent(query)}&type=video&key=${API_KEY}`;
 
