@@ -104,7 +104,7 @@ tr:nth-child(odd) {
   background-color: #221e45;
   color: #b4b4b4;
 }
-@media (max-width: 717px) {
+@media (max-width: 777px) {
   .bg-portrait {
     display: none !important;
   }
@@ -125,7 +125,7 @@ tr:nth-child(odd) {
   #playerTwoSelection,
   #playerTwoContainer,
   #videoContainer,
-  #videoButton {
+  #findMatchButton {
     display: none;
   }
   table {
