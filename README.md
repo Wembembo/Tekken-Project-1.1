@@ -48,7 +48,7 @@ index.js: Logic for data fetching, UI updates, and API integration.
 ### Data for each character in the game.
 ![Data for each character in the game](./Assets/screenshots/screenshot1.png)
 
-### Complete with video player that dynaicmally searches for videos using Youtubes API.
+### Complete with video player that dynamically searches for videos using Youtubes API.
 ![Complete with video player that dynaicmally searches for videos using Youtubes API](./Assets/screenshots/screenshot2.png)
 
 ### Tables that adapt per character as needed, such as Lars and King having Command Grab tables in lieu of defensive options.
