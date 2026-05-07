@@ -66,7 +66,7 @@ Updated data for the latest Tekken 8 patches (I got a little behind on this).
 
 More robust data, I am considering an expansive mode that covers a character's entire movelist. 
 
-A complete set of transparent portraits for each character and standardise the size for better formatting.
+~~A complete set of transparent portraits for each character and standardise the size for better formatting.~~ DONE!
 
 Project created by Tim Fitzgerald (@wembembo).
 Notation font provided by @Theweirdologist.
