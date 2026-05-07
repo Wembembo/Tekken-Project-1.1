@@ -56,6 +56,7 @@ index.js: Logic for data fetching, UI updates, and API integration.
 
 ### Mobile View
 Responsive design that makes this a single-player lookup tool on mobile devices. 
+
 ![Tekken Matchup Mobile Preview](./Assets/screenshots/screenshot4.png)
 
 ## 🤝 Contributing
