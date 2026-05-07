@@ -6,7 +6,7 @@ function updatePortrait(character, bgID) {
     if (!bgElement) return;
     bgElement.classList.remove('portrait-visible');
     setTimeout(() => {
-        const imagePath = `./Assets/Characters/char_icons/Full-Art/${character}.png`;
+        const imagePath = `./Assets/Characters/${character}.png`;
         bgElement.style.backgroundImage = `url('${imagePath}')`;
         bgElement.classList.add('portrait-visible');
     }, 800);
