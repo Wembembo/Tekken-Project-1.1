@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta chawrap;"UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tekken Matchup Chart</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet"></link>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-<!--Site starter-->
+<!--Portrait container-->
+<div id="p1-bg" class="bg-portrait p1-art"></div>
+<div id="p2-bg" class="bg-portrait p2-art"></div>
 
+<!--HEader-->
 <header class="header">
     <h1 class="header_title">Tekken 8 Quick Matchup Guide</h1>
     <p class="header_subtitle">A quick referencing tool for matchups, with the goal of getting beginners into a character as quickly as possible</p>
     <p>The information here is subject to change depending on the latest patch. I'll be trying to keep on top of everything, but this will need some time to update as patches are released. </p>
     <p>You can find the latest patch notes <a href="https://www.bandainamcoent.com/news/tekken-8-patch-notes-v3-00-02">here</a>. Version 3.00.02 is the current version of the game</p>
 </header>
-    <!--Drop Down Menus-->
+
+<!--Player one selection dropdown-->
 <div class="Dropdown">
-<!--PLAYER ONE SELECTION-->
     <select class="Dropdown" id="playerOneSelection">
-        <option value="" disabled="disabled" selected="selected">Select Player 1</option>
+        <option value="" disabled selected>Select Player 1</option>
         <option value="Alisa">Alisa Bosconovitch</option>
         <option value="Anna">Anna Williams</option>
         <option value="Armour">Armour King</option>
@@ -67,9 +70,9 @@
         <option value="Zafina">Zafina</option>
     </select>
 
-<!--PLAYER TWO SELECTION-->
+<!-- Player two selection dropdown -->
     <select class="Dropdown" id="playerTwoSelection">
-        <option value="" disabled="disabled" selected="selected">Select Player 2</option>
+        <option value="" disabled selected>Select Player 2</option>
         <option value="Alisa">Alisa Bosconovitch</option>
         <option value="Anna">Anna Williams</option>
         <option value="Armour">Armour King</option>
@@ -114,22 +117,24 @@
         <option value="Zafina">Zafina</option>
     </select>
 </div>
+
+<!-- Video container-->
 <div id="videoDiv">
-    <button onclick="showMatch()" id="videoButton">View Match</button><br>
-    
+    <button id="findMatchButton">View Match</button><br>
     <div id="videoContainer" style="margin-top: 20px;"></div>    
 </div>
 
+<!--Data container-->
 <div class="dataContainer">
     <div class="dataTable" id="playerOneContainer"></div>
     <div class="dataTable" id="playerTwoContainer"></div>
 </div>
 
+<!--Footer-->
 <div id="footer">
     <p class="header">This is an ongoing project, and has some more stuff planned for better functionality. For more information, please see <a href="./To-Do/to-do.html">here</a></p>
     <p class="header">Project made by Tim Fitzgerald (@wembembo on everything), notation font made by @Theweirdologist</p>
 </div>
-
 <script src="index.js" charset="UTF-8"></script>
 </body>
 </html>
