@@ -10,19 +10,18 @@
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-<!--Portrait container-->
+<!--Character portraits-->
 <div id="p1-bg" class="bg-portrait p1-art"></div>
 <div id="p2-bg" class="bg-portrait p2-art"></div>
 
-<!--HEader-->
+<!-- Header -->
 <header class="header">
     <h1 class="header_title">Tekken 8 Quick Matchup Guide</h1>
     <p class="header_subtitle">A quick referencing tool for matchups, with the goal of getting beginners into a character as quickly as possible</p>
     <p>The information here is subject to change depending on the latest patch. I'll be trying to keep on top of everything, but this will need some time to update as patches are released. </p>
     <p>You can find the latest patch notes <a href="https://www.bandainamcoent.com/news/tekken-8-patch-notes-v3-00-02">here</a>. Version 3.00.02 is the current version of the game</p>
 </header>
-
-<!--Player one selection dropdown-->
+<!-- Player one selection dropdown -->
 <div class="Dropdown">
     <select class="Dropdown" id="playerOneSelection">
         <option value="" disabled selected>Select Player 1</option>
@@ -70,7 +69,7 @@
         <option value="Zafina">Zafina</option>
     </select>
 
-<!-- Player two selection dropdown -->
+    <!--Player 2 selection dropdown-->
     <select class="Dropdown" id="playerTwoSelection">
         <option value="" disabled selected>Select Player 2</option>
         <option value="Alisa">Alisa Bosconovitch</option>
@@ -118,19 +117,19 @@
     </select>
 </div>
 
-<!-- Video container-->
+<!-- Video Div -->
 <div id="videoDiv">
     <button id="findMatchButton">View Match</button><br>
     <div id="videoContainer" style="margin-top: 20px;"></div>    
 </div>
 
-<!--Data container-->
+<!-- Data Containers -->
 <div class="dataContainer">
     <div class="dataTable" id="playerOneContainer"></div>
     <div class="dataTable" id="playerTwoContainer"></div>
 </div>
 
-<!--Footer-->
+<!-- Footer -->
 <div id="footer">
     <p class="header">This is an ongoing project, and has some more stuff planned for better functionality. For more information, please see <a href="./To-Do/to-do.html">here</a></p>
     <p class="header">Project made by Tim Fitzgerald (@wembembo on everything), notation font made by @Theweirdologist</p>
