@@ -18,7 +18,7 @@ function updatePortrait(character, bgID) {
 
     // 2. Wait for fade out, then change source and fade back in
     setTimeout(() => {
-        const imagePath = `./Assets/Characters/Full-Art/${character}.png`; 
+        const imagePath = `./Assets/Characters/${character}.png`; 
         bgElement.style.backgroundImage = `url('${imagePath}')`;
         bgElement.classList.add('portrait-visible');
     }, 800); 
