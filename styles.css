@@ -1,38 +1,33 @@
 html {
   max-width: 100%;
 }
-
 body {
-  background-image: linear-gradient(to bottom right, #224e5b, #01050d);
+  background-image: linear-gradient(to bottom right, #41041a, #000201, #19565f);
   height: auto;
   background-attachment: fixed;
   background-size: cover;
   font-family: "Bebas Neue", sans-serif;
   font-weight: 100;
   font-style: normal;
+  margin: 0;
 }
-
 @font-face {
   font-family: ironFist;
   src: url(./Styles/Iron-Fist.ttf);
 }
-
 .Dropdown {
   display: flex;
   justify-content: center;
 }
-
 h1 {
   background-color: #dd1d5b;
   color: white;
 }
-
 h2 {
   background-color: #dd1d5b;
   color: white;
   display: inline-block;
 }
-
 .header {
   text-align: center;
   font-family: "Bebas Neue", sans-serif;
@@ -41,76 +36,52 @@ h2 {
   font-size: large;
   color: #9b9999f8;
 }
-
-.Footer{
-    text-align: center;
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-    font-size: large;
-    color: #9b9999f8;
-  }
-
-.fade-in {
-  opacity: 1;
-  animation-name: fadeInOpacity;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in;
-  animation-duration: 1.5s;
-}
-
-#toDoList {
-  text-align: center;
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: 100;
-  font-size: large;
-  margin: 10px;
-}
-
-#Nav {
-  background-color: #dd1d5b;
-  text-align: center;
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: 100;
-  font-size: large;
-  margin: 10px;
-}
-
-#help {
-  color: #9a9b9c;
-}
-
-@keyframes fadeInOpacity {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-}
-
 .notation {
   height: 30px;
   font-family: ironFist;
   font-size: 30px;
   color: aliceblue;
 }
-
 .dataContainer {
   display: flex;
   justify-content: space-between;
   gap: 20px;
   padding: 50px;
 }
-
+.bg-portrait {
+  position: fixed;
+  top: 0;
+  width: 70%;
+  height: 100vh;
+  z-index: -1;
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+  pointer-events: none;
+}
+.p1-art {
+  left: 0;
+  background-position: left center;
+  -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.4) 40%, rgba(0,0,0,0) 90%);
+  mask-image: linear-gradient(to right, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.4) 40%, rgba(0,0,0,0) 90%);
+}
+.p2-art {
+  right: 0;
+  background-position: right center;
+  -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.4) 40%, rgba(0,0,0,0) 90%);
+  mask-image: linear-gradient(to left, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.4) 40%, rgba(0,0,0,0) 90%);
+}
+.portrait-visible {
+  opacity: 1;
+}
 #playerOneContainer,
 #playerTwoContainer {
   flex: 1;
   min-width: 45%;
   max-width: 50%;
 }
-
-#videoDiv{
+#videoDiv {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -119,70 +90,47 @@ h2 {
 table {
   background-color: #c8acd6;
 }
-
 th {
   text-align: center;
   color: #d4d4d6;
 }
-
 td {
   text-align: center;
 }
-
 tr:nth-child(even) {
   background-color: #857bde;
 }
-
 tr:nth-child(odd) {
   background-color: #221e45;
   color: #b4b4b4;
 }
-
-@media (max-width: 900px) {
-}
-
-@media (max-width: 768px) {
-  .notation {
-    font-size: 1rem;
+@media (max-width: 717px) {
+  .bg-portrait {
+    display: none !important;
   }
   .dataContainer {
-    padding: 5px;
-  }
-}
-
-@media (max-width: 717px) {
-  .notation {
-    font-size: 0.9rem;
-  }
-  img{
-    height: 50%;
-  }
-  .dataContainer{
-    padding: 0;
-    size: 1rem;
-    min-width: 100%;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    padding: 10px;
+    width: 100%;
   }
-  #playerTwoSelection{
+  #playerOneContainer,
+  #playerTwoContainer {
+    min-width: 90%;
+    max-width: 95%;
+    margin: 0 auto;
+  }
+  #playerTwoSelection,
+  #playerTwoContainer,
+  #videoContainer,
+  #videoButton {
     display: none;
   }
-  #playerTwoContainer{
-    display: none;
-  }
-  #videoContainer{
-    display: none;
-  }
-  #videoButton{
-    display: none;
-  }
-}
-
-@media (max-width: 450px){
-  .dataContainer{
-    max-width: 100%;
-    padding: 0px;
-    display: flex;
-    justify-content: flex-start;
+  table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
   }
 }
