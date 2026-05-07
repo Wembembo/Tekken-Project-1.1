@@ -46,7 +46,7 @@ index.js: Logic for data fetching, UI updates, and API integration.
 
 ## 📸 Screenshots
 ### Data for each character in the game.
-![Data for each character in the game](./Assets/screenshots/screenshot1.png.png)
+![Data for each character in the game](./Assets/screenshots/screenshot1.png)
 
 ### Complete with video player that dynaicmally searches for videos using Youtubes API.
 ![Complete with video player that dynaicmally searches for videos using Youtubes API](./Assets/screenshots/screenshot2.png)
@@ -56,7 +56,7 @@ index.js: Logic for data fetching, UI updates, and API integration.
 
 ### Mobile View
 Responsive design that makes this a single-player lookup tool on mobile devices. 
-![Tekken Matchup Mobile Preview](./Assets/screenshots/screenshot4.png.png)
+![Tekken Matchup Mobile Preview](./Assets/screenshots/screenshot4.png)
 
 ## 🤝 Contributing
 This is an ongoing project. Future updates will include:
