@@ -1,12 +1,56 @@
 "use strict";
-const characters = ["Alisa", "Anna", "Armour", "Asuka", "Azucena", "Bob", "Bryan", "Claudio", "Clive", "Devil", "Dragunov", "Eddy", "Fahkumram", "Feng", "Heihachi", "Hwoarang", "Jack", "Jin", "Jun", "Kazuya", "King", "Kuma", "Lars", "Law", "Lee", "Leo", "Leroy", "Lidia", "Lili", "Nina", "Panda", "Paul", "Raven", "Reina", "Rodger", "Shaheen", "Steve", "Victor", "Xiaoyu", "Yoshimitsu", "Zafina"];
+const characters = [
+    "Alisa", 
+    "Anna", 
+    "Armour", 
+    "Asuka", 
+    "Azucena", 
+    "Bob", 
+    "Bryan", 
+    "Claudio", 
+    "Clive", 
+    "Devil", 
+    "Dragunov", 
+    "Eddy", 
+    "Fahkumram", 
+    "Feng", 
+    "Heihachi", 
+    "Hwoarang", 
+    "Jack", 
+    "Jin", 
+    "Jun", 
+    "Kazuya", 
+    "King", 
+    "Kuma", 
+    "Kunimitsu",
+    "Lars", 
+    "Law", 
+    "Lee", 
+    "Leo", 
+    "Leroy", 
+    "Lidia", 
+    "Lili",
+    "Miary", 
+    "Nina", 
+    "Panda", 
+    "Paul", 
+    "Raven", 
+    "Reina", 
+    "Rodger", 
+    "Shaheen", 
+    "Steve", 
+    "Victor",
+    "Xiaoyu", 
+    "Yoshimitsu", 
+    "Zafina"
+];
 
 function updatePortrait(character, bgID) {
     const bgElement = document.getElementById(bgID);
     if (!bgElement) return;
     bgElement.classList.remove('portrait-visible');
     setTimeout(() => {
-        const imagePath = `./Assets/Characters/${character}.png`;
+        const imagePath = `./Assets/Characters/${character}.webp`;
         bgElement.style.backgroundImage = `url('${imagePath}')`;
         bgElement.classList.add('portrait-visible');
     }, 800);
@@ -61,7 +105,7 @@ async function showMatch() {
     videoContainer.innerHTML = "<p>Finding best match replay...</p>";
     try {
         const query = `Tekken 8 ${p1} vs ${p2} pro match`;
-        const API_KEY = 'YOUR_API_KEY';
+        const API_KEY = 'YOUR_API_HERE'; //API KEY GOES HERE
         const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=${encodeURIComponent(query)}&type=video&key=${API_KEY}`;
         const response = await fetch(url);
         const data = await response.json();
