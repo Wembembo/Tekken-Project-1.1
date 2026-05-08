@@ -10,14 +10,24 @@
         "headers": ["Term", "Notation", "Input"],
         "rows": [
             [
-            "Stance Name",
-            "ABC",
-            "<p class='notation'>Input</p>"
+            "Bad Jaguar",
+            "BAD",
+            "<p class='notation'>d2</p>"
             ],
             [
-            "Special Move",
-            "<img class='notation' src='./Assets/Path/icon.png'>",
-            "<p class='notation'>d+2</p>"
+            "Back Turn",
+            "BT",
+            "Back Towards Opponent"
+            ],
+            [
+            "Beast Step",
+            "BST",
+            "<p class='notation'>d5sx</p>"
+            ],
+            [
+            "Dark Upper",
+            "-",
+            "<p class='notation'>d5sx9</p>"
             ]
         ]
         },
@@ -28,17 +38,50 @@
             "Description",
             "Startup",
             "Level",
-            "Block",
-            "Counter"
+            "Block"
         ],
         "rows": [
             [
-            "<p class='notation'>1,2</p>",
-            "Description of the move here.",
-            "10",
-            "High, High",
-            "+1",
-            "N/A"
+            "<p class='notation'>7</p>",
+            "Single Jab to check most situations, has useful extensions.",
+            "i10",
+            "High",
+            "+1"
+            ],
+            [
+            "<p class='notation'>x7</p>",
+            "Mid Poke to check siituations, use sparing to check if opponent likes to retaliate",
+            "i13",
+            "Mid",
+            "-3"
+            ],
+            [
+            "<p class='notation'>x9</p>",
+            "Unsafe Mid counterhit launcher. Good button for calling out opponents that over extend on pressure. For a safer counterhit, use df3",
+            "i15",
+            "Mid",
+            "-12"
+            ],
+            [
+            "<p class='notation'>d1</p>",
+            "Low poke to harass the opponent, leads to really good frame advantage on counterhit.",
+            "i17",
+            "Low",
+            "-12"
+            ],
+            [
+            "<p class='notation'>dD9</p>",
+            "A Long range counterhit launcher that creates space when blocked. Good to control space, and create spacing traps",
+            "i16",
+            "Mid",
+            "-6"
+            ],
+            [
+            "<p class='notation'>dd59</p>",
+            "High crushing low with counterhit properties. It can shift into BAD by holding forwards after pressing 2. Good way to approach while applying stance based mixups",
+            "i19",
+            "Low",
+            "-13"
             ]
         ]
         },
@@ -47,11 +90,32 @@
         "headers": ["Input", "Description", "Startup", "Level", "Block"],
         "rows": [
             [
-            "<p class='notation'>b+1+2</p>",
-            "Power Crush / Parry details.",
-            "20",
+            "<p class='notation'>d2</p>",
+            "Has punch parry properties, and leads into a guaranteed throw.",
+            "N/A",
+            "SP",
+            "N/A"
+            ],
+                        [
+            "<p class='notation'>a4 a6</p>",
+            "Punch Parry",
+            "N/A",
+            "N/A",
+            "N/A"
+            ],
+                        [
+            "<p class='notation'>d8</p>",
+            "Power Crush",
+            "i22",
             "Mid",
-            "-13"
+            "-1"
+            ],
+                        [
+            "<p class='notation'>q8</p>",
+            "Evasive Attack",
+            "i30",
+            "Mid",
+            "-14"
             ]
         ]
         }

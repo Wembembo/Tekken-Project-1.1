@@ -10,14 +10,19 @@
         "headers": ["Term", "Notation", "Input"],
         "rows": [
             [
-            "Stance Name",
-            "ABC",
-            "<p class='notation'>Input</p>"
+            "Moreni Stance",
+            "MOR",
+            "<p class='notation'>d1</p>"
             ],
             [
-            "Special Move",
-            "<img class='notation' src='./Assets/Path/icon.png'>",
-            "<p class='notation'>d+2</p>"
+            "Baobab Mihira",
+            "BAO",
+            "<p class='notation'>2</p>"
+            ],
+            [
+            "Tromba",
+            "Tromba",
+            "Wall Cling"
             ]
         ]
         },
@@ -28,17 +33,63 @@
             "Description",
             "Startup",
             "Level",
-            "Block",
-            "Counter"
+            "Block"
         ],
         "rows": [
             [
-            "<p class='notation'>1,2</p>",
-            "Description of the move here.",
-            "10",
+            "<p class='notation'>7</p>",
+            "Quick Jab to start offence and check sitations, it has a strong extention in 1,1,2 that can be used to counterhit oppoents that are over extending their pressure",
+            "i10",
+            "High",
+            "+1"
+            ],
+            [
+            "<p class='notation'>x7</p>",
+            "Mid poke to harass the opponent. It has good extentions and can be used for pressure as well. ",
+            "13",
+            "Mid",
+            "-2"
+            ],
+            [
+            "<p class='notation'>a91</p>",
+            "Fast homing attack to check sidestepping opponents. If you shift into MOR by holding forwards, you can  make the string safe by cancelling out of MOR with downback.",
+            "13",
             "High, High",
-            "+1",
-            "N/A"
+            "-9"
+            ],
+            [
+            "<p class='notation'>x3</p>",
+            "A fast, safe, mid counterhit launcher. Good for fishing for counterhite at close range. Can shift into MOR by holding forwards to create stance pressure on normal hit.",
+            "i16",
+            "Mid",
+            "-4"
+            ],
+            [
+            "<p class='notation'>s1</p>",
+            "Low poke to harass the opponent.",
+            "i20",
+            "Low",
+            "-14"
+            ],
+                        [
+            "<p class='notation'>d39</p>",
+            "Slow but safe wallspatting attack. The direction of the knockdown can be changed with inputs. During heat, it can be used for pressure.",
+            "i18",
+            "Mid, Mid",
+            "-9"
+            ],            [
+            "<p class='notation'>x9</p>",
+            "Safe Mid Launcher that can be used for keepout and punishment.",
+            "15",
+            "Mid",
+            "-7"
+            ],
+                        [
+            "<p class='notation'>s8</p>",
+            "A risky launcher that can be used to hit grounded opponents.",
+            "i19",
+            "Mid",
+            "-17"
             ]
         ]
         },
@@ -47,9 +98,16 @@
         "headers": ["Input", "Description", "Startup", "Level", "Block"],
         "rows": [
             [
-            "<p class='notation'>b+1+2</p>",
-            "Power Crush / Parry details.",
-            "20",
+            "<p class='notation'>d9</p>",
+            "Has punch parry properties.",
+            "i20",
+            "Mid",
+            "-13"
+            ],
+            [
+            "<p class='notation'>a8</p>",
+            "Power Crush",
+            "i18",
             "Mid",
             "-13"
             ]
