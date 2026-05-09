@@ -18,24 +18,22 @@
     },
     {
     "table_name": "Key Moves",
-    "headers": ["Input", "Description", "Startup", "Level", "Block", "Counter"],
+    "headers": ["Input", "Description", "Startup", "Level", "Block"],
     "rows": [
-        ["<p class=\"notation\">7</p>", "Quick jab to start offence and check situations", "10", "High", "+1", "N/A"],
-        ["<p class=\"notation\">x7</p>", "Mid poke to harass the opponent", "13", "Mid", "-1", "N/A"],
-        ["<p class=\"notation\">a1</p>", "Axe kick for up close pressure", "19", "Mid", "+3", "N/A"],
-        ["<p class=\"notation\">s1</p>", "Lock poke that transitions to SNK with a d+3", "16", "Low", "-14", "N/A"],
-        ["<p class=\"notation\">e1</p>", "Good keepout button. Can be done with ub or u+3", "25", "Mid", "-7", "N/A"],
-        ["<p class=\"notation\">ddD9</p>", "Approaching attack that leaves you at advantage on block", "17", "Mid", "+5", "N/A"],
-        ["<img alt=\"Full Crouch\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R5_02_FC.png\"><p class=\"notation\">xsX1</p>", "A long range low that enables his crouching mixup", "16", "Low", "-23", "N/A"]
+        ["<p class=\"notation\">7</p>", "Quick jab to start offence and check situations", "i10", "High", "+1"],
+        ["<p class=\"notation\">x7</p>", "Mid poke to harass the opponent", "i13", "Mid", "-1"],
+        ["<p class=\"notation\">a1</p>", "Axe kick for up close pressure", "i19", "Mid", "+1"],
+        ["<p class=\"notation\">s1</p>", "Lock poke that transitions to SNK with a d+3", "i16", "Low", "-14"],
+        ["<p class=\"notation\">e1</p>", "Good keepout button. Can be done with ub or u+3", "i25", "Mid", "-7"],
+        ["<p class=\"notation\">ddD9</p>", "Approaching attack that leaves you at advantage on block", "i17", "Mid", "+5"],
+        ["<img alt=\"Full Crouch\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R5_02_FC.png\"><p class=\"notation\">xsX1</p>", "A long range low that enables his crouching mixup", "i16", "Low", "-23"]
     ]
     },
     {
     "table_name": "Defensive Options",
     "headers": ["Input", "Description", "Startup", "Level", "Block"],
     "rows": [
-        ["<p class=\"notation\">a4</p>", "Punch Parry", "N/A", "N/A", "N/A"],
-        ["<p class=\"notation\">a6</p>", "Punch Parry", "N/A", "N/A", "N/A"]
-    ]
+        ["<p class=\"notation\">a4</p>", "Punch Parry", "N/A", "SP", "N/A"]    ]
     }
 ]
 }

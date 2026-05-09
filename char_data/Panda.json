@@ -28,29 +28,27 @@
     },
     {
     "table_name": "Key Moves",
-    "headers": ["Input", "Description", "Startup", "Level", "Block", "Counter"],
+    "headers": ["Input", "Description", "Startup", "Level", "Block"],
     "rows": [
-        ["<p class=\"notation\">7</p>", "Quick jab to check situations", "10", "High", "N/A", "N/A"],
-        ["<p class=\"notation\">777</p>", "Risky counterhit launcher to challenge situations", "22", "High, Mid, Mid", "N/A", "N/A"],
-        ["<p class=\"notation\">z9</p>", "Low poke that can also enter hunting bear stance", "18", "Low", "N/A", "N/A"],
-        ["<p class=\"notation\">z3</p>", "Risky low for pressure, launches on counterhit", "21", "Low", "N/A", "N/A"],
-        ["<p class=\"notation\">w8</p>", "Safe mid attack that can transition into HBS", "18", "Mid", "N/A", "N/A"],
-        ["<p class=\"notation\">z79</p>", "Attack string that can be charged to three different levels", "17-34-47", "High, Mid", "N/A", "N/A"],
+        ["<p class=\"notation\">7</p>", "Quick jab to check situations", "i10", "High", "1"],
+        ["<p class=\"notation\">777</p>", "Risky counterhit launcher to challenge situations", "i10", "High, Mid, Mid", "-16"],
+        ["<p class=\"notation\">z9</p>", "Low poke that can also enter hunting bear stance", "i18", "Low", "-15"],
+        ["<p class=\"notation\">z3</p>", "Risky low for pressure, launches on counterhit", "i21", "Low", "-23"],
+        ["<p class=\"notation\">w8</p>", "Safe mid attack that can transition into HBS", "i18", "Mid", "-8"],
+        ["<p class=\"notation\">z79</p>", "Attack string that can be charged to three different levels", "i14", "High, Mid", "-13, -12, +3"],
         [
         "<img alt=\"Heat\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R5_01_HEAT.png\"><img alt=\"Roll\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_ROL.png\">",
         "Enhanced roll stance, useful for creating mixups",
         "-",
         "-",
-        "-",
-        "N/A"
+        "-"
         ],
         [
         "<img alt=\"Hunting Bear Stance\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_HBS.png\">",
         "Explore this stance to form an aggressive gameplan",
         "-",
         "-",
-        "-",
-        "N/A"
+        "-"
         ]
     ]
     },
@@ -68,9 +66,9 @@
         [
         "<img alt=\"Hunting Bear Stance\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_HBS.png\"><p class=\"notation\">2</p>",
         "Power Crush",
-        "25",
+        "20",
         "Mid",
-        "N/A"
+        "-14"
         ]
     ]
     }

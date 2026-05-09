@@ -10,7 +10,7 @@
     "headers": ["Term", "Notation", "Input"],
     "rows": [
         ["Garuda Force", "GRF", "Hit the opponent with certain moves to build stocks of this"],
-        ["-", "RMS", "After guard break"]
+        ["Rama Stance", "RMS", "After certain guard breaks when Garude Force is active"]
     ]
     },
     {
@@ -20,18 +20,16 @@
         "Description",
         "Startup",
         "Level",
-        "Block",
-        "Counter"
+        "Block"
     ],
     "rows": [
-        ["<p class=\"notation\">7</p>", "Fast attack to check situations and start pressure", "-", "-", "-", "N/A"],
-        ["<p class=\"notation\">1</p>", "Quick mid poke to check situations", "-", "Mid", "-", "N/A"],
-        ["<p class=\"notation\">x7</p>", "Slow mid poke to harass the opponent, has several useful extentions", "-", "Mid", "-", "N/A"],
-        ["<p class=\"notation\">x1 \\ x3</p>", "Low poke to harass the opponent, either input is fine", "-", "Low", "-", "N/A"],
-        ["<p class=\"notation\">2</p>", "Safe mid counterhit launcher, has lots of range", "-", "Mid", "-", "N/A"],
-        ["<p class=\"notation\">ad3</p>", "A powerful high launcher that can break through parries and power crushes, On block you can continue your pressure", "-", "High", "-", "N/A"],
-        ["<p class=\"notation\">d3</p>", "Slow axe kick that can pressure opponents at close range, very rewarding counterhit", "-", "-", "-", "N/A"],
-        ["<p class=\"notation\">ddD3</p>", "Running knee attack that can be used to approach opponents, can be used to start pressure", "-", "-", "-", "N/A"]
+        ["<p class=\"notation\">7</p>", "Fast attack to check situations and start pressure", "i10", "High", "+1"],
+        ["<p class=\"notation\">1</p>", "Quick mid poke to check situations", "i13", "Mid", "-9"],
+        ["<p class=\"notation\">x7</p>", "Slow mid poke to harass the opponent, has several useful extentions", "i15", "Mid", "-3"],
+        ["<p class=\"notation\">x1</p>", "Low poke to harass the opponent, either input is fine", "i20", "Low", "-13"],
+        ["<p class=\"notation\">2</p>", "Safe mid counterhit launcher, has lots of range", "i13", "Mid, Mid", "-12"],
+        ["<p class=\"notation\">ad3</p>", "A powerful high launcher that can break through parries and power crushes, On block you can continue your pressure", "i18", "High", "+6"],
+        ["<p class=\"notation\">d3</p>", "Slow axe kick that can pressure opponents at close range, very rewarding counterhit", "i25", "Mid", "+3"]    
     ]
     },
     {
@@ -40,8 +38,8 @@
     "rows": [
         ["<p class=\"notation\">a4</p>", "Kick Parry", "N/A", "N/A", "N/A"],
         ["<p class=\"notation\">a6</p>", "Punch Parry", "N/A", "N/A", "N/A"],
-        ["<p class=\"notation\">e9</p>", "Power Crush", "N/A", "N/A", "N/A"],
-        ["<p class=\"notation\">d2</p>", "Power Crush", "N/A", "N/A", "N/A"]
+        ["<p class=\"notation\">e9</p>", "Power Crush", "i18", "High", "-7"],
+        ["<p class=\"notation\">d2</p>", "Power Crush", "i22", "Mid", "-14"]
     ]
     }
 ]

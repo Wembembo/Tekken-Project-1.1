@@ -19,22 +19,20 @@
     },
     {
     "table_name": "Key Moves",
-    "headers": ["Input", "Description", "Startup", "Level", "Block", "Counter"],
+    "headers": ["Input", "Description", "Startup", "Level", "Block"],
     "rows": [
-        ["<p class=\"notation\">797</p>", "Quick jab string, can PAB by pressing f(-2) or FLK by pressing b(-1)", "14", "High, High, High", "-3", "N/A"],
-        ["<p class=\"notation\">x7</p>", "A quick low poke to harass the opponent. Has a number of extension and stance options", "13", "Mid", "-2", "N/A"],
-        ["<p class=\"notation\">a7</p>", "Counterhit launcher for keepout and checking situations. Input B to move to FLK", "13", "High", "-13", "N/A"],
-        ["<p class=\"notation\">s97</p>", "Low poke, cancels into many options. Input 3 for left weave, 4 for right", "14", "Low, Mid", "-11", "N/A"],
-        ["<p class=\"notation\">z19</p>", "Short ranged low, useful for wall pressure. Transitions into LNH", "15", "Low, High", "-6", "N/A"]
+        ["<p class=\"notation\">797</p>", "Quick jab string, can PAB by pressing f(-2) or FLK by pressing b(-1)", "i10", "High, High, High", "-3"],
+        ["<p class=\"notation\">x7</p>", "A quick low poke to harass the opponent. Has a number of extension and stance options", "i13", "Mid", "-2"],
+        ["<p class=\"notation\">a7</p>", "Counterhit launcher for keepout and checking situations. Input B to move to FLK", "i13", "High", "-14"],
+        ["<p class=\"notation\">s97</p>", "Low poke, cancels into many options. Input 3 for left weave, 4 for right", "i17", "Low, Mid", "-11"],
+        ["<p class=\"notation\">z19</p>", "Short ranged low, useful for wall pressure. Transitions into LNH", "i16", "Low, High", "-6"]
     ]
     },
     {
     "table_name": "Defensive Options",
     "headers": ["Input", "Description", "Startup", "Level", "Block"],
     "rows": [
-        ["<p class=\"notation\">a4</p>", "Punch parry, alternative input is B+2,4", "N/A", "sp", "N/A"],
-        ["<p class=\"notation\">9</p>", "Punch parry properties", "12", "High", "-1"]
-    ]
+        ["<p class=\"notation\">a4</p>", "Punch parry, alternative input is B+2,4", "N/A", "sp", "N/A"]    ]
     }
 ]
 }

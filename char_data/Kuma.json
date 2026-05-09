@@ -33,18 +33,17 @@
         "Description",
         "Startup",
         "Level",
-        "Block",
-        "Counter"
+        "Block"
     ],
     "rows": [
-        ["<p class=\"notation\">7</p>", "Quick jab to check situations", "10", "High", "+1", "N/A"],
-        ["<p class=\"notation\">777</p>", "Risky counterhit launcher to challenge situations", "22", "High, Mid, Mid", "-16", "N/A"],
-        ["<p class=\"notation\">z9</p>", "Low poke to annoy opponents from mid range", "18", "Low", "-15", "N/A"],
-        ["<p class=\"notation\">z3</p>", "Risky low for pressure, launches on counter hit", "21", "Low", "-23", "N/A"],
-        ["<p class=\"notation\">w8</p>", "Safe mid attack that can shift into HBS by holding down", "18", "Mid", "-4", "N/A"],
-        ["<p class=\"notation\">z79</p>", "Attack string that can be charged at different levels", "17", "High, Mid", "-13", "N/A"],
-        ["<img alt=\"Heat\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R5_01_HEAT.png\"><p class=\"notation\">xM</p>", "Special mid launcher, useful to pressure the opponent", "15", "Special Mid", "+5", "N/A"],
-        ["<img alt=\"Hunting Bear Stance\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_HBS.png\">", "Explore this stance to form an aggressive game plan", "-", "-", "-", "N/A"]
+        ["<p class=\"notation\">7</p>", "Quick jab to check situations", "i10", "High", "+1"],
+        ["<p class=\"notation\">777</p>", "Risky counterhit launcher to challenge situations", "i22", "High, Mid, Mid", "-16"],
+        ["<p class=\"notation\">z9</p>", "Low poke to annoy opponents from mid range", "i18", "Low", "-15"],
+        ["<p class=\"notation\">z3</p>", "Risky low for pressure, launches on counter hit", "i21", "Low", "-23"],
+        ["<p class=\"notation\">w8</p>", "Safe mid attack that can shift into HBS by holding down", "i18", "Mid", "-8"],
+        ["<p class=\"notation\">z79</p>", "Attack string that can be charged at different levels", "i14", "High, Mid", "-13"],
+        ["<img alt=\"Heat\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R5_01_HEAT.png\"><p class=\"notation\">xM</p>", "Special mid launcher, useful to pressure the opponent", "i15", "Special Mid", "0"],
+        ["<img alt=\"Hunting Bear Stance\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_HBS.png\">", "Explore this stance to form an aggressive game plan", "-", "-", "-"]
     ]
     },
     {
@@ -54,7 +53,7 @@
         [
         "<img alt=\"Hunting Bear Stance\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_HBS.png\"><p class=\"notation\">d2</p>",
         "Transitions into sit stance, hitbox is behind Kuma. Alternative input is forward 3+4",
-        "16",
+        "i16",
         "Low",
         "+11"
         ],

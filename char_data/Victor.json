@@ -23,23 +23,23 @@
     },
     {
     "table_name": "Key Moves",
-    "headers": ["Input", "Description", "Startup", "Level", "Block", "Counter"],
+    "headers": ["Input", "Description", "Startup", "Level", "Block"],
     "rows": [
-        ["<p class=\"notation\">7</p>", "Quick jab to start offence and check situations", "10", "High", "+1", "N/A"],
-        ["<p class=\"notation\">x7</p>", "Mid poke to harass the opponent", "13", "Mid", "N/A", "N/A"],
-        ["<p class=\"notation\">s3</p>", "Low poke to harass the opponent", "16", "Low", "-14", "N/A"],
-        ["<p class=\"notation\">z3</p>", "High curshing low that launches on counterhit", "20", "Low", "-26", "N/A"],
-        ["<p class=\"notation\">a3</p>", "Ranged homing attack to check the opponent side stepping", "18", "High", "-2", "N/A"],
-        ["<p class=\"notation\">a9</p>", "Quick short ranged attack to challenge pressure, cannot KO", "12", "High", "-9", "N/A"],
-        ["<p class=\"notation\">8</p>", "Strong mid counterhit launcher", "15", "Mid", "-8", "N/A"],
-        ["<p class=\"notation\">ddD9</p>", "Approach and pressure tool", "15", "Mid", "-8", "N/A"]
+        ["<p class=\"notation\">7</p>", "Quick jab to start offence and check situations", "i10", "High", "+1"],
+        ["<p class=\"notation\">x7</p>", "Mid poke to harass the opponent", "i13", "Mid", "-2"],
+        ["<p class=\"notation\">s3</p>", "Low poke to harass the opponent", "i16", "Low", "-13"],
+        ["<p class=\"notation\">z3</p>", "High curshing low that launches on counterhit", "i20", "Low", "-26"],
+        ["<p class=\"notation\">a3</p>", "Ranged homing attack to check the opponent side stepping", "i18", "High", "-2"],
+        ["<p class=\"notation\">a9</p>", "Quick short ranged attack to challenge pressure, cannot KO", "i10", "High", "-6"],
+        ["<p class=\"notation\">8</p>", "Strong mid counterhit launcher", "i15", "Mid", "-9"],
+        ["<p class=\"notation\">ddD9</p>", "Approach and pressure tool", "i18", "Mid", "+2"]
     ]
     },
     {
     "table_name": "Defensive Options",
     "headers": ["Input", "Description", "Startup", "Level", "Block"],
     "rows": [
-        ["<p class=\"notation\">d1</p>", "Punch Parry", "18", "Low", "-13"],
+        ["<p class=\"notation\">d1</p>", "Punch Parry", "i20", "SP", "N/A"],
         ["Tap forward during IAI", "Low Parry", "N/A", "N/A", "N/A"]
     ]
     }

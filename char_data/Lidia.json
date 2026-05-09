@@ -17,26 +17,26 @@
     },
     {
     "table_name": "Key Moves",
-    "headers": ["Input", "Description", "Startup", "Level", "Block", "Counter"],
+    "headers": ["Input", "Description", "Startup", "Level", "Block"],
     "rows": [
-        ["<p class=\"notation\">7</p>", "Quick jab to start offence", "10", "High", "+1", "N/A"],
-        ["<p class=\"notation\">x7</p>", "Mid poke with extensions to harass the opponent", "13", "Mid", "-5", "N/A"],
-        ["<p class=\"notation\">dD9</p>", "Long reaching attack that shifts into horse stance except on whiff", "13", "Mid", "+5", "N/A"],
-        ["<p class=\"notation\">ddD7</p>", "Approach / Pressure tool", "13", "High", "+6", "N/A"],
-        ["<p class=\"notation\">z3</p>", "Useful against opponents that are stand blocking too much", "22", "Low", "-13", "N/A"],
-        ["<p class=\"notation\">s9</p>", "Useful against opponents that are stand blocking too much", "18", "Low", "-14", "N/A"],
-        ["<p class=\"notation\">a3</p>", "Homing tool, guaranteed followup on counterhit", "16", "Low", "-13", "N/A"],
-        ["<p class=\"notation\">z1</p>", "Low that can shift into HOR except on Whiff, has a clean hit", "16", "Low", "-11", "N/A"],
-        ["<p class=\"notation\">dD1</p>", "Long reaching launcher that can hit grounded opponents", "19", "Mid", "-14", "N/A"]
+        ["<p class=\"notation\">7</p>", "Quick jab to start offence", "i10", "High", "+1"],
+        ["<p class=\"notation\">x7</p>", "Mid poke with extensions to harass the opponent", "i13", "Mid", "-5"],
+        ["<p class=\"notation\">dD9</p>", "Long reaching attack that shifts into horse stance except on whiff", "i13", "Mid", "+5"],
+        ["<p class=\"notation\">ddD7</p>", "Approach / Pressure tool", "i13", "High", "+6"],
+        ["<p class=\"notation\">z3</p>", "Useful against opponents that are stand blocking too much", "i22", "Low", "-13"],
+        ["<p class=\"notation\">s9</p>", "Useful against opponents that are stand blocking too much", "i18", "Low", "-14"],
+        ["<p class=\"notation\">a3</p>", "Homing tool, guaranteed followup on counterhit", "i16", "High", "-3"],
+        ["<p class=\"notation\">z1</p>", "Low that can shift into HOR except on Whiff, has a clean hit", "i16", "Low", "-11"],
+        ["<p class=\"notation\">dD1</p>", "Long reaching launcher that can hit grounded opponents", "i19", "Mid", "-14"]
     ]
     },
     {
     "table_name": "Defensive Options",
     "headers": ["Input", "Description", "Startup", "Level", "Block"],
     "rows": [
-        ["<p class=\"notation\">z2</p>", "Has Low Parry", "22", "Mid", "-3"],
-        ["<p class=\"notation\">e7</p>", "Has high attack parry properties", "23", "Mid", "-6"],
-        ["<p class=\"notation\">a8</p>", "Power Crush", "20", "Mid", "-13"],
+        ["<p class=\"notation\">z2</p>", "Has Low Parry", "i22", "Mid", "-3"],
+        ["<p class=\"notation\">e7</p>", "Has high attack parry properties", "i23", "Mid", "-6"],
+        ["<p class=\"notation\">a8</p>", "Power Crush", "i20", "Mid", "-13"],
         ["HAE", "During heat, has reversal properties", "-", "-", "-"]
     ]
     }

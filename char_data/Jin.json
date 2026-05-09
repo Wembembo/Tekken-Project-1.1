@@ -38,28 +38,24 @@
         "Description",
         "Startup",
         "Level",
-        "Block",
-        "Counter"
+        "Block"
     ],
     "rows": [
-        ["<p class=\"notation\">7</p>", "Quick jab to start offense. Has many extensions.", "10", "High", "+1", "N/A"],
-        ["<p class=\"notation\">3</p>", "High Homing Attack to check sidestepping opponents", "13", "High", "-9", "N/A"],
-        ["<p class=\"notation\">x7</p>", "A mid to harass the opponent. Has follow-ups", "12", "Mid", "-3", "N/A"],
-        ["<p class=\"notation\">s9</p>", "Strong low that launches on counter", "22", "Low", "-14", "N/A"],
-        ["<p class=\"notation\">z3</p>", "Good low poke to pressure the opponent", "20", "Low", "-13", "N/A"],
-        ["<p class=\"notation\">d3</p>", "Long range mid that launches on counter", "16", "Mid", "-8", "N/A"],
-        ["<img alt=\"Electric Wind God Fist\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_EWGF.png\">", "High launching attack useful in many situations", "11", "High", "+5", "N/A"],
-        ["<p class=\"notation\">w9</p>", "Evasive punch that can be used to challenge situations", "15", "Mid", "N/A", "N/A"]
-    ]
+        ["<p class=\"notation\">7</p>", "Quick jab to start offense. Has many extensions.", "i10", "High", "+1"],
+        ["<p class=\"notation\">3</p>", "High Homing Attack to check sidestepping opponents", "i13", "High", "-9"],
+        ["<p class=\"notation\">x7</p>", "A mid to harass the opponent. Has follow-ups", "i13", "Mid", "-3"],
+        ["<p class=\"notation\">s9</p>", "Strong low that launches on counter", "i22", "Low", "-14"],
+        ["<p class=\"notation\">z3</p>", "Good low poke to pressure the opponent", "i20", "Low", "-13"],
+        ["<p class=\"notation\">d3</p>", "Long range mid that launches on counter", "i16", "Mid", "-8"],
+        ["<img alt=\"Electric Wind God Fist\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_EWGF.png\">", "High launching attack useful in many situations", "i11", "High", "-10"]    ]
     },
     {
     "table_name": "Defensive Options",
     "headers": ["Input", "Description", "Startup", "Level", "Block"],
     "rows": [
         ["<p class=\"notation\">a4</p>", "Parry", "N/A", "SP", "N/A"],
-        ["<p class=\"notation\">a6</p>", "Parry", "N/A", "SP", "N/A"],
-        ["<p class=\"notation\">a8</p>", "Has punch parry effect", "23", "Mid", "N/A"],
-        ["<p class=\"notation\">s7</p>", "Power Crush", "21", "Mid, (t) High", "-13"]
+        ["<p class=\"notation\">a8</p>", "Has punch parry effect", "i23", "Mid", "N/A"],
+        ["<p class=\"notation\">s7</p>", "Power Crush", "i21", "Mid, (t) High", "-13"]
     ]
     }
 ]

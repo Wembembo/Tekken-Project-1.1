@@ -23,26 +23,24 @@
         "Description",
         "Startup",
         "Level",
-        "Block",
-        "Counter"
+        "Block"
     ],
     "rows": [
-        ["<p class=\"notation\">7</p>", "Quick jab to start offence and check situations", "10", "High", "+1", "N/A"],
-        ["<p class=\"notation\">a7</p>", "Homing attack, great for space control", "18", "Mid", "-5", "N/A"],
-        ["<p class=\"notation\">a1</p>", "Mid poke with extentions to discourage retaliation", "13", "Mid", "-4", "N/A"],
-        ["<p class=\"notation\">x9</p>", "Quick counterhit launcer", "14", "Mid", "-18", "N/A"],
-        ["<p class=\"notation\"><img alt=\"SideStep\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R5_05_SS.png\">3</p>", "Low poke for pressure", "20", "Low", "-12", "N/A"],
-        ["<p class=\"notation\"><img alt=\"While Rising\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R5_03_WR.png\">9</p>", "Very strong approach tool", "13", "High", "+7", "N/A"],
-        ["<p class=\"notation\">dd3</p>", "Safe mid approach with counterhit proprerites", "15", "Mid", "-13", "N/A"],
-        ["<p class=\"notation\">x9</p>", "Mid with extensions, great for wall pressure", "14", "Mid", "-13", "N/A"]
+        ["<p class=\"notation\">7</p>", "Quick jab to start offence and check situations", "i10", "High", "+1"],
+        ["<p class=\"notation\">a7</p>", "Homing attack, great for space control", "i18", "Mid", "-8"],
+        ["<p class=\"notation\">a1</p>", "Mid poke with extentions to discourage retaliation", "i13", "Mid", "-4"],
+        ["<p class=\"notation\">x9</p>", "Quick counterhit launcer", "i14", "Mid", "-13"],
+        ["<p class=\"notation\"><img alt=\"SideStep\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R5_05_SS.png\">3</p>", "Low poke for pressure", "i20", "Low", "-12"],
+        ["<p class=\"notation\">dD3</p>", "Safe mid approach with counterhit proprerites", "i15", "Mid", "-1"],
+        ["<p class=\"notation\">x9</p>", "Mid with extensions, great for wall pressure", "i14", "Mid", "-13"]
     ]
     },
     {
     "table_name": "Defensive Options",
     "headers": ["Input", "Description", "Startup", "Level", "Block"],
     "rows": [
-        ["<p class=\"notation\">a2</p>", "Evasive attack", "29", "Mid", "-14"],
-        ["<p class=\"notation\">a8</p>", "Power Crush", "22", "Mid", "-13"]
+        ["<p class=\"notation\">a2</p>", "Evasive attack", "i29", "Mid", "-15"],
+        ["<p class=\"notation\">a8</p>", "Power Crush", "i22", "Mid", "-13"]
     ]
     }
 ]

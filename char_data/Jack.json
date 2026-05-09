@@ -29,17 +29,16 @@
         "Description",
         "Startup",
         "Level",
-        "Block",
-        "Counter"
+        "Block"
     ],
     "rows": [
-        ["<p class=\"notation\">9</p>", "Jab to start offence, has extentions", "11", "High", "+1", "N/A"],
-        ["<p class=\"notation\">d9</p>", "Quick high to challenge situations", "10", "High", "-12", "N/A"],
-        ["<p class=\"notation\">x7</p>", "Mid Poke to harass the opponent, has extentions", "14", "Mid", "-4", "N/A"],
-        ["<p class=\"notation\">dd7</p>", "Approach tool for mid-range, can shift into GMH", "15", "Mid", "-6", "N/A"],
-        ["<p class=\"notation\">ddD8</p>", "Approach tool that leaves you at advantage on block", "20", "Mid", "+3", "N/A"],
-        ["<p class=\"notation\">z7</p>", "Low poke to harass the opppnent, can also be done in full crouch", "13", "Low", "-12", "N/A"],
-        ["<p class=\"notation\">e9</p>", "Low crushing attack, good for wall pressure", "24", "Mid", "+4", "N/A"]
+        ["<p class=\"notation\">9</p>", "Jab to start offence, has extentions", "i11", "High", "+1"],
+        ["<p class=\"notation\">d9</p>", "Quick high to challenge situations", "i10", "High", "-12"],
+        ["<p class=\"notation\">x7</p>", "Mid Poke to harass the opponent, has extentions", "i14", "Mid", "-4"],
+        ["<p class=\"notation\">dd7</p>", "Approach tool for mid-range, can shift into GMH", "i15", "Mid", "-6"],
+        ["<p class=\"notation\">ddD8</p>", "Approach tool that leaves you at advantage on block", "i20", "Mid", "+4"],
+        ["<p class=\"notation\">z7</p>", "Low poke to harass the opppnent, can also be done in full crouch", "i12", "Low", "-12"],
+        ["<p class=\"notation\">e9</p>", "Low crushing attack, good for wall pressure", "i24", "Mid", "+4"]
     ]
     },
     {
@@ -47,8 +46,8 @@
     "headers": ["Input", "Description", "Startup", "Level", "Block"],
     "rows": [
         ["<p class=\"notation\">q8</p>", "Power Crush", "20", "High", "-9"],
-        ["<p class=\"notation\">d8</p>", "Power crush", "27", "Mid, Mid", "-15"],
-        ["<p class=\"notation\">2</p>", "Power Crush, Briefly gains Gamma Charge upon absorbing an attack", "N/A", "SP", "N/A"]
+        ["<p class=\"notation\">d8</p>", "Power crush", "27", "Mid, Mid", "-12"],
+        ["<p class=\"notation\">2</p>", "Power Crush, Briefly gains Gamma Charge upon absorbing an attack", "N/A", "N/A", "N/A"]
     ]
     }
 ]

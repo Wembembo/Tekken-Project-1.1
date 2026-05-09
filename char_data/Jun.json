@@ -33,29 +33,27 @@
         "Description",
         "Startup",
         "Level",
-        "Block",
-        "Counter"
+        "Block"
     ],
     "rows": [
-        ["<p class=\"notation\">7</p>", "Quick jab to start offence and check situtations", "10", "High", "+1", "N/A"],
-        ["<p class=\"notation\">x7</p>", "Quick mid poke with extensions", "13", "Mid", "-3", "N/A"],
-        ["<p class=\"notation\">z1</p>", "Low poke to harass the opponent", "18", "Low", "-12", "N/A"],
-        ["<p class=\"notation\">z9</p>", "Low poke to harass the opponent", "23", "Low", "-12", "N/A"],
-        ["<img alt=\"Full Crouch\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R5_02_FC.png\"><p class=\"notation\">x9</p>", "A very reward low from full crouch", "16", "Low", "-11", "N/A"],
-        ["<p class=\"notation\">a1</p>", "Keepout launcher that goes over lows", "16", "Mid", "-19", "N/A"],
-        ["<p class=\"notation\">x1</p>", "Mid homing move that can wallsplat", "17", "Mid", "-8", "N/A"],
-        ["<p class=\"notation\">dd8</p>", "Mid approach and pressure tool", "22", "Mid", "-8", "N/A"]
+        ["<p class=\"notation\">7</p>", "Quick jab to start offence and check situtations", "i10", "High", "+1"],
+        ["<p class=\"notation\">x7</p>", "Quick mid poke with extensions", "i13", "Mid", "-3"],
+        ["<p class=\"notation\">z1</p>", "Low poke to harass the opponent", "i18", "Low", "-12"],
+        ["<p class=\"notation\">z9</p>", "Low poke to harass the opponent", "i23", "Low", "-12"],
+        ["<img alt=\"Full Crouch\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R5_02_FC.png\"><p class=\"notation\">x9</p>", "A very reward low from full crouch", "i16", "Low", "-11"],
+        ["<p class=\"notation\">a1</p>", "Keepout launcher that goes over lows", "i16", "Mid", "-19"],
+        ["<p class=\"notation\">x1</p>", "Mid homing move that can wallsplat", "i17", "Mid", "-8"],
+        ["<p class=\"notation\">dD8</p>", "Mid approach and pressure tool", "i22", "Mid", "+6"]
     ]
     },
     {
     "table_name": "Defensive Options",
     "headers": ["Input", "Description", "Startup", "Level", "Block"],
     "rows": [
-        ["<p class=\"notation\">a4</p>", "Reversal", "N/A", "SP", "N/A"],
-        ["<p class=\"notation\">a6</p>", "Reversal", "N/A", "SP", "N/A"],
-        ["<p class=\"notation\">dM</p>", "Has punch parry effect", "28", "High", "0"],
-        ["<p class=\"notation\">a2</p>", "Power Crush", "28", "Mid", "-12"],
-        ["<p class=\"notation\">d2</p>", "This stance has reversal properties against low attacks and throws", "N/A", "SP", "N/A"]
+        ["<p class=\"notation\">a4</p>", "Reversal", "N/A", "N/A", "N/A"],
+        ["<p class=\"notation\">dM</p>", "Has punch parry effect", "i28", "High", "0"],
+        ["<p class=\"notation\">a2</p>", "Power Crush", "i22", "Mid", "-12"],
+        ["<p class=\"notation\">d2</p>", "This stance has reversal properties against low attacks and throws", "N/A", "N/A", "N/A"]
     ]
     }
 ]

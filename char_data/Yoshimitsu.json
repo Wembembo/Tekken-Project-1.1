@@ -48,21 +48,21 @@
     },
     {
     "table_name": "Key Moves",
-    "headers": ["Input", "Description", "Startup", "Level", "Block", "Counter"],
+    "headers": ["Input", "Description", "Startup", "Level", "Block"],
     "rows": [
-        ["<p class=\"notation\">7</p>", "Quick Jab to check situations", "10", "High", "+1", "N/A"],
-        ["<p class=\"notation\">x73</p>", "Mid pokes to harass the opponent", "17", "Mid, Mid", "-12", "N/A"],
-        ["<p class=\"notation\">z11</p>", "Multi hitting low", "15", "Low, Low", "-19", "N/A"],
-        ["<p class=\"notation\">w2</p>", "Very evasive launching attack", "39", "Mid, Mid", "+1", "N/A"],
-        ["<p class=\"notation\">N</p>", "Very fast attack for challenging Situations", "6", "Mid", "-15", "N/A"],
-        ["<img class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_KIN.png\"><img class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_DGF.png\">", "Stances to create strong situations", "-", "-", "-", "N/A"]
+        ["<p class=\"notation\">7</p>", "Quick Jab to check situations", "i10", "High", "+1"],
+        ["<p class=\"notation\">x73</p>", "Mid pokes to harass the opponent", "i13", "Mid, Mid", "-12"],
+        ["<p class=\"notation\">z11</p>", "Multi hitting low", "i18", "Low, Low", "-19"],
+        ["<p class=\"notation\">w2</p>", "Very evasive launching attack", "i39", "Mid, Mid", "+1"],
+        ["<p class=\"notation\">N</p>", "Very fast attack for challenging Situations", "i6", "Mid", "-20"],
+        ["<img class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_KIN.png\"><img class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_DGF.png\">", "Stances to create strong situations", "-", "-", "-"]
     ]
     },
     {
     "table_name": "Defensive Options",
     "headers": ["Input", "Description", "Startup", "Level", "Block"],
     "rows": [
-        ["<p class=\"notation\">N</p>", "Flash, an extremely fast attack", "6", "Mid", "-15"],
+        ["<p class=\"notation\">N</p>", "Flash, an extremely fast attack", "i6", "Mid", "-20"],
         ["<p class=\"notation\">8</p>", "Parries all highs or mids except unblockables", "N/A", "N/A", "N/A"]
     ]
     }

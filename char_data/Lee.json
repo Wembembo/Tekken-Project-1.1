@@ -24,17 +24,15 @@
         "Description",
         "Startup",
         "Level",
-        "Block",
-        "Counter"
+        "Block"
     ],
     "rows": [
-        ["<p class=\"notation\">7</p>", "Quick jab to start offence", "10", "High", "+1", "N/A"],
-        ["<p class=\"notation\">991</p>", "Fast counterhit string to challenge situations", "21", "High, Mid, High", "-3", "N/A"],
-        ["<p class=\"notation\">x7</p>", "Mid poke to harass the opponent and create situations", "13", "Mid", "-1", "N/A"],
-        ["<p class=\"notation\">8(2)</p>", "Counterhit launcher, can shift into HMS for additional pressure", "21", "High, High", "-6", "N/A"],
-        ["<p class=\"notation\">a11d</p>", "Quick low poke to harass the opponent, can be +4 when pressing forward", "19", "Low, High", "-12", "N/A"],
-        ["<p class=\"notation\">dd3</p>", "Evasive High attack that launches", "16", "High", "-5", "N/A"],
-        ["<img class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R5_02_FC.png\"><p class=\"notation\">xsx1</p>", "Slide attack that is the core of his full crouch mixup", "18", "Low", "-15", "N/A"]
+        ["<p class=\"notation\">7</p>", "Quick jab to start offence", "i10", "High", "+1"],
+        ["<p class=\"notation\">991</p>", "Fast counterhit string to challenge situations", "i10", "High, Mid, High", "-3"],
+        ["<p class=\"notation\">x7</p>", "Mid poke to harass the opponent and create situations", "i13", "Mid", "-1"],
+        ["<p class=\"notation\">a11</p>", "Quick low poke to harass the opponent, can be +4 and transition to MS when pressing forward", "i15", "Low, High", "-12"],
+        ["<p class=\"notation\">dd3</p>", "Evasive High attack that launches", "i16", "High", "-5"],
+        ["<img class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R5_02_FC.png\"><p class=\"notation\">xsx1</p>", "Slide attack that is the core of his full crouch mixup. Can also trasition into ms, hms  and full crouch", "i18", "Low", "-15"]
     ]
     },
     {

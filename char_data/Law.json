@@ -23,27 +23,26 @@
         "Description",
         "Startup",
         "Level",
-        "Block",
-        "Counter"
+        "Block"
     ],
     "rows": [
-        ["<p class=\"notation\">7</p>", "Quick jab to start offence and check situations", "10", "High", "+1", "N/A"],
-        ["<p class=\"notation\">x7</p>", "Mid poke to harass the opponent", "13", "Mid", "-1", "N/A"],
-        ["<p class=\"notation\">d8</p>", "A mid attack for pressure that launches on counter", "20", "Mid", "+3", "N/A"],
-        ["<p class=\"notation\">x9</p>", "Launching uppercut, Good as a keepout tool", "15", "Mid", "-7", "N/A"],
-        ["<p class=\"notation\">z1</p>", "Low poke to pressure the opponent", "17", "Low", "-13", "N/A"],
-        ["<p class=\"notation\">a3</p>", "Homing attack for space control", "14", "Mid", "-7", "N/A"],
-        ["<p class=\"notation\">s91</p>", "Risky counterhit launcher to challenge situations", "23", "Mid", "-15", "N/A"],
-        ["<img class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R5_02_FC.png\"><p class=\"notation\">xsx1</p>", "A Long range low that enables his crouching Mixup", "-", "Low", "-", "N/A"]
+        ["<p class=\"notation\">7</p>", "Quick jab to start offence and check situations", "i10", "High", "+1"],
+        ["<p class=\"notation\">x7</p>", "Mid poke to harass the opponent", "i13", "Mid", "-1"],
+        ["<p class=\"notation\">d8</p>", "A mid attack for pressure that launches on counter", "i20", "Mid", "+3"],
+        ["<p class=\"notation\">x9</p>", "Launching uppercut, Good as a keepout tool", "i15", "Mid", "-7"],
+        ["<p class=\"notation\">z1</p>", "Low poke to pressure the opponent", "i17", "Low", "-13"],
+        ["<p class=\"notation\">a3</p>", "Homing attack for space control", "i14", "Mid", "-7"],
+        ["<p class=\"notation\">s91</p>", "Risky counterhit launcher to challenge situations", "i11", "Special Low, Mid", "-15"],
+        ["<img class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R5_02_FC.png\"><p class=\"notation\">xsx1</p>", "A Long range low that enables his crouching Mixup", "i16", "Low", "-23"]
     ]
     },
     {
     "table_name": "Defensive Options",
     "headers": ["Input", "Description", "Startup", "Level", "Block"],
     "rows": [
-        ["<p class=\"notation\">a4</p>", "Parry - On success, press forward to enter DSS", "2", "N/A", "+14 on successful parry"],
+        ["<p class=\"notation\">a4</p>", "Parry - On success, press forward to enter DSS", "N/A", "N/A", "N/A"],
         ["<p class=\"notation\">a6</p>", "Reversal, punches only", "-", "Throw", "-"],
-        ["<p class=\"notation\">a8</p>", "Power Crush", "20", "Mid", "-14"],
+        ["<p class=\"notation\">a8</p>", "Power Crush", "i20", "Mid", "-14"],
         ["<img class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R5_01_HEAT.png\"><p class=\"notation\">s8</p>", "Has Punch Parry Properties, Enter into DSS", "N/A", "N/A", "N/A"]
     ]
     }

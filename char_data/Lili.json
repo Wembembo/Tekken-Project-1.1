@@ -23,27 +23,26 @@
     },
     {
     "table_name": "Key Moves",
-    "headers": ["Input", "Description", "Startup", "Level", "Block", "Counter"],
+    "headers": ["Input", "Description", "Startup", "Level", "Block"],
     "rows": [
-        ["<p class=\"notation\">7</p>", "Quick jab to start offence and check situations", "10", "High", "+1", "N/A"],
-        ["<p class=\"notation\">x7</p>", "Mid Poke to check the opponent", "13", "Mid", "-1", "N/A"],
-        ["<p class=\"notation\">s1</p>", "Low attack to harass the opponent", "19", "Low", "-12", "N/A"],
-        ["<p class=\"notation\">d3</p>", "A Mid counterhit launcher with good range", "17", "Mid", "-9", "N/A"],
-        ["<p class=\"notation\">x1</p>", "Long reaching launcher that leaves you in back turn", "20", "Mid", "+3", "N/A"],
-        ["<p class=\"notation\">sxd2</p>", "High Homing attack, useful to start pressure", "-", "-", "-", "N/A"],
-        ["<p class=\"notation\">dd3A</p>", "A low that can transition into Back turn by holding back", "18", "Mid", "-12", "N/A"]
+        ["<p class=\"notation\">7</p>", "Quick jab to start offence and check situations", "i10", "High", "+1"],
+        ["<p class=\"notation\">x7</p>", "Mid Poke to check the opponent", "i13", "Mid", "-1"],
+        ["<p class=\"notation\">s1</p>", "Low attack to harass the opponent", "i19", "Low", "-12"],
+        ["<p class=\"notation\">d3</p>", "A Mid counterhit launcher with good range", "i17", "Mid", "-9"],
+        ["<p class=\"notation\">x1</p>", "Long reaching launcher that leaves you in back turn", "i20", "Mid", "+3"],
+        ["<p class=\"notation\">dd3</p>", "A low that can transition into Back turn by holding back", "i22", "Low", "-12"]
     ]
     },
     {
     "table_name": "Defensive Options",
     "headers": ["Input", "Description", "Startup", "Level", "Block"],
     "rows": [
-        ["<p class=\"notation\">a4</p>", "Alternative input: b+2+4, Has parry properties", "23", "Mid", "-12"],
-        ["<p class=\"notation\">s8</p>", "Power Crush", "20", "Mid", "-13"],
+        ["<p class=\"notation\">a4</p>", "Alternative input: b+2+4, Has parry properties", "N/A", "Throw", "N/A"],
+        ["<p class=\"notation\">s8</p>", "Power Crush", "i20", "Mid", "-13"],
         [
         "<img alt=\"Back Turn\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R5_02_BT.png\"><p class=\"notation\">9</p>",
         "Power Crush",
-        "14",
+        "i14",
         "Mid",
         "-13"
         ]

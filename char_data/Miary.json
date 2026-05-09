@@ -1,5 +1,5 @@
 {
-    "character": "Chaacter Name",
+    "character": "Miary Zo",
     "metadata": {
         "dlc_pack": "Season 2",
         "image_path": "./Assets/Characters/FileName.png"
@@ -71,7 +71,7 @@
             "Low",
             "-14"
             ],
-                        [
+            [
             "<p class='notation'>d39</p>",
             "Slow but safe wallspatting attack. The direction of the knockdown can be changed with inputs. During heat, it can be used for pressure.",
             "i18",
@@ -84,7 +84,7 @@
             "Mid",
             "-7"
             ],
-                        [
+            [
             "<p class='notation'>s8</p>",
             "A risky launcher that can be used to hit grounded opponents.",
             "i19",

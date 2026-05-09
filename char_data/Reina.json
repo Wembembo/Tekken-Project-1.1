@@ -19,25 +19,24 @@
     },
     {
     "table_name": "Key Moves",
-    "headers": ["Input", "Description", "Startup", "Level", "Block", "Counter"],
+    "headers": ["Input", "Description", "Startup", "Level", "Block"],
     "rows": [
-        ["<p class=\"notation\">7</p>", "Quick jab to start your offence - 1 1 2 is a hit confirmable extension", "10", "High", "+1", "N/A"],
-        ["<p class=\"notation\">x7</p>", "Mid poke with extensions - Transition to SEN with F", "13", "Mid", "-13", "N/A"],
-        ["<p class=\"notation\">a9</p>", "Homing attack, useful against side stepping opponents", "16", "Mid", "-9", "N/A"],
-        ["<p class=\"notation\">d3</p>", "Mid attack to pressure the opponent. Great to use at the wall", "12", "Low", "-13", "N/A"],
-        ["<p class=\"notation\">dd9D</p>", "Approaching tool that can shift into SEN for mixups", "12", "Mid", "-9", "N/A"],
-        ["<p class=\"notation\">ddD1</p>", "Approach and pressure tool, transitions to WRA with D", "26", "High", "+4", "N/A"],
-        ["<p class=\"notation\">z9</p>", "Useful against opponents that are stand blocking too much", "16", "Low", "-13", "N/A"],
-        ["<img alt=\"Crouch Dash\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_CD_All.png\"><p class=\"notation\">39S</p>", "Low Sweep that can shift into WRA, very useful at the wall", "24", "Low, High", "-22", "N/A"],
-        ["<img alt=\"Crouch Dash\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_CD_All.png\"><p class=\"notation\">9</p>", "Electric Wind God Fist - High launching attack", "11", "High", "+5", "N/A"]
+        ["<p class=\"notation\">7</p>", "Quick jab to start your offence - 1 1 2 is a hit confirmable extension", "i10", "High", "+1"],
+        ["<p class=\"notation\">x7</p>", "Mid poke with extensions - Transition to SEN with F", "i13", "Mid", "-3"],
+        ["<p class=\"notation\">a9</p>", "Homing attack, useful against side stepping opponents", "i16", "Mid", "-9"],
+        ["<p class=\"notation\">d3</p>", "Mid attack to pressure the opponent. Great to use at the wall", "i19", "Mid", "+2"],
+        ["<p class=\"notation\">dD9</p>", "Approaching tool that can shift into SEN for mixups by holding forwards", "i12", "Mid", "-9"],
+        ["<p class=\"notation\">ddD1</p>", "Approach and pressure tool, transitions to WRA with D", "i24", "Mid", "+6"],
+        ["<p class=\"notation\">z9</p>", "Useful against opponents that are stand blocking too much", "i20", "Low", "-16"],
+        ["<img alt=\"Crouch Dash\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_CD_All.png\"><p class=\"notation\">9</p>", "Electric Wind God Fist - High launching attack", "i11", "High", "+5"]
     ]
     },
     {
     "table_name": "Defensive Options",
     "headers": ["Input", "Description", "Startup", "Level", "Block"],
     "rows": [
-        ["Tap Forward", "Punch Parry", "-", "-", "-"],
-        ["<p class=\"notation\">a4</p>", "A parry that converts incoming damage into recoverable health", "N/A", "N/A", "N/A"],
+        ["Tap Forward", "Punch Parry", "N/A", "SP", "N/A"],
+        ["<p class=\"notation\">a4</p>", "A parry that converts incoming damage into recoverable health", "N/A", "SP", "N/A"],
         ["<img alt=\"Heat\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R5_01_HEAT.png\"><p class=\"notation\">s8</p>", "A reversal that transitions into SEN with F+3, or into WGS with DF", "N/A", "sp", "N/A"]
     ]
     }

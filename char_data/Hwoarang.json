@@ -39,27 +39,24 @@
         "Description",
         "Startup",
         "Level",
-        "Block",
-        "Counter"
+        "Block"
     ],
     "rows": [
-        ["<p class=\"notation\">7</p>", "Quick jab to start offence and check situations", "10", "High", "+1", "N/A"],
-        ["<p class=\"notation\">x7</p>", "Mid attack to check situations", "13", "Mid", "-1", "N/A"],
-        ["<p class=\"notation\">z1</p>", "Low poke to harass opponents", "19", "Low", "-13", "N/A"],
-        ["<p class=\"notation\">s13</p>", "Low string that shifts into RFF", "19", "Low", "-11", "N/A"],
-        ["<p class=\"notation\">x3</p>", "Homing attack that shifts into RFF", "16", "Mid", "-8", "N/A"],
-        ["<p class=\"notation\">dd1</p>", "Mid Attack, useful for approaching and pressure", "20", "Mid", "-8", "N/A"],
-        ["JFSR", "Keepout move, requires a perfect input", "16", "Mid", "-8", "N/A"],
-        ["<img alt=\"Left Flamingo Stance\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_LFS.png\"><img alt=\"Right Flamingo Stance\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_RFS.png\">", "Learn your options out of these stances", "-", "-", "-", "N/A"]
+        ["<p class=\"notation\">7</p>", "Quick jab to start offence and check situations", "i10", "High", "+1"],
+        ["<p class=\"notation\">x7</p>", "Mid attack to check situations", "i13", "Mid", "-1"],
+        ["<p class=\"notation\">z1</p>", "Low poke to harass opponents", "i19", "Low", "-13"],
+        ["<p class=\"notation\">s13</p>", "Low string that shifts into RFF", "i17", "Low", "+8"],
+        ["<p class=\"notation\">x3</p>", "Homing attack that shifts into RFF", "i16", "Mid", "-8"],
+        ["<p class=\"notation\">dD1</p>", "Mid Attack, useful for approaching and pressure", "i20", "Mid", "+6"],
+        ["JFSR", "Keepout move, requires a perfect input", "i16", "Mid", "-8"],
+        ["<img alt=\"Left Flamingo Stance\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_LFS.png\"><img alt=\"Right Flamingo Stance\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_RFS.png\">", "Learn your options out of these stances", "-", "-", "-"]
     ]
     },
     {
     "table_name": "Defensive Options",
     "headers": ["Input", "Description", "Startup", "Level", "Block"],
     "rows": [
-        ["<p class=\"notation\">a4</p>", "Punch parry, press 4 on successful parry", "-", "-", "-"],
-        ["<p class=\"notation\">a6</p>", "Punch parry, press 4 on successful parry", "-", "-", "-"],
-        ["<p class=\"notation\">x13</p>", "Power Crush", "24", "Mid Mid", "-14"]
+        ["<p class=\"notation\">a4</p>", "Punch parry, press 4 on successful parry", "-", "-", "-"]
     ]
     }
 ]

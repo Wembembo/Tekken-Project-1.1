@@ -1,5 +1,5 @@
 {
-    "character": "Chaacter Name",
+    "character": "Bob",
     "metadata": {
         "dlc_pack": "Season 3",
         "image_path": "./Assets/Characters/FileName.png"
@@ -10,14 +10,9 @@
         "headers": ["Term", "Notation", "Input"],
         "rows": [
             [
-            "Stance Name",
-            "ABC",
-            "<p class='notation'>Input</p>"
-            ],
-            [
-            "Special Move",
-            "<img class='notation' src='./Assets/Path/icon.png'>",
-            "<p class='notation'>d+2</p>"
+            "-",
+            "-",
+            "<p class='notation'></p>"
             ]
         ]
         },
@@ -28,17 +23,15 @@
             "Description",
             "Startup",
             "Level",
-            "Block",
-            "Counter"
+            "Block"
         ],
         "rows": [
             [
-            "<p class='notation'>1,2</p>",
+            "<p class='notation'></p>",
             "Description of the move here.",
-            "10",
-            "High, High",
-            "+1",
-            "N/A"
+            "-",
+            "-",
+            "-"
             ]
         ]
         },
@@ -47,11 +40,11 @@
         "headers": ["Input", "Description", "Startup", "Level", "Block"],
         "rows": [
             [
-            "<p class='notation'>a+1+2</p>",
-            "Power Crush / Parry details.",
-            "20",
-            "Mid",
-            "-13"
+            "<p class='notation'></p>",
+            "Description of the defensive option here.",
+            "-",
+            "-",
+            "-"
             ]
         ]
         }

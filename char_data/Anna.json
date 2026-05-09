@@ -10,8 +10,8 @@
     "headers": ["Term", "Notation", "Input"],
     "rows": [
         ["Chaos Judgement", "CJM", "<p class=\"notation\">a1</p>"],
-        ["HCS", "HCS", "<p class=\"notation\">d1</p>"],
-        ["PTS", "PTS", "?"],
+        ["Hammer Chance Stance", "HCS", "<p class=\"notation\">d1</p>"],
+        ["Pleasure Time Stance", "PTS", "Only available after certain moves, like HCS 2,2"],
         ["ROLL", "ROLL", "df during CJM"]
     ]
     },
@@ -22,16 +22,15 @@
         "Description",
         "Startup",
         "Level",
-        "Block",
-        "Counter"
+        "Block"
     ],
     "rows": [
-        ["<p class=\"notation\">7</p>", "Single jab to check situations, has many useful extensions", "10", "High", "+1", "N/A"],
-        ["<p class=\"notation\">x79</p>", "Mid poke with many follow ups, can shift into HCS and CJM", "10,10", "Mid, High", "-1", "N/A"],
-        ["<p class=\"notation\">dD9</p>", "High homing ranged attack that can be used to approach. Can be used to approach from mid-range, gives frame advantage on block", "17", "High", "+4", "N/A"],
-        ["<p class=\"notation\">z3</p>", "Low poke that shifts into HCS for stance mixups, tracks SSR", "17", "Low", "-13", "N/A"],
-        ["<p class=\"notation\">sxd7</p>", "Quick high elbow that is plus on block, Use this to fish for counter hits at mid range", "13", "High", "N/A", "N/A"],
-        ["<p class=\"notation\">8</p>", "Mid homing attack that is plus on block. Can be very spammable at close range", "16", "Mid", "+1", "N/A"]
+        ["<p class=\"notation\">7</p>", "Single jab to check situations, has many useful extensions", "i10", "High", "+1"],
+        ["<p class=\"notation\">x79</p>", "Mid poke with many follow ups, can shift into HCS and CJM", "i13", "Mid, High", "-5"],
+        ["<p class=\"notation\">dD9</p>", "High homing ranged attack that can be used to approach. Can be used to approach from mid-range, gives frame advantage on block", "i17", "High", "+4"],
+        ["<p class=\"notation\">z3</p>", "Low poke that shifts into HCS for stance mixups, tracks SSR", "i17", "Low", "-13"],
+        ["<p class=\"notation\">sxd7</p>", "Quick high elbow that is plus on block, Use this to fish for counter hits at mid range", "i13", "High", "+1"],
+        ["<p class=\"notation\">8</p>", "Mid homing attack that is plus on block. Can be very spammable at close range", "i16", "Mid", "+1"]
     ]
     },
     {
@@ -39,7 +38,7 @@
     "headers": ["Input", "Description", "Startup", "Level", "Block"],
     "rows": [
         ["<p class=\"notation\">a4</p>", "Alternative input: b+2+4. Reversal", "N/A", "N/A", "N/A"],
-        ["<p class=\"notation\">a8</p>", "Power Crush", "20", "Mid", "+4"],
+        ["<p class=\"notation\">a8</p>", "Power Crush", "i20", "Mid", "-13"],
         ["During CJM", "Has low parry properties, can reverse grab attempts", "N/A", "N/A", "N/A"]
     ]
     }

@@ -38,26 +38,25 @@
         "Description",
         "Startup",
         "Level",
-        "Block",
-        "Counter"
+        "Block"
     ],
     "rows": [
-        ["<p class=\"notation\">7(779)</p>", "Jab to start offense. The full string can be hit confirmed", "10 (13)", "High (High High Mid)", "+1 (-17)", "N/A"],
-        ["<p class=\"notation\">d3</p>", "Mid attack for pressure that has counter properties", "13", "Mid", "-9", "N/A"],
-        ["<p class=\"notation\">x9</p>", "Homing mid counterhit launcher that is unsafe on block", "14", "Mid", "-9", "N/A"],
-        ["<p class=\"notation\">z9</p>", "Low poke to pressure the opponent", "20", "Mid", "-9", "N/A"],
-        ["<p class=\"notation\">dD1</p>", "Safe mid launcher that can be used in mixups", "20", "Mid", "-3", "N/A"],
-        ["<p class=\"notation\">dD3</p>", "Useful to get opponents off the ground", "17", "Mid", "-3", "N/A"],
-        ["<img alt=\"Electric Wind God Fist\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_EWGF.png\">", "High launching attack useful in many situations", "11", "High", "+5", "N/A"],
-        ["<img alt=\"Crouch Dash\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_CD_All.png\">37", "A strong low that is the base of his mixup game", "26", "Low, Mid", "+5", "N/A"]
+        ["<p class=\"notation\">7(779)</p>", "Jab to start offense. The full string can be hit confirmed", "i10, (10)", "High (High High Mid)", "+1, (-17)"],
+        ["<p class=\"notation\">d3</p>", "Mid attack for pressure that has counter properties", "i19", "Mid", "+4"],
+        ["<p class=\"notation\">x9</p>", "Homing mid counterhit launcher that is unsafe on block", "i14", "Mid", "-12"],
+        ["<p class=\"notation\">z9</p>", "Low poke to pressure the opponent", "i8", "Mid", "-4"],
+        ["<p class=\"notation\">dD1</p>", "Safe mid launcher that can be used in mixups", "i20", "Mid", "-3"],
+        ["<p class=\"notation\">dD3</p>", "Useful to get opponents off the ground", "i17", "Mid", "-9"],
+        ["<img alt=\"Electric Wind God Fist\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_EWGF.png\">", "High launching attack useful in many situations", "i11", "High", "-10"],
+        ["<img alt=\"Crouch Dash\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_CD_All.png\">37", "A strong low that is the base of his mixup game", "i16", "Low, Mid", "-16"]
     ]
     },
     {
     "table_name": "Defensive Options",
     "headers": ["Input", "Description", "Startup", "Level", "Block"],
     "rows": [
-        ["<p class=\"notation\">d8</p>", "Has punch parry effect", "25", "Mid", "-9"],
-        ["<p class=\"notation\">d9</p>", "Power Crush", "20", "Mid", "-12"]
+        ["<p class=\"notation\">d8</p>", "Has punch parry effect", "i25", "Mid", "-9"],
+        ["<p class=\"notation\">d9</p>", "Power Crush", "i20", "Mid", "-12"]
     ]
     }
 ]

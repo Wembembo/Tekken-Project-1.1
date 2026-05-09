@@ -19,89 +19,71 @@
         "Description",
         "Startup",
         "Level",
-        "Block",
-        "Counter"
+        "Block"
     ],
     "rows": [
         [
         "<p class=\"notation\">7</p>",
         "Single jab to check situations, use its extensions to stop them from challenging it",
-        "10",
+        "i10",
         "High",
-        "-2",
-        "N/A"
+        "-2"
         ],
         [
         "<p class=\"notation\">x7</p>",
         "Mid poke to harass opponents",
-        "13",
+        "i13",
         "Mid",
-        "-3",
-        "N/A"
+        "-3"
         ],
         [
         "<p class=\"notation\">a1</p>",
         "Keepout launcher, hit confirmable into B.343",
-        "16",
+        "i16",
         "Mid",
-        "-",
-        "N/A"
+        "-19"
         ],
         [
         "<p class=\"notation\">a3</p>",
         "A knee attack to fish for a counterhit launch",
-        "15",
+        "i15",
         "Mid",
-        "-7",
-        "N/A"
+        "-7"
         ],
         [
         "<p class=\"notation\">e1</p>",
         "Jumping conuterhit launcher, good for keepout",
-        "20",
+        "i20",
         "Mid",
-        "-3",
-        "N/A"
+        "-3"
         ],
         [
         "<p class=\"notation\">z1</p>",
         "Low poke to annoy the enemy and make them press into your defensive tools",
-        "20",
+        "i20",
         "Mid",
-        "-",
-        "N/A"
-        ],
-        [
-        "<p class=\"notation\"><img class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R5_03_WS.png\">z9</p>",
-        "Low poke to annoy the enemy and make them press into your defensive buttons",
-        "20",
-        "Mid",
-        "-",
-        "N/A"
+        "-12"
         ],
         [
         "<p class=\"notation\"><img class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R5_03_WS.png\">8</p>",
         "Can be used for approaching, launches on counterhit",
-        "21",
+        "i21",
         "Mid",
-        "-2",
-        "N/A"
+        "-2"
         ],
         [
         "<p class=\"notation\">d3</p>",
         "Useful against opponents that are side stepping",
-        "19",
+        "i19",
         "High",
-        "+3",
-        "N/A"
+        "+3"
         ],
         [
         "<p class=\"notation\">d1<img class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R7_40_HOLD.PNG\"></p>",
         "Becomes an unblockable when fully held, Very useful against opponents getting off the ground",
-        "70",
-        "Unblockable Mid",
-        "Knockdown",
-        "N/A"
+        "i70",
+        "Mid",
+        "+28"
         ]
     ]
     },
@@ -109,26 +91,26 @@
     "table_name": "Defensive Options",
     "headers": ["Input", "Description", "Startup", "Level", "Block"],
     "rows": [
-        ["<p class=\"notation\">a4</p>", "Reversal", "5", "SP", "N/A"],
-        ["<p class=\"notation\">a6</p>", "Reversal", "5", "SP", "N/A"],
+        ["<p class=\"notation\">a4</p>", "Reversal", "i5", "SP", "N/A"],
+        ["<p class=\"notation\">a6</p>", "Reversal", "i5", "SP", "N/A"],
         [
         "<p class=\"notation\">z8</p>",
         "Has a low parry effect",
-        "42",
+        "i42",
         "Mid Mid",
         "+10"
         ],
         [
         "<p class=\"notation\">aM</p>",
         "Has a kick parry effect",
-        "24",
+        "i24",
         "Mid",
         "-9"
         ],
         [
         "<p class=\"notation\">dM</p>",
         "Has a punch parry effect",
-        "23",
+        "i23",
         "High",
         "0"
         ]

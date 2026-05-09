@@ -15,17 +15,17 @@
     },
     {
     "table_name": "Key Moves",
-    "headers": ["Input", "Description", "Startup", "Level", "Block", "Counter"],
+    "headers": ["Input", "Description", "Startup", "Level", "Block"],
     "rows": [
-        ["<p class=\"notation\">7</p>", "Good mid poke to check situations", "10", "High", "+1", "N/A"],
-        ["<p class=\"notation\">x1</p>", "Good mid poke to check situations", "14", "Mid", "-2", "N/A"],
-        ["<p class=\"notation\">z97</p>", "First hit can be used to enter back turn stance.", "22", "Mid, High", "-4", "N/A"],
-        ["<p class=\"notation\">11</p>", "Poke string with counterhit launching follow-up.", "17", "Mid, High", "-8", "N/A"],
-        ["<p class=\"notation\">a7</p>", "Pressure move that shifts into SZN on hit or block", "16", "High", "+7", "N/A"],
-        ["<p class=\"notation\">d91</p>", "Safe long range attack that can go into SZN", "21", "Mid, Mid", "-12", "N/A"],
-        ["<p class=\"notation\">sxd3</p>", "Good keepout tool", "18", "Mid", "-14", "N/A"],
-        ["<img alt=\"While Standing\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R5_03_WS.png\"><p class=\"notation\">9</p>", "A safe counterhit launcher from a crouching position", "13", "Mid", "-8", "N/A"],
-        ["<img alt=\"Full Crouch\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R5_02_FC.png\"><p class=\"notation\">x2</p>", "A big low that enables his full crouch mixup game", "18", "Low, Special Mid", "-23", "N/A"]
+        ["<p class=\"notation\">7</p>", "Good mid poke to check situations", "i10", "High", "+1"],
+        ["<p class=\"notation\">x1</p>", "Good mid poke to check situations", "i16", "Mid", "-9"],
+        ["<p class=\"notation\">z97</p>", "First hit can be used to enter back turn stance or Soul Zone Stance.", "i13", "Mid, High", "-1"],
+        ["<p class=\"notation\">11</p>", "Poke string with counterhit launching follow-up.", "i17", "Mid, High", "-8"],
+        ["<p class=\"notation\">a7</p>", "Pressure move that shifts into SZN on hit or block", "i16", "High", "+7"],
+        ["<p class=\"notation\">d91</p>", "Safe long range attack that can go into SZN", "i15", "Mid, Mid", "-9"],
+        ["<p class=\"notation\">sxd3</p>", "Good keepout tool", "i18", "Mid", "-14"],
+        ["<img alt=\"While Standing\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R5_03_WS.png\"><p class=\"notation\">9</p>", "A safe counterhit launcher from a crouching position", "i13", "Mid", "-8"],
+        ["<img alt=\"Full Crouch\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R5_02_FC.png\"><p class=\"notation\">x2</p>", "A big low that enables his full crouch mixup game", "i18", "Low, Special Mid", "-23"]
     ]
     },
     {
@@ -33,8 +33,8 @@
     "headers": ["Input", "Description", "Startup", "Level", "Block"],
     "rows": [
         ["<p class=\"notation\">a4</p>", "Alternative input: B+2+4 - Escapes any attacks except rage arts", "N/A", "N/A", "N/A"],
-        ["<p class=\"notation\">sxd8</p>", "Parries high or mid punches and kicks", "24", "Mid, Mid", "-14"],
-        ["<p class=\"notation\">aa9</p>", "Parries High and low punches and kicks, not mid", "17", "Mid, High", "-10"]
+        ["<p class=\"notation\">sxd8</p>", "Parries high or mid punches and kicks", "i24", "Mid, Mid", "0"],
+        ["<p class=\"notation\">aa9</p>", "Parries High and low punches and kicks, not mid", "i17", "Mid, High", "-10"]
     ]
     }
 ]

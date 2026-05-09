@@ -33,42 +33,38 @@
         "Description",
         "Startup",
         "Level",
-        "Block",
-        "Counter"
+        "Block"
     ],
     "rows": [
-        ["<p class=\"notation\">7</p>", "Use it to start offence and check situations", "10", "High", "+1", "N/A"],
-        ["<p class=\"notation\">x7</p>", "Mid attack to harass the opponent", "13", "Mid", "-1", "N/A"],
-        ["<p class=\"notation\">a7</p>", "Quick homing attack to check opponents side stepping", "15", "Mid", "-6", "N/A"],
-        ["<p class=\"notation\">e3</p>", "A safe launcher that goes over lows", "25", "Mid", "-8", "N/A"],
-        ["<p class=\"notation\">a3</p>", "Mid knee attack with counterhit properties", "15", "Mid", "-8", "N/A"],
-        ["<img class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R5_02_FC.png\"><p class=\"notation\">x9</p>", "Counter hit launcher from crouching position", "15", "Mid", "-8", "N/A"],
-        ["<p class=\"notation\">dD8</p>", "Safe approach that launches on counterhit", "16", "Mid", "-9", "N/A"],
-        ["<p class=\"notation\">z3</p>", "Risky low sweep that launches on counterhit", "21", "Low", "-26", "N/A"]
+        ["<p class=\"notation\">7</p>", "Use it to start offence and check situations", "i10", "High", "+1"],
+        ["<p class=\"notation\">x7</p>", "Mid attack to harass the opponent", "i13", "Mid", "-3"],
+        ["<p class=\"notation\">a7</p>", "Quick homing attack to check opponents side stepping", "i15", "Mid", "-9"],
+        ["<p class=\"notation\">e3</p>", "A safe launcher that goes over lows", "i25", "Mid", "-8"],
+        ["<p class=\"notation\">a3</p>", "Mid knee attack with counterhit properties", "i15", "Mid", "-8"],
+        ["<img class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R5_02_FC.png\"><p class=\"notation\">x9</p>", "Counter hit launcher from crouching position", "i15", "Mid", "-8"],
+        ["<p class=\"notation\">dD8</p>", "Safe approach that launches on counterhit", "i16", "Mid", "-9"],
+        ["<p class=\"notation\">z3</p>", "Risky low sweep that launches on counterhit", "i20", "Low", "-26"]
     ]
     },
     {
     "table_name": "Throw Data",
-    "headers": ["Input", "Escape", "Startup Frames", "Attack Level"],
+    "headers": ["Input", "Escape", "Startup Frames"],
     "rows": [
-        ["<p class=\"notation\">e8</p>", "1+2 Escape", "12", "Throw, High, High"],
+        ["<p class=\"notation\">e8</p>", "1+2 Escape", "i12"],
         [
         "<img class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R5_03_WR.png\"><p class=\"notation\">4</p>",
         "1+2 Escape",
-        "12",
-        "Throw, High, High"
+        "i12"
         ],
         [
         "<img class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_DEN.png\"><p class=\"notation\">M</p>",
         "1+2 Escape",
-        "12",
-        "Throw, High, High"
+        "i12"
         ],
         [
         "<p class=\"notation\">e28</p>",
         "1+2 Escape",
-        "9",
-        "sp Throw, High, High"
+        "N/A"
         ]
     ]
     }

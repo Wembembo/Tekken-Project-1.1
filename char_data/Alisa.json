@@ -38,78 +38,68 @@
         "Description",
         "Startup Frames",
         "Attack Level",
-        "+/- On Block",
-        "Counter Options"
+        "+/- On Block"
     ],
     "rows": [
         [
         "<p class=\"notation\">7</p>",
         "Quick jab to start offence",
-        "10",
+        "i10",
         "High",
-        "+1",
-        "-"
+        "+1"
         ],
         [
         "<p class=\"notation\">a7</p>",
         "Mid Poke with good range",
-        "15",
+        "i15",
         "Mid",
-        "-5",
-        "-"
+        "-5"
         ],
         [
         "<p class=\"notation\">z1</p>",
         "Key low poke to harass the opponent",
-        "16",
+        "i16",
         "Low",
-        "-13",
-        "-"
+        "-13"
         ],
         [
         "<p class=\"notation\">x9</p>",
         "Good keepout and whiff punisher",
-        "16",
+        "i16",
         "Mid",
-        "-9",
-        "-"
+        "-9"
         ],
         [
         "<p class=\"notation\">s1</p>",
         "Long ranged low, mix it with your other approach tools",
-        "23",
+        "i23",
         "Low",
-        "-10",
-        "-"
+        "-110"
         ],
         [
         "<p class=\"notation\">a1</p>",
         "Homing attack with great range and pushback on block",
-        "20",
+        "i20",
         "Mid",
-        "-8",
-        "-"
+        "-8"
         ],
         [
         "<img alt=\"While Standing\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R5_03_WS.png\">8",
         "Homing attack from crouch, Mix it with FC1+2",
-        "20",
+        "i20",
         "Mid",
-        "-8",
-        "-"
+        "-8"
         ],
         [
         "<p class=\"notation\">ddD8</p>",
         "Approach attack, usefule to pressure the opponent",
-        "18",
+        "i18",
         "Mid",
-        "-4",
-        ""
+        "-3"
         ],
         [
         "<img alt=\"Destuctive Form\" class=\"notation\" src=\"./Assets/Input-Notations/assets_generic/R9_DES.png\">",
         "Explore this stance to form and aggressive gameplan",
-        "-",
         "-",
         "-",
         "-"
@@ -136,14 +126,14 @@
         [
         "<p class=\"notation\">a8</p>",
         "Power Crush",
-        "19",
+        "i19",
         "Mid",
         "-13"
         ],
         [
         "<p class=\"notation\">q9</p>",
         "Power Crush",
-        "16",
+        "i16",
         "High",
         "-9"
         ]
